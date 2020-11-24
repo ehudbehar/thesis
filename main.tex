@@ -1,4 +1,4 @@
-\documentclass[nofonts,nobib]{tufte-book}
+\documentclass[justified,nofonts,nobib]{tufte-book}
 % Use tufte-book, not tufte-handout as the documentclass
 % use pdfLatex as the compiler
 \pdfoutput=1
@@ -17,6 +17,13 @@
 \usepackage{titlesec}
 % Turn on section numbering
 \setcounter{secnumdepth}{2}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,
+}
 
 %%% Document %%%
 \begin{document}
@@ -150,24 +157,26 @@ Paschen's Law states that the breakdown voltage is a unique function of the prod
 \section{Diffraction grating}\label{sec:diffractiongrating}
 
 \chapter{Thesis Goals}\label{chap:goals}
-This thesis presents the results of the experimental study of various plasma processes that occur in the plasma discharge, the main of them is inserting gas mixture N\textsubscript{2}H\textsubscript{2} inside the capillary.
+This thesis presents the results of the experimental study of various plasma processes in gas--filled capillary discharge.
 \begin{enumerate}
-  \item An experiment to lower and measure the jitter in igniting the plasma, generated in a mixture of N\textsubscript{2}H\textsubscript{2} gas mixture, found to be in the scale of \SI{1}{\ns}, providing possibility for the synchronization with a high intensity laser or other auxiliary systems (f.e injectors).
+  \item An experiment to lower and measure the jitter in igniting the plasma, generated in a mixture of N\textsubscript{2} and H\textsubscript{2} gas mixture, found to be in the scale of \SI{1}{\ns}, providing possibility for the synchronization with a high intensity laser or other auxiliary systems (f.e injectors).
   \item Gain for optical guiding of an \SI{84}{\MHz} oscillator laser passing through the capillary.
   \item Spectroscopy analysis on the plasma utilizing Stark broadening to convert the plasma's emission spectra to study its density and density profile; We confirmed the existence of a hollow density plasma profile and its density profile.
-  \item \textit{red}{First experiment with a double capillary.}
+  \item \textcolor{red}{First experiment with a double capillary.}
 \end{enumerate}
 	\chapter{Methods}\label{chap:methods}
 
 	\section{Experiment Scheme}\label{sec:experiment_scheme}
-Our method of plasma generation is based on the laser trigger technique with the injection of nitrogen/hydrogen gas inside the capillary \cite{Bobrova2002,Spence2001}.
+Our method of plasma generation is based on the laser trigger technique with the injection of N\textsubscript{2} and H\textsubscript{2} gas inside the capillary \cite{Bobrova2002,Spence2001}.
 The waveguide is designed to operate in an evacuated chamber, maintained at $~$\SI{e-4}{\torr}.
 \begin{figure}
     \includegraphics[width=\textwidth]{figures/Laser-based ignition scheme.png}
     \label{fig:scheme}
-    \caption{\textcolor{red}{high-Voltage pulser scheme., valve is missing, Nd:Yag is missing.}}
+    \caption{Plasma generation in the N\textsubscript{2}+H\textsubscript{2} gas--filled capillary. The vacuum chamber has been omitted for clarity.}
     \end{figure}
-The experimental system is shown in figure \ref{fig:scheme}, and applies to all forth coming discussion,\textcolor{red}{except if I write about double capillary.} Two electrodes are mounted at both ends of the capillary. Those electrodes are connected to a high-voltage source, which provides a pulse of a few kilovolts amplitude, during the opening of a valve \sidenote{Product of \textit{Parker Hannifin Corporation}, model 099-0340-900}, set to be opened for \SI{30}{\ms}, that injects gas to the capillary. The ignition is achieved by the igniting laser pulse, that ionizes matter and detaches electrons \cite{Palchan2007}, which in turn accelerate under the applied high voltage and in an avalanche manner, plasma discharge manifests inside the capillary. The created electron current effectively closes an electrical circuit \textcolor{red}{(Fig. 1.a)}, so the plasma ignition acts as a switch for that circuit. The discharge current is recorded by a Rogowski coil \sidenote{\textit{Pearson}, model 110A. A wide band current transformer with typical response time of less than \SI{50}{\ns}.} and the current profile is acquired by an oscilloscope \textcolor{red}{(Fig. 1.b)}.
+The experimental system is shown in figure \ref{fig:scheme}, and applies to all forth--coming discussion,\textcolor{red}{except if I write about double capillary.}
+
+Two electrodes are mounted at both ends of the capillary. Those electrodes are connected to a high-voltage source, which provides a pulse of a few kilovolts amplitude, during the opening of a valve \sidenote{Product of \textit{Parker Hannifin Corporation}, model 099-0340-900}, set to be opened for \SI{30}{\ms}, that fills the the capillary with gas. The ignition is achieved by the igniting laser pulse, that ionizes matter and detaches electrons \cite{Palchan2007}, which in turn accelerate under the applied high voltage and in an avalanche manner, plasma discharge manifests inside the capillary. The created electron current effectively closes an electrical circuit, for which the plasma ignition acts as a switch. The discharge current is recorded by a Rogowski coil \sidenote{\textit{Pearson}, model 110A. A wide band current transformer with typical response time of less than \SI{50}{\ns}.} and the current profile is acquired by an oscilloscope.
 
 	\section{Devices in use}\label{sec:devices}
 The experiment was conducted using the following devices:
@@ -191,22 +200,19 @@ In the system two laser were in use, igniting laser and \textcolor{red}{oscillat
 	\begin{marginfigure}
         \includegraphics[width=\marginparwidth]{figures/oscillator_single.PNG}
         \label{fig:oscillator_single}
-        \caption{Oscillator laser,\SI{84}{\MHz} temporal beam profile}
+        \caption{Oscillator laser, \SI{84}{\MHz} temporal beam profile.}
     \end{marginfigure}
     It produces \SI{5}{\mJ} \textcolor{red}{check that}, \SI{20}{\fs} pulses at a \SI{84}{\MHz} rate. \textcolor{red}{I.e., a pulse every \SI{12.5}{\ns}.} This beam was directed through the capillary and recorded with a fast photo-diode (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
 \end{itemize}
-	\subsection{Details about capillary}
-	\subsection{High Voltage pulser}
-	The high voltage pulser provides the high voltage difference applied on the two electrodes. A schematic electronic circuit is shown in figure \ref{fig:hvpulser}.
-	\begin{marginfigure}
-		\includegraphics[width=\marginparwidth]{./figures/hvpulser.PNG}
-		\caption{Schematic electronic circuit of the High--Voltage pulser, designed, made and maintained by Levin.}
-		\label{fig:hvpulser}
-	\end{marginfigure}
-	Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was built, and still maintained, by Levin, see \cite{Levin2009, pp. 46-47} for more information considering the setup and explanation of its operation.
+\subsection{Details about capillary}
+\subsection{High Voltage pulser}
+The high voltage pulser provides the high voltage difference applied on the two electrodes. See picture on the right. Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was built, and still maintained, by Levin, see \cite{Levin2009, pp. 46-47} for more information considering the setup and explanation of its operation.
 	
 \subsection{Spectrograph and Andor CCD camera}\label{ssec:spectro}
-To measure the capillary plasma density and to validate the existence of a hollow radial density profile at the time segment optical guiding exist, we performed a direct spectroscopic study of the plasma emission. \st{The H alpha emission line and its Stark broadening.} The plasma emission during the discharge was collected by an imaging system and imaged onto the entrance slit of a detection system, composed of a spectrometric instrument, fitted with a 2D 1024$\times$256 element intensified charge-coupled device (ICCD) fast camera\sidenote{\textit{Andor}, model DH520.}. The CCD allows for recording images with both spectral and spatial resolution. The detector gating and delay were set by a digital delay and pulse generator board\sidenote{\textit{Stanford Research Systems}, model DG535.} that triggers the CCD camera. Figure \ref{fig:spectrometer} shows a typical 2D image. 
+To measure the capillary plasma density and to validate the existence of a hollow radial density profile at the time segment optical guiding exist, we performed a direct spectroscopic study of the plasma emission. The plasma emission during the discharge was collected by an imaging system and imaged onto the entrance slit of a detection system, composed of a spectrometric instrument\sidenote{\textit{Spectra--Pro} model 300i}, fitted with a 2D 1024$\times$256 element intensified charge-coupled device (CCD) fast camera\sidenote{\textit{Andor}, model DH520.}. The CCD allows for recording images with both spectral and spatial resolution.
+
+The detector gating and delay were set by a digital delay and pulse generator board\sidenote{\textit{Stanford Research Systems}, model DG535.} that triggers the CCD camera.
+
 \begin{figure}
 \includegraphics[width=\textwidth]{./figures/spectrometer.PNG}
 \caption{Optical layout for the spectrometric instrument.}
@@ -247,7 +253,7 @@ The \textcolor{red}{color1} waveform is the plasma discharge current profile del
 
 The explanation for the gain of the voltage arriving from \textcolor{red}{P.D 2} during the formation of the plasma channel was mentioned in section \ref{sec:indexrefraction}: If the plasma has a normal density profile (maximum on the axis), it behaves like a negative lens and causes the laser beam to diverge into the walls. If an inverted density profile (minimum on the axis, refer to figure \ref{fig:rdp_parabola}) can be created, however, the lens effect becomes converging; and the radiation is focused and trapped by the plasma. See figure \ref{fig:chen4_31}.
 \begin{marginfigure}
-		\includegraphics[width=\marginparwidth]{./figures/trap.pdf}
+		\includegraphics[width=\marginparwidth]{./figures/chen4_31.PNG}
 		\caption{A plasma confined inside the capillary will trap the 800 nm laser light only if the plasma has a density minimum on axis.}
 		\label{fig:chen4_31}
 \end{marginfigure}
