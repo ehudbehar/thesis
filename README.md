@@ -38,4 +38,22 @@ The relevant changes I made are:
 \setcounter{secnumdepth}{2}
  ```
 
-The easier way is to make the changes in the document pre-amble, and not to touch the metal.
+The easier way is to make the changes in the document pre-amble, and not to touch the metal, or to create a file with the defintion and load it explicitly with that method.
+
+### Notes on "typical ccd image"
+I generated the color 2d plot using matlab and the following lines of code:
+```matlab
+[X, Y] = meshgrid(linspace(1,1024,100)...
+                 ,linspace(1,256,100) ); % generate a rectangle maeshgrid
+A=10;
+b=0.0008; % gausiian width
+c=90;
+F = ...
+(A./((X-512).^2+100000)).*(exp(-b.*((Y-c).^2))+exp(-b.*((Y-c-65).^2)));
+surf(X,Y,F)
+xlabel('lambda')
+ylabel('Y')
+view(2)
+```
+The function that displays the density profile is
+![Equation](https://i.ibb.co/RbssSnx/png.png) i.e., addition of two Gaussians in the spatial coordinate and a Lorentzian in the wavelength coordinate.
