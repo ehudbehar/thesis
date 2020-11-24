@@ -54,6 +54,12 @@ surf(X,Y,F)
 xlabel('lambda')
 ylabel('Y')
 view(2)
+xlim([1 1024])
+ylim([0 256])
+pbaspect([4 1 1])
+axis off;
+set(gca,'Position',[0 0 1 1]);
+saveas(gcf,'typical_image.png')
 ```
 The function that displays the density profile is
 ![Equation](https://i.ibb.co/RbssSnx/png.png) i.e., addition of two Gaussians in the spatial coordinate and a Lorentzian in the wavelength coordinate.
