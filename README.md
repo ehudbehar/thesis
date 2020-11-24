@@ -49,7 +49,7 @@ A=10;
 b=0.0008; % gausiian width
 c=90;
 F = ...
-(A./((X-512).^2+100000)).*(exp(-b.*((Y-c).^2))+exp(-b.*((Y-c-65).^2)));
+(A./((X-512).^2+100000)).*(exp(-b.*((Y-c).^2))+exp(-b.*((Y-c-60).^2)));
 surf(X,Y,F)
 xlabel('lambda')
 ylabel('Y')
