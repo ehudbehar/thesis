@@ -222,21 +222,27 @@ The detector gating and delay were set by a digital delay and pulse generator bo
 \label{fig:spectrometer}
 \end{figure}
 The spectrometric instrument is a Czerny-Turner arrangement, made of a plane reflection grating. Light entering the entrance slit is collimated by a concave mirror and directed towards the plane reflection grating. Light diffracted from the grating forms a plane wave that is focused by another concave mirror onto the exit slit. Only one wavelength leaves the grating in the right direction to reach the exit slit, and tuning is achieved by rotating the grating, controlled by Andor's computer software. See figure \ref{fig:spectrometer}. In our measurements we used a 1800 lines/mm grating. Spatial resolution is controlled by the width of the entrance slit.
+
 \subsection{Timings}
 	\textcolor{red}{fill!}
+	
 \chapter{Experimental work}\label{chap:Experimental_work}
 \section{Capillary discharge, Jitter}\label{sec:jitter}
 Experiments in which plasma channels are supposed to be ready-to-use guiding media require a low ignition jitter (the spread in initiation of the current), so as to provide results reproducible on shot-to-shot basis. Typical guiding window lasts about \SIrange{50}{100}{\ns}, so ignition jitter of about \SI{10}{ns} would be tolerable.
 
 This was our goal as a first experiment with the gas injected capillaries.
 
-A schematically drawing of the system is shown in figure \ref{fig:jitter_exp}. \textcolor{red}{a sentence about the system.} The capillary is positioned inside a vacuum chamber held
-To anchor the discharge starting process to a fixed event to which we can refer, we mounted a photodiode close to the igniting laser radiation output, thus enabling one to fix a time event at which the plasma discharge occurs; The photodiode allows for visualizing the synchronization. Recording to an oscilloscope both the phodo-diode rise-up signal and the current profile obtained from the Rogowsky coil, we monitored the igniting pulse and the discharge current. 
-We observed low jitter, approximately \SI{1}{ns}, as shown in figure \textcolor{red}{schematic system figure}, for consecutive 50 ignitions performed at constant time intervals.
+A schematically drawing of the system is shown in figure \ref{fig:scheme}. To anchor the discharge starting process to a fixed event to which we can refer, we mounted a photo--detector close to the igniting laser radiation output, thus enabling one to fix a time event at which the plasma discharge occurs; The photo--detector allows for visualizing the synchronization. Recording to an oscilloscope both the phodo-diode rise-up signal and the current profile obtained from the Rogowsky coil, we monitored the igniting pulse and the discharge current for consecutive 50 ignitions performed at constant time intervals.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/jitter/low_jitter.jpg}
+    \caption{Low jitter exhibiting \textcolor{red}{fix this.}}
+    \label{fig:low_jitter}
+\end{figure}
 
 The time resolution is evaluated while taking into consideration both the oscilloscope sampling rate and the prior to ignition electrical components' jitter. The jitter is calculated as half the difference between the earliest and latest ignition timing of multiple independent ignitions. Overall, we evaluate the jitter to be
 \begin{equation}
-	\tau_\text{jitter}\approx 1\pm 0.36 \text{ ns}
+	\tau_\text{jitter}\approx 1\pm 0.36\si{\ns}
 \end{equation}
 This implies that we can determine the optical guiding timing of the incident laser to the plasma, with no concerns of shooting too early or too late with respect to the plasma channel. Also, we deduce that our system and its over all components is relatively stable and reliable.
 
