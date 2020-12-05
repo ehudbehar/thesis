@@ -23,6 +23,7 @@
     colorlinks=true,
     linkcolor=cyan,
     filecolor=magenta,
+    pdftitle={Thesis Ehud Behar}
 }
 
 %%% Document %%%
@@ -121,7 +122,7 @@ Modern particle accelerators use radio-frequency (RF) waves travelling in metal 
 If the limiting factor on the scale of the accelerator is ionisation of the material, then an attractive alternative, proposed by J. Dawson and T. Tajima\cite{Tajima1979} is to use a plasma as the medium for the acceleration mechanism, since a plasma can support arbitrarily high electric fields, limited only by the obtainable charge density \cite{Esarey2009}.
 
 \textcolor{red}{Write correctly this paragraph; Get help from 2.3.1 in Antonio Giulietti}
- A single laser pulse with a duration less than the plasma period excites a plasma wave via the action of the ponderomotive force. This force, caused by the laser intensity gradient, ejects all the electrons, leaving a bubble of the slow moving ions. This charge separation provides a large electric field. The ponderomotive force, related to the laser intensity gradient, is able to push electrons away from regions of high laser intensity, while the ions stay immobile because of their higher mass. As the pulse passes, the electrons are attracted back by the ion charge, forming a negative layer around the bubble and converging into an electron bunch behind the bubble.
+A single laser pulse with a duration less than the plasma period excites a plasma wave via the action of the ponderomotive force. This force, caused by the laser intensity gradient, ejects all the electrons, leaving a bubble of the slow moving ions. This charge separation provides a large electric field. The ponderomotive force, related to the laser intensity gradient, is able to push electrons away from regions of high laser intensity, while the ions stay immobile because of their higher mass. As the pulse passes, the electrons are attracted back by the ion charge, forming a negative layer around the bubble and converging into an electron bunch behind the bubble.
 Laser-driven plasma acceleration is a technique in which particles are accelerated by the field of an electron plasma wave (wakefield) trailing an intense laser pulse. Such large electric field generation can be achieved by focusing an ultra-short and powerful TW laser that provides a large electric field because of charge separation. Plasma formed by initiating a discharge in a narrow channel made within a tube (i.e., discharge capillary) satisfies promising
 conditions for a plasma source to exploit LWFA. Since the middle of 1980s, Ultrashort laser pulses of sufficient energy have become possible and available, after the damage thershold inherent in optical amplifiers had been overcome by means of Chirped Pulse Amplification (CPA)\cite{Strickland1985}.
 
@@ -181,32 +182,34 @@ Two electrodes are mounted at both ends of the capillary. Those electrodes are c
 	\section{Devices in use}\label{sec:devices}
 The experiment was conducted using the following devices:
 \begin{enumerate}
-    \item \textcolor{blue}{capillary, PolyJet technology, material C\textsubscript{5}H\textsubscript{8}O\textsubscript{2}}
+    \item Capillary
     \item Nd:Yag Laser, 1064 nm
     \item Oscillator laser, 800 nm
     \item High Voltage power supply
     \item Spectrograph and Andor ccd camera
     \item Photodiodes
-    \item Lenses and mirrors
+    \item Optical Elements, viz., lenses and mirrors
     \item Rogowsky coil
     \item Digital delay and pulse generator board
+    \item Gate valve
     \item Vacuum chamber
 \end{enumerate}
-		\subsection{Lasers used}\label{ssec:lasers}
-In the system two laser were in use, igniting laser and \textcolor{red}{oscillator} laser:
+\subsection{Capillary production}
+The capillary is the medium at which the plasma channel forms. Its length is \SI{5}{\cm}, and the inner diameter is \SI{500}{\um}. The unit is made with   3D--printed, with the a polymer with an of is made of a 3D--printed polymer with a length of \SI{5}{\cm} and an inner diameter of \SI{500}{\um}. The matter used for the production The in the PolyJet technology. take a look at the migra'at for the eletrodes. page 22 in pollak. page 20 in ferber.
+\subsection{Lasers used}\label{ssec:lasers}
+In our system two laser were in use, igniting laser and \textcolor{red}{oscillator} laser:
 \begin{itemize}
-    \item The first is \textit{Tempest 10}, a \SI{1.064}{\mu} pulse laser, flashlamp pumped, Q-switched, Nd:Yag laser manufactured by \textit{New Wave Optics}. The pulse duration is $\tau \sim$ \SI{10}{\ns}, and with energy of up to $\sim$ \SI{200}{\mJ}. The ignition of the plasma is initiated by this laser pulse that ablates a small amount of surface in the inner wall of the capillary and produces seed ionization that triggers the discharge after $\sim$\SI{50}{\ns}. In the experiment the energy being used in most cases to obtain reliable ignition was \SIrange{50}{100}{\mJ}. \textcolor{red}{This is what I measured with a power meter. Ask Arie.} Misha said \href{https://aip.scitation.org/doi/full/10.1063/1.2149183}{here} \textcolor{red}{that it was 10 to 15 mJ and Ori pollak say it was 80 mJ.} The laser beam was delivered on the capillary axis through the negative electrode by a focusing lens (see Figure \textcolor{red}{figure number }), thus igniting the plasma. \st{This technique makes it possible to achieve very low shot-to-shot jitter of the ignition delay.}
-	\item The second laser is \textit{Mai Tai}, a 800 nm mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
-	\begin{marginfigure}
-        \includegraphics[width=\marginparwidth]{figures/oscillator_single.PNG}
-        \label{fig:oscillator_single}
-        \caption{Oscillator laser, \SI{84}{\MHz} temporal beam profile.}
-    \end{marginfigure}
-    It produces \SI{5}{\mJ} \textcolor{red}{check that}, \SI{20}{\fs} pulses at a \SI{84}{\MHz} rate. \textcolor{red}{I.e., a pulse every \SI{12.5}{\ns}.} This beam was directed through the capillary and recorded with a fast photo-diode (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
+\item The first is \textit{Tempest 10}, a \SI{1.064}{\mu} pulse laser, flashlamp pumped, Q-switched, Nd:Yag laser manufactured by \textit{New Wave Optics}. The pulse duration is $\tau \sim$ \SI{10}{\ns}, and with energy of up to $\sim$ \SI{200}{\mJ}. The ignition of the plasma is initiated by this laser pulse that ablates a small amount of surface in the inner wall of the capillary and produces seed ionization that triggers the discharge after $\sim$\SI{50}{\ns}. In the experiment the energy being used in most cases to obtain reliable ignition was \SIrange{50}{100}{\mJ}. \textcolor{red}{This is what I measured with a power meter. Ask Arie.} Misha said \href{https://aip.scitation.org/doi/full/10.1063/1.2149183}{here} \textcolor{red}{that it was 10 to 15 mJ and Ori pollak say it was 80 mJ.} The laser beam was delivered on the capillary axis through the negative electrode by a focusing lens (see Figure \textcolor{red}{figure number }), thus igniting the plasma. \st{This technique makes it possible to achieve very low shot-to-shot jitter of the ignition delay.}
+\item The second laser is \textit{Mai Tai}, a 800 nm mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
+\begin{marginfigure}
+    \includegraphics[width=\marginparwidth]{figures/oscillator_single.PNG}
+    \label{fig:oscillator_single}
+    \caption{Oscillator laser, \SI{84}{\MHz} temporal beam profile.}
+\end{marginfigure}
+It produces \SI{5}{\mJ} \textcolor{red}{check that}, \SI{20}{\fs} pulses at a \SI{84}{\MHz} rate. \textcolor{red}{I.e., a pulse every \SI{12.5}{\ns}.} This beam was directed through the capillary and recorded with a fast photo-diode (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
 \end{itemize}
-\subsection{Details about capillary}
 \subsection{High Voltage pulser}
-The high voltage pulser provides the high voltage difference applied on the two electrodes. See picture on the right. Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was built, and still maintained, by Levin, see \cite{Levin2009, pp. 46-47} for more information considering the setup and explanation of its operation.
+The high voltage pulser provides the high voltage difference applied on the two electrodes. See picture on the right. Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was designed, built, and still maintained, by Levin. See \cite{Levin2009ExcitationAcceleration, pp. 46-47} for more information considering the setup and explanation of its operation.
 	
 \subsection{Spectrograph and Andor CCD camera}\label{ssec:spectro}
 To measure the capillary plasma density and to validate the existence of a hollow radial density profile at the time segment optical guiding exist, we performed a direct spectroscopic study of the plasma emission. The plasma emission during the discharge was collected by an imaging system and imaged onto the entrance slit of a detection system, composed of a spectrometric instrument\sidenote{\textit{Spectra--Pro} model 300i}, fitted with a 2D 1024$\times$256 element intensified charge-coupled device (CCD) fast camera\sidenote{\textit{Andor}, model DH520.}. The CCD allows for recording images with both spectral and spatial resolution.
@@ -237,7 +240,13 @@ The time resolution is evaluated while taking into consideration both the oscill
 \end{equation}
 This implies that we can determine the optical guiding timing of the incident laser to the plasma, with no concerns of shooting too early or too late with respect to the plasma channel. Also, we deduce that our system and its over all components is relatively stable and reliable.
 
-On the contrary, a much less stable regime was observed if the experiment was repeated \textbf{without} the igniting laser pulse. The explanation is that the electrical breakdown evolves in a much less deterministic behaviour; The process of the electrons being ripped from the molecules in a cascading manner is rather not stable. The jitter observed under this constraint of absent igniting laser pulse is on the order of $X \ \mu \text{s}$  \textcolor{red}{see figure}.
+On the contrary, a much less stable regime was observed if the experiment was repeated \textbf{without} the igniting laser pulse. The explanation is that the electrical breakdown evolves in a much less deterministic behaviour; The process of the electrons being ripped from the molecules in a cascading manner is rather not stable. The jitter observed under this constraint of absent igniting laser pulse is on the order of \SI{80}{\us}. See figure \ref{fig:multiple}.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/jitter/multiple.PNG}
+    \caption{Exposition of high jitter in the discharge when no Nd:Yag is present. \textcolor{red}{write this again.}}
+    \label{fig:multiple}
+\end{figure}
 
 \section{Duration of the hollow density profile}\label{sec:duration-of-guiding}
 We are now in a position to estimate the timing and duration of the hollow density profile. For that, with the system set-up as in the previous measurement, we aligned the 800 nm oscillator laser \ref{ssec:lasers} through the capillary and directed the outgoing beam out of the vacuum chamber to the active area of a fast photo-diode detector \textcolor{red}{P.D 2}. This detector output was connected to the same measuring oscilloscope as well.
