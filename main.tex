@@ -200,7 +200,7 @@ The capillary is the medium at which the plasma channel forms. Its length is \SI
 In our system two laser were in use, igniting laser and \textcolor{red}{oscillator} laser:
 \begin{itemize}
 \item The first is \textit{Tempest 10}, a \SI{1.064}{\mu} pulse laser, flashlamp pumped, Q-switched, Nd:Yag laser manufactured by \textit{New Wave Optics}. The pulse duration is $\tau \sim$ \SI{10}{\ns}, and with energy of up to $\sim$ \SI{200}{\mJ}. The ignition of the plasma is initiated by this laser pulse that ablates a small amount of surface in the inner wall of the capillary and produces seed ionization that triggers the discharge after $\sim$\SI{50}{\ns}. In the experiment the energy being used in most cases to obtain reliable ignition was \SIrange{50}{100}{\mJ}. \textcolor{red}{This is what I measured with a power meter. Ask Arie.} Misha said \href{https://aip.scitation.org/doi/full/10.1063/1.2149183}{here} \textcolor{red}{that it was 10 to 15 mJ and Ori pollak say it was 80 mJ.} The laser beam was delivered on the capillary axis through the negative electrode by a focusing lens (see Figure \textcolor{red}{figure number }), thus igniting the plasma. \st{This technique makes it possible to achieve very low shot-to-shot jitter of the ignition delay.}
-\item The second laser is \textit{Mai Tai}, a 800 nm mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
+\item The second laser is \textit{Mai Tai}, a \SI{800}{\nm} mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
 \begin{marginfigure}
     \includegraphics[width=\marginparwidth]{figures/oscillator_single.PNG}
     \label{fig:oscillator_single}
@@ -214,7 +214,7 @@ The high voltage pulser provides the high voltage difference applied on the two 
 \subsection{Spectrograph and Andor CCD camera}\label{ssec:spectro}
 To measure the capillary plasma density and to validate the existence of a hollow radial density profile at the time segment optical guiding exist, we performed a direct spectroscopic study of the plasma emission. The plasma emission during the discharge was collected by an imaging system and imaged onto the entrance slit of a detection system, composed of a spectrometric instrument\sidenote{\textit{Spectra--Pro} model 300i}, fitted with a 2D 1024$\times$256 element intensified charge-coupled device (CCD) fast camera\sidenote{\textit{Andor}, model DH520.}. The CCD allows for recording images with both spectral and spatial resolution.
 
-The detector gating and delay were set by a digital delay and pulse generator board\sidenote{\textit{Stanford Research Systems}, model DG535.} that triggers the CCD camera.
+The detector gating and delay were set by a digital delay and pulse generator board\sidenote{\textit{Stanford Research Systems}, model DG--535.} that triggers the CCD camera.
 
 \begin{figure}
 \centering
@@ -247,10 +247,10 @@ The time resolution is evaluated while taking into consideration both the oscill
 \end{equation}
 This implies that we can determine the optical guiding timing of the incident laser to the plasma, with no concerns of shooting too early or too late with respect to the plasma channel. Also, we deduce that our system and its over all components is relatively stable and reliable.
 
-On the contrary, a much less stable regime was observed if the experiment was repeated \textbf{without} the igniting laser pulse. The explanation is that the electrical breakdown evolves in a much less deterministic behaviour; The process of the electrons being ripped from the molecules in a cascading manner is rather not stable. The jitter observed under this constraint of absent igniting laser pulse is on the order of \SI{80}{\us}. See figure \ref{fig:multiple}.
+On the contrary, a much less stable regime was observed if the experiment is repeated \textbf{without} the igniting laser pulse. The explanation is that the electrical breakdown evolves in a much less deterministic behaviour; The process of the electrons being ripped from the molecules in a cascading manner is rather not stable. The jitter observed under this constraint of absent igniting laser pulse is on the order of \SI{80}{\us}. See figure \ref{fig:multiple}.
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{figures/jitter/multiple.PNG}
+    \includegraphics[width=\textwidth]{figures/jitter/multiple.pdf}
     \caption{Exposition of high jitter in the discharge when no Nd:Yag is present. \textcolor{red}{write this again.}}
     \label{fig:multiple}
 \end{figure}
@@ -264,20 +264,26 @@ We are now in a position to estimate the timing and duration of the hollow densi
 		    \caption{\textcolor{red}{write a description.}}
 		    \label{fig:oscillator}
 \end{figure}
-Upon plasma discharge, we recorded the optical guiding of the \textcolor{red}{ultra-}short laser pulses, shown in \textcolor{red}{?}, and watched after the gain of the signal while it interacts with the plasma inside the capillary. The effect of gain in the optical guiding is easily seen in figure \textcolor{red}{figure}.
+Upon plasma discharge, we recorded the optical guiding of the \textcolor{red}{ultra-}short laser pulses, shown in figure  \ref{fig:oscillator_single}, and watched after the gain of the signal while it interacts with the plasma inside the capillary. The result is shown in figure \ref{fig:oscillator_gain}.
 
-The \textcolor{red}{color1} waveform is the plasma discharge current profile delievered from the Rogowsky coil. The \textcolor{red}{color2} waveform is the signal arriving from the Nd:Yag photo-diode detector, which as mentioned before, tells us whether the discharge is timed with the igniting laser and is jitter-controlled. The bottom, \textcolor{red}{color3} waveform is that recorded from \textcolor{red}{P.D 2} with the oscillator as its signal. 
+The \textcolor{red}{color1} waveform is the plasma discharge current profile delivered from the Rogowsky coil. The \textcolor{red}{color2} waveform is the signal arriving from the Nd:Yag photo-diode detector, which as mentioned before, tells us whether the discharge is timed with the igniting laser and is jitter-controlled. The bottom, \textcolor{red}{color3} waveform is that recorded from \textcolor{red}{P.D 2} with the oscillator as its signal.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/gain.PNG}
+    \caption{\textcolor{red}{Write.}}
+    \label{fig:oscillator_gain}
+\end{figure}
 
 The explanation for the gain of the voltage arriving from \textcolor{red}{P.D 2} during the formation of the plasma channel was mentioned in section \ref{sec:indexrefraction}: If the plasma has a normal density profile (maximum on the axis), it behaves like a negative lens and causes the laser beam to diverge into the walls. If an inverted density profile (minimum on the axis, refer to figure \ref{fig:rdp_parabola}) can be created, however, the lens effect becomes converging; and the radiation is focused and trapped by the plasma. See figure \ref{fig:chen4_31}.
 \begin{marginfigure}
 		\includegraphics[width=\marginparwidth]{./figures/chen4_31.PNG}
-		\caption{A plasma confined inside the capillary will trap the 800 nm laser light only if the plasma has a density minimum on axis.}
+		\caption{A plasma confined inside the capillary will trap the \SI{800}{\nm} laser light only if the plasma has a density minimum on axis.}
 		\label{fig:chen4_31}
 \end{marginfigure}
 
 An additional phenomenon to remark is the attenuation of the signal in the later stage of the discharge---the plasma becomes opaque to radiation traversing it. \textcolor{red}{\textbf{Explain why}}
 
-In addition to the timing and duration of the plasma channel, we examined the factor within which the guidance efficiency is determined. Therefore, we measured the enhancement for different parameters: applied voltage, laser power and injected gas pressure. Analysis shows that the main parameter that increases the efficiency of the guiding is the applied voltage. The effect is easily visible--the enhanced transmission duration is approximately in the scale of several \SI{1e-7}{\sec}, also we see that the timing seems to be synchronized with the maximal value of the current. Furthermore, using more precise analysis we assess the mean duration of the hollow density profile to be $\tau_\text{channel}=\SI{300}{\ns}$ and with a maximal transmission during approximately \SI{30}{\ns} long.
+In addition to the timing and duration of the plasma channel, we examined the factor within which the guidance efficiency is determined. Therefore, we measured the enhancement for different parameters: applied voltage, laser power and injected gas pressure. Analysis shows that the main parameter that increases the efficiency of the guiding is the applied voltage. The effect is easily visible--the enhanced transmission duration is approximately in the scale of several \SI{1e-7}{\sec}, also we see that the timing seems to be synchronized with the maximal value of the current. Furthermore, using more precise analysis we assess the mean duration of the hollow density profile to be $\tau_\text{channel}=\SI{300}{\ns}$ and with a maximal transmission lasting approximately \SI{30}{\ns} long.
 
 \section{Spectroscopic measurements}\label{sec:spectro}
 To estimate \textcolor{red}{quantitatively} the depth of the plasma channel and the plasma density, we performed an additional measurement with a spectrometer and a fast camera, introduced in section \ref{ssec:spectro}, and analysed the broadened emission line attributable to Stark effect.
