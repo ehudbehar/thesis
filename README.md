@@ -63,3 +63,13 @@ saveas(gcf,'typical_image.png')
 ```
 The function that displays the density profile is
 ![Equation](https://i.ibb.co/RbssSnx/png.png) i.e., addition of two Gaussians in the spatial coordinate and a Lorentzian in the wavelength coordinate.
+
+### Parabolic profile plot
+Parabola parameters from the Matlab figure:
+```
+fitresult(x) = p1*x^2 + p2*x + p3
+p0 =   0.0001261
+p2 =   -0.002145
+p3 =      0.4325
+```
+The scatter plot with the errorbars are stored in `raw_data.csv`. Check the figure and the script commands to get the units and the axis labels and ticks. Script is in `Specific_code_to_add_tunnel_to_graph_of_density_profile_no_15.m` file.
