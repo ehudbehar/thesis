@@ -22,23 +22,23 @@
 \setcounter{secnumdepth}{2}
 % chapter format
 \titleformat{\chapter}%
-  {\huge\rmfamily\itshape\color{red}}% format applied to label+text
-  {\llap{\colorbox{red}{\parbox{1.5cm}{\hfill\itshape\huge\color{white}\thechapter}}}}% label
+  {\huge\sffamily\bfseries}% format applied to label+text
+  {\llap{\colorbox{cyan}{\parbox{1.5cm}{\hfill\itshape\huge\color{white}\thechapter}}}}% label
   {2pt}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
 % section format
 \titleformat{\section}%
-  {\sffamily\Large\bfseries\color{orange}}% format applied to label+text
-  {\llap{\colorbox{orange}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}% label
-  {1em}% horizontal separation between label and title body
+  {\sffamily\Large\bfseries}% format applied to label+text
+  {\thesection}% label
+  {1 em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
   
-% subsection format
 \titleformat{\subsection}%
   {\sffamily\large}% format applied to label+text
-  % horizontal separation between label and title body
+  {\thesubsection}% label
+  {4 pt}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
   
@@ -225,7 +225,7 @@ The capillary is the medium at which the plasma channel forms. Its length is \SI
 \subsection{Lasers used}\label{ssec:lasers}
 In our system two laser were in use, igniting laser and \textcolor{red}{oscillator} laser:
 \begin{itemize}
-\item The first is \textit{Tempest 10}, a \SI{1.064}{\mu} pulse laser, flashlamp pumped, Q-switched, Nd:Yag laser manufactured by \textit{New Wave Optics}. The pulse duration is $\tau \sim$ \SI{10}{\ns}, and with energy of up to $\sim$ \SI{200}{\mJ}. The ignition of the plasma is initiated by this laser pulse that ablates a small amount of surface in the inner wall of the capillary and produces seed ionization that triggers the discharge after $\sim$\SI{50}{\ns}. In the experiment the energy being used in most cases to obtain reliable ignition was \SIrange{50}{100}{\mJ}. \textcolor{red}{This is what I measured with a power meter. Ask Arie.} Misha said \href{https://aip.scitation.org/doi/full/10.1063/1.2149183}{here} \textcolor{red}{that it was 10 to 15 mJ and Ori pollak say it was 80 mJ.} The laser beam was delivered on the capillary axis through the negative electrode by a focusing lens (see Figure \textcolor{red}{figure number }), thus igniting the plasma. \st{This technique makes it possible to achieve very low shot-to-shot jitter of the ignition delay.}
+\item The first is \textit{Tempest 10}, a \SI{1.064}{\um} pulse laser, flashlamp pumped, Q-switched, Nd:Yag laser manufactured by \textit{New Wave Optics}. The pulse duration is $\tau \sim$ \SI{10}{\ns}, and with energy of up to $\sim$ \SI{200}{\mJ}. The ignition of the plasma is initiated by this laser pulse that ablates a small amount of surface in the inner wall of the capillary and produces seed ionization that triggers the discharge after $\sim$\SI{50}{\ns}. In the experiment the energy being used in most cases to obtain reliable ignition was \SIrange{50}{100}{\mJ}. \textcolor{red}{This is what I measured with a power meter. Ask Arie.} Misha said \href{https://aip.scitation.org/doi/full/10.1063/1.2149183}{here} \textcolor{red}{that it was 10 to 15 mJ and Ori pollak say it was 80 mJ.} The laser beam was delivered on the capillary axis through the negative electrode by a focusing lens (see Figure \textcolor{red}{figure number }), thus igniting the plasma. \st{This technique makes it possible to achieve very low shot-to-shot jitter of the ignition delay.}
 \item The second laser is \textit{Mai Tai}, a \SI{800}{\nm} mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
 \begin{marginfigure}
     \includegraphics[width=\marginparwidth]{figures/oscillator_single.PNG}
@@ -235,12 +235,16 @@ In our system two laser were in use, igniting laser and \textcolor{red}{oscillat
 It produces \SI{5}{\mJ} \textcolor{red}{check that}, \SI{20}{\fs} pulses at a \SI{84}{\MHz} rate. \textcolor{red}{I.e., a pulse every \SI{12.5}{\ns}.} This beam was directed through the capillary and recorded with a fast photo-diode (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
 \end{itemize}
 \subsection{High Voltage pulser}
-The high voltage pulser provides the high voltage difference applied on the two electrodes. See picture on the right. Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was designed, built, and still maintained, by Levin. See \cite{Levin2009ExcitationAcceleration, pp. 46-47} for more information considering the setup and explanation of its operation.
+\begin{marginfigure}
+        \includegraphics[width=\marginparwidth]{figures/hvpulser.PNG}
+        \caption{Discharge Pulser high voltage, designed, built and Maintained by Michael Levin.}
+\end{marginfigure}
+The high voltage pulser provides the high voltage difference applied on the two electrodes. See picture on the right. Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was designed, built, and still maintained, by Levin. See  \cite{Levin2009ExcitationAcceleration} pp. 46-47, for more information considering the setup and explanation of its operation.
 	
 \subsection{Spectrograph and Andor CCD camera}\label{ssec:spectro}
 To measure the capillary plasma density and to validate the existence of a hollow radial density profile at the time segment optical guiding exist, we performed a direct spectroscopic study of the plasma emission. The plasma emission during the discharge was collected by an imaging system and imaged onto the entrance slit of a detection system, composed of a spectrometric instrument\sidenote{\textit{Spectra--Pro} model 300i}, fitted with a 2D 1024$\times$256 element intensified charge-coupled device (CCD) fast camera\sidenote{\textit{Andor}, model DH520.}. The CCD allows for recording images with both spectral and spatial resolution.
 
-The detector gating and delay were set by a digital delay and pulse generator board\sidenote{\textit{Stanford Research Systems}, model DG--535.} that triggers the CCD camera.
+The detector gating and delay were set by a digital delay and pulse generator board\sidenote{\textit{Stanford Research Systems},\newline model DG--535.} that triggers the CCD camera.
 
 \begin{figure}
 \centering
