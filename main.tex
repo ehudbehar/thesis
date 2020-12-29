@@ -34,6 +34,14 @@
   {1em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
+  
+% subsection format
+\titleformat{\subsection}%
+  {\sffamily\large}% format applied to label+text
+  % horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+  
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -236,7 +244,7 @@ The detector gating and delay were set by a digital delay and pulse generator bo
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{./figures/spectrometer.PNG}
+\includegraphics[width=\textwidth]{./figures/spectro/spectrometer.PNG}
 \caption{Optical layout for the spectrometric instrument.}
 \label{fig:spectrometer}
 \end{figure}
@@ -314,7 +322,8 @@ To estimate \textcolor{red}{quantitatively} the depth of the plasma channel and 
 We installed an imaging system that images the \textcolor{red}{spatially} capillary entrance, shown in figure \ref{fig:radial_system}. For an accurate and \textcolor{red}{fidelity?} measurement, we needed to over--come two main difficulties:
 
 	\begin{figure}
-	    \includegraphics[width=\textwidth]{./figures/radial_system.png}
+	\centering
+	    \includegraphics[width=\textwidth]{./figures/spectro/radial_system.png}
 	    \caption{Experimental setup and typical spectrum of the plasma at the exit of the capillary.}
 	    \label{fig:radial_system}
 	\end{figure}
@@ -325,19 +334,21 @@ Secondly, as mentioned before (\ref{sec:jitter}), the plasma channel lasts for \
 
 The simple imaging system was composed of two converging lens (fused-silica, bi-convex, \diameter 2 inch), the first with a shorter focal length, that imaged the capillary entrance magnified by $\times 5$ on the spectrometer entrance slit. I.e. the image of a \SI{0.5}{\mm} capillary was $\sim$ \SI{2.5}{\mm} in diameter, corresponding to about \textcolor{red}{???} of the CCD's vertical range. The spectrometer slit had the width of \SI{150}{\micro\metre}, providing a spectral resolution of about \SI{0.3}{\nm}.
 
-The grating was rotated to the central wavelength of \SI{653.3}{\nm}, which, as mentioned in section \ref{sec:hydrogen}, is the unperturbed central wavelength of hydrogen $H_\alpha$ line. This line, when emitted withing a plasma, undergoes Stark broadening from which the electron density can be deduced, with the density estimate based on equation \ref{eq:delta_lambda}. A dielectric mirror coated for zero degrees at \SI{1.064}{\um} prevented the radiation of the igniting laser from entering the spectrometer.
+The grating was rotated to the central wavelength of \SI{653.3}{\nm}, which, as mentioned in section \ref{sec:hydrogen}, is the unperturbed central wavelength of hydrogen H\textsubscript{$\alpha$} line. This line, when emitted within a plasma, undergoes Stark broadening from which the electron density can be deduced, with the density estimate based on equation \ref{eq:delta_lambda}. A dielectric mirror coated for zero degrees at \SI{1.064}{\um} prevented the radiation of the igniting laser from entering the spectrometer.
 
 We gated the CCD camera, as stated, to \SI{40}{\ns} gate--on time at time windows that correspond to the maximal transmission of the oscillator signal (as described in \ref{sec:duration-of-guiding}), and set the gain of the microchannel plate to its highest, at the level of 9.
 
 The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. A Lorentzian intensity profile is assumed as the analytical fitting function with the line half-width as a free parameter. A fit was found for each row of the data. The vertical dimension corresponds to the spatial coordinate. \textcolor{red}{Explain the step--by--step of the analysis or not?.}
 
-Figure \ref{fig:channel.png} plots the experimentally measured plasma density as a function of position (capillary radius) across a \SI{500}{\um} capillary diameter at a delay time \SI{400}{\ns}\textcolor{red}{check the time} after the beginning of the electrical current. The maximum discharge current was \SI{160}{\A} \textcolor{red}{check the amperes}.
+Figure \ref{fig:plasma_channel_spectro} plots the experimentally measured plasma density as a function of position (capillary radius) across a \SI{500}{\um} capillary diameter at a delay time \SI{400}{\ns}\textcolor{red}{check the time} after the beginning of the electrical current. The maximum discharge current was \SI{160}{\A} \textcolor{red}{check the amperes}.
 
-\begin{marginfigure}
-\includegraphics{./figures/channel.png}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/spectro/parabolic.png}
     \caption{Radial density profile of the plasma from the measured spectrum, \SI{400}{\ns} \textcolor{red}{check the number} after the beginning of the current.}
+    
 \label{fig:plasma_channel_spectro}
-\end{marginfigure}
+\end{figure}
 
 For these conditions, there is a density minimum on the axis of the capillary; at early delay times the minimum at the radial density profile was not created, and at later delay times it disappears. These conditions provide an optimal plasma channel that can be used for guiding an intense laser pulse for LWFA accelerators.
 
