@@ -64,12 +64,9 @@ saveas(gcf,'typical_image.png')
 The function that displays the density profile is
 ![Equation](https://i.ibb.co/RbssSnx/png.png) i.e., addition of two Gaussians in the spatial coordinate and a Lorentzian in the wavelength coordinate.
 
-### Parabolic profile plot
-Parabola parameters from the Matlab figure:
-```
-fitresult(x) = p1*x^2 + p2*x + p3
-p0 =   0.0001261
-p2 =   -0.002145
-p3 =      0.4325
-```
-The scatter plot with the errorbars are stored in `raw_data.csv`. Check the figure and the script commands to get the units and the axis labels and ticks. Script is in `Specific_code_to_add_tunnel_to_graph_of_density_profile_no_15.m` file.
+## Double Capillary
+On December 30th 2020 I finally succeeded measuring the 800nm signal when making a discharge. Arie said to put an iris in front of the convex lens positioned in the vacuum chamber. The iris was opened to ~4mm in diameter, and the bump of the optical noise was downgraded to ~35 mV, instead of 80 or 60 without. The bump's amplitude depends strongly on the capillary discharge strength; bright plasma -> high bump.
+
+Unfortunately, only the left branch is (probably) amplified. The right one is not affected at all. And the left channel was connected to the power supply.
+
+When connecting the second power supply, the current profile of the first looks not as good as before, and the current profile of the second (Rogowsky II) is not critical damped. Additionaly, the bump of the optic noise is has a different shape, and additional electric noises are visible.
