@@ -67,4 +67,4 @@ The function that displays the density profile is
 ## Double Capillary
 On December 30th 2020 I finally succeeded measuring the 800nm signal when making a discharge. Arie said to put an iris in front of the convex lens positioned in the vacuum chamber. The iris was opened to ~4mm in diameter, and the bump of the optical noise was downgraded to ~35 mV, instead of 80 or 60 without. The bump's amplitude depends strongly on the capillary discharge strength; bright plasma -> high bump.
 
-Unfortunately, only the left branch is (probably) amplified. The right one is not affected at all. Check what channel is getting feed from the power supply.
+Unfortunately, only the left branch is (probably) amplified. The right one is not affected at all. And the left channel was connected to the power supply.
