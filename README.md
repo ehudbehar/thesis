@@ -45,7 +45,7 @@ The easier way is to make the changes in the document pre-amble, and not to touc
 - `justified`: Text alignment as in print media (align both the left and right ends of consecutive lines of text).
 - `nobib`: Prevents tufte-book from loading `natbib`, which means you should load `biblatex` or `bibtex`.
 - `openany`: Remove an unwanted blank page between two chapters.
-- Turn on section numbering and set the depth to which section numbering occurs: `\setcounter{secnumdepth}{2}`.
+- Turn on section numbering and set the depth to which section numbering occurs (chapters onwards): `\setcounter{secnumdepth}{2}`.
 - Load the `titlesec` package to customize chapters, sections and subsections style: `\usepackage{titlesec}`.
 Sections style and format:
 ```tex
