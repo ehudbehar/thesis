@@ -40,6 +40,50 @@ The relevant changes I made are:
 
 The easier way is to make the changes in the document pre-amble, and not to touch the metal, or to create a file with the defintion and load it explicitly with that method.
 
+### Document class options and macro preamble:
+- `nofonts`: Use Computer Modern Font, not the the tufte default.
+- `justified`: Text alignment as in print media (align both the left and right ends of consecutive lines of text).
+- `nobib`: Prevents tufte-book from loading `natbib`, which means you should load `biblatex` or `bibtex`.
+- `openany`: Remove an unwanted blank page between two chapters.
+- Turn on section numbering and set the depth to which section numbering occurs: `\setcounter{secnumdepth}{2}`.
+- Load the `titlesec` package to customize chapters, sections and subsections style: `\usepackage{titlesec}`.
+Sections style and format:
+```tex
+% chapter format
+\titleformat{\chapter}%
+  {\huge\sffamily\bfseries}% format applied to label+text
+  {\llap{\colorbox{cyan}{\parbox{1.5cm}{\hfill\itshape\huge\color{white}\thechapter}}}}% label
+  {2pt}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+% section format
+\titleformat{\section}%
+  {\sffamily\Large\bfseries}% format applied to label+text
+  {\thesection}% label
+  {1 em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+% subsection format
+\titleformat{\subsection}%
+  {\sffamily\large}% format applied to label+text
+  {\thesubsection}% label
+  {4 pt}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+```
+
+- Add links to `ref`s:
+```tex
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,
+    pdftitle={Ehud Behar M.Sc. thesis}
+}
+```
+
+
 ### Notes on "typical ccd image"
 I generated the color 2d plot using matlab and the following lines of code:
 ```matlab
