@@ -160,23 +160,27 @@ If the limiting factor on the scale of the accelerator is ionisation of the mate
 
 In a plasma accelerator, a longitudinal electron plasma wave (wakefield) is formed and electrons injected into the plasma near the high--density area will experience an acceleration toward it by the plasma. This method, termed \emph{Laer WakeField Acceleration} (LWFA), utilizes an ultrashort ($\sim\SI{30}{\fs}$), ultraintense (\si{\TW}) laser that provides a large electric field because of charge separation. Plasma formed by initiating a discharge in a narrow channel made within a tube (i.e., discharge capillary) satisfies promising conditions for a plasma source to exploit LWFA, on a length scale of centimeters \cite{Gonsalves2019PetawattWaveguide,Leemans2014Multi-GeVRegime}. The injected electrons' acceleration continues as the wakefield travels through the plasma waveguide. The research has widely grown since the mid 1980s, when ultrashort laser pulses of sufficient energy became available after the damage threshold inherent in optical amplifiers had been overcome by means of Chirped Pulse Amplification (CPA) \cite{Strickland1985CompressionPulses}.
 
-To date, a major limitation of LWFA that prevents well--defined electron beam from reaching high energies is the dephasing length: trapped electrons outrun or dephase the accelerating phase of the wakefield \cite{Esarey2009PhysicsAccelerators}. The current paradigm within the LWFA community envisions a \si{\TeV} LWFA composed of multiple $~\SI{10}{\GeV}$ stages, which could be be optimized for efficiency, by matching the dephasing length to the depletion length of the laser pulse \cite{Schroeder2010PhysicsColliders}.
-
-A promising approach is using multiple LWFA stages to successively accelerate one electron beam to higher energies, in a multistage accelerator. However, this introduces severe challenges with regard to electron beam transport in between stages \textcolor{red}{[cite]}: A laser beam coupling--in and coupling--out coefficient is required for a suitable accelerator.
+To date, a major limitation of LWFA that prevents well--defined electron beam from reaching high energies is the dephasing length: trapped electrons outrun or dephase the accelerating phase of the wakefield \cite{Esarey2009PhysicsAccelerators}. The current paradigm within the LWFA community envisions a \si{\TeV} LWFA composed of multiple $~$\SI{10}{\GeV} stages, which could be be optimized for efficiency, by matching the dephasing length to the depletion length of the laser pulse \cite{Schroeder2010PhysicsColliders}; Using multiple LWFA stages to successively accelerate one electron beam to higher energies (see figure \ref{fig:coupling_scheme}).
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{figures/coupling_scheme.png}
+\caption{Proposed multistage acceleration scheme. The first main laser is initiating the acceleration of the electron beam. A fishbone shaped curved channels are added down the acceleration line enabling further acceleration of the electrons.}
+\label{fig:coupling_scheme}
+\end{marginfigure}
+However, this introduces severe challenges with regard to electron beam transport in between stages \cite{Esarey2009PhysicsAccelerators}.
 
 A gas-filled capillary is an attractive technique to confine plasma \cite{Bobrova2002SimulationsWaveguide,Spence2001InvestigationWaveguide} and since the medium responsible for guiding is not damaged by the laser radiation, it is able to guide pulses with a wide range of intensities and wavelengths \cite{Dorchies1999MonomodeTubes}.
 
-In an ideal plasma waveguide , the radial electron density profile is parabolic:
-\begin{equation}
-    N_e(r)=N_e(0)+\Delta N_e\left( \frac{r}{r_\text{ch}}\right)^2
-    \label{eq:rdp}
-\end{equation}
 \begin{marginfigure}
     \includegraphics[width=\marginparwidth]{figures/rdp.PNG}
     \caption{Radial Density Profile}
     \label{fig:rdp_parabola}
 \end{marginfigure}
-where $N_e(r)$ is the electron density at a distance $r$ from the axis of the beam and $\Delta N_e$ is the increase in the electron density at $r=r_\text{ch}$ compared to the axial value. See figure \ref{fig:rdp_parabola}. Lacking such guiding, the interaction length is at most of the order of the Rayleigh range.
+By use of a preformed plasma channel, laser pulses can propagate over many Rayleigh lengths, and remain essentially guided. In an ideal plasma waveguide of this type, the radial electron density profile is parabolic \cite{Sprangle1992PropagationPlasmas}:
+\begin{equation}
+    N_e(r)=N_e(0)+\Delta N_e\left( \frac{r}{r_\text{ch}}\right)^2
+    \label{eq:rdp}
+\end{equation}
+where $N_e(r)$ is the electron density at a distance $r$ from the axis of the beam, $\Delta N_e=\SI{1.3e15}{\per\cubic\centi\metre}$ is the increase in the electron density at $r=r_\text{ch}$ compared to the axial value and $N_e(0)=\SI{1.2e16}{\per\cubic\centi\metre}$. See figure \ref{fig:rdp_parabola}. Lacking such guiding, the interaction length is at most of the order of the Rayleigh range.
 
 The dependence $N_e\left(r\right)$ in equation \ref{eq:rdp}, usually termed ”radial density profile” (RDP), forms dynamically inside the capillary; A plasma waveguide of this type is of highly practical interest, because it is capable of guiding a tightly focused laser pulse while keeping its spot radius constant \cite{Sprangle1992PropagationPlasmas,Esarey1997Self-focusingPlasmas}; It can help increase the dephasing length that will allow a longer propagation distance and a higher energy gain \cite{Sprangle2000StableAcceleration}.
 
@@ -218,18 +222,18 @@ The experiment was conducted using the following devices:
     \item Photodiodes
     \item Optical Elements, viz., lenses and mirrors
     \item Rogowsky coil
-    \item Digital delay and pulse generator board
+    \item Digital delay and pulse generator
     \item Gate valve
     \item Vacuum chamber
 \end{enumerate}
 \subsection{Capillary production}
 The capillary is the medium at which the plasma channel forms. Its length is \SI{5}{\cm}, and its inner diameter is \SI{500}{\um}. The plastic unit is made of a photopolymer, created in a 3D printer. The capillary is shown in figure \ref{fig:capillaryCAD}. Note the circular extrusion in the upper face; The capillary is filled with gas from this inlet port.
-\begin{figure}
+\begin{figure*}
     \centering
-    \includegraphics{figures/capillaryCAD.png}
-    \caption{}
+    \includegraphics[width=\textwidth]{figures/capillary_cad.png}
+    \caption[][-20pt]{3D drawing of the linear capillary used in the preponderance of the experimental work. A gas hose connects at the top circular extrusion in the upper face to fill the capillary with gas. The capillary is \SI{5}{\cm} long, with an inner diameter of \SI{500}{\um}.}
     \label{fig:capillaryCAD}
-\end{figure}
+\end{figure*}
 \subsection{Lasers used}\label{ssec:lasers}
 In our system two laser were in use, igniting laser and \textcolor{red}{oscillator} laser:
 \begin{itemize}
