@@ -8,6 +8,8 @@
 \addbibresource{references.bib}
 \usepackage{csquotes}
 
+\usepackage{float}
+
 \usepackage{siunitx}
 \DeclareSIUnit\torr{Torr}
 \DeclareSIUnit\MV{MV}
@@ -47,8 +49,9 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=cyan,
+    linkcolor=ForestGreen,
     filecolor=magenta,
+    citecolor=blue,
     pdftitle={Ehud Behar M.Sc. thesis}
 }
 
@@ -227,31 +230,31 @@ The experiment was conducted using the following devices:
     \item Vacuum chamber
 \end{enumerate}
 \subsection{Capillary production}
-The capillary is the medium at which the plasma channel forms. Its length is \SI{5}{\cm}, and its inner diameter is \SI{500}{\um}. The plastic unit is made of a photopolymer, created in a 3D printer. The capillary is shown in figure \ref{fig:capillaryCAD}. Note the circular extrusion in the upper face; The capillary is filled with gas from this inlet port.
+The capillary is the medium at which the plasma channel forms. Its length is \SI{5}{\cm}, and its inner diameter is \SI{500}{\um}. The plastic unit is made of a photopolymer, created in a 3D printer, and is shown in figure \ref{fig:capillaryCAD}. A hose connects at the top circular extrusion in the upper face to fill the capillary with gas. The capillary is \SI{5}{\cm} long, with an inner diameter of \SI{500}{\um}.
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/capillary_cad.png}
-    \caption[][-20pt]{3D drawing of the linear capillary used in the preponderance of the experimental work. A gas hose connects at the top circular extrusion in the upper face to fill the capillary with gas. The capillary is \SI{5}{\cm} long, with an inner diameter of \SI{500}{\um}.}
+    \caption{3D drawing of the linear capillary.}
     \label{fig:capillaryCAD}
 \end{figure*}
 \subsection{Lasers used}\label{ssec:lasers}
-In our system two laser were in use, igniting laser and \textcolor{red}{oscillator} laser:
+In our system two laser were in use, igniting laser and an oscillator laser:
 \begin{itemize}
-\item The first is \textit{Tempest 10}, a \SI{1.064}{\um} pulse laser, flashlamp pumped, Q-switched, Nd:Yag laser manufactured by \textit{New Wave Optics}. The pulse duration is $\tau \sim$ \SI{10}{\ns}, and with energy of up to $\sim$ \SI{200}{\mJ}. The ignition of the plasma is initiated by this laser pulse that ablates a small amount of surface in the inner wall of the capillary and produces seed ionization that triggers the discharge after $\sim$\SI{50}{\ns}. In the experiment the energy being used in most cases to obtain reliable ignition was $\sim$\SI{50}{\mJ}. The laser beam was delivered on the capillary axis through the negative electrode by a focusing lens (see Figure \textcolor{red}{figure number }), thus igniting the plasma. \st{This technique makes it possible to achieve very low shot-to-shot jitter of the ignition delay.}
-\item The second laser is \textit{Mai Tai}, a \SI{800}{\nm} mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
+\item The first is \textit{Tempest 10}, a \SI{1.064}{\um} pulse laser, flashlamp pumped, Q-switched, Nd:Yag laser manufactured by \textit{New Wave Optics}. The pulse duration is $\tau \sim$ \SI{10}{\ns}, and with energy of up to $\sim$ \SI{200}{\mJ}. The ignition of the plasma is initiated by this laser pulse that ablates a small amount of surface in the inner wall of the capillary and produces seed ionization that triggers the discharge after $\sim$\SI{50}{\ns}. In the experiment the energy being used in most cases to obtain reliable ignition was $\sim$\SI{50}{\mJ}. The laser beam was delivered on the capillary axis through the negative electrode by a focusing lens.
 \begin{marginfigure}
-    \includegraphics[width=\marginparwidth]{figures/oscillator/single.pdf}
-    \label{fig:oscillator_single}
-    \caption{Oscillator laser, \SI{84}{\MHz} temporal beam profile.}
+\includegraphics[width=\marginparwidth]{figures/oscillator/single.pdf}
+\label{fig:oscillator_single}
+\caption{Oscillator laser, \SI{84}{\MHz} temporal beam profile.}
 \end{marginfigure}
-It produces \SI{5}{\mJ} \textcolor{red}{check that}, \SI{20}{\fs} pulses at a \SI{84}{\MHz} rate. \textcolor{red}{I.e., a pulse every \SI{12.5}{\ns}.} This beam was directed through the capillary and recorded with a fast photo-diode (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
+\item The second laser is \textit{Mai Tai}, a \SI{800}{\nm} mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
+It produces \SI{5}{\mJ} \textcolor{red}{check that}, \SI{20}{\fs} pulses at a \SI{84}{\MHz} rate. \textcolor{red}{I.e., a pulse every \SI{12.5}{\ns}.} This beam was directed through the capillary and recorded with a fast photo--diode\sidenote{\textit{ThorLabs DET10A}} (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
 \end{itemize}
 \subsection{High Voltage pulser}
-\begin{marginfigure}
-        \includegraphics[width=\marginparwidth]{figures/hvpulser.PNG}
-        \caption{Discharge Pulser high voltage, designed, built and Maintained by Michael Levin.}
-\end{marginfigure}
 The high voltage pulser provides the high voltage difference applied on the two electrodes. See picture on the right. Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was designed, built, and still maintained, by Levin. See  \cite{Levin2009ExcitationAcceleration} pp. 46-47, for more information considering the setup and explanation of its operation.
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{figures/hvpulser.PNG}
+\caption{Discharge Pulser high voltage, designed, built and Maintained by Michael Levin.}
+\end{marginfigure}
 	
 \subsection{Spectrograph and Andor CCD camera}\label{ssec:spectro}
 To measure the capillary plasma density and to validate the existence of a hollow radial density profile at the time segment optical guiding exist, we performed a direct spectroscopic study of the plasma emission. The plasma emission during the discharge was collected by an imaging system and imaged onto the entrance slit of a detection system, composed of a spectrometric instrument\sidenote{\textit{Spectra--Pro} model 300i}, fitted with a 2D 1024$\times$256 element intensified charge-coupled device (CCD) fast camera\sidenote{\textit{Andor}, model DH520.}. The CCD allows for recording images with both spectral and spatial resolution.
@@ -276,7 +279,7 @@ A schematically drawing of the system is shown in figure \ref{fig:scheme}.
 \begin{marginfigure}
     \includegraphics[width=\marginparwidth]{figures/jitter/discharge_sample.pdf}
     \caption{A typical discharge. Blue is current profile. Orange is photo--diode rise up from Nd:Yag. \textcolor{red}{Write more about it.}}
-    \label{discharge_sample}
+    \label{fig:discharge_sample}
 \end{marginfigure}
 To anchor the discharge starting process to a fixed event to which we can refer, we mounted a photo--detector close to the igniting laser radiation output, thus enabling one to fix a time event at which the plasma discharge occurs; The photo--detector allows for visualizing the synchronization. Recording to an oscilloscope both the photo--diode rise-up signal and the current profile obtained from the Rogowsky coil, we monitored the igniting pulse and the discharge current for consecutive 50 ignitions performed at constant time intervals.
 \begin{figure}
@@ -308,9 +311,9 @@ We are now in a position to estimate the timing and duration of the hollow densi
 \caption{\textcolor{red}{write a description.}}
 \label{fig:oscillator}
 \end{figure}
-Upon plasma discharge, we recorded the optical guiding of the \textcolor{red}{ultra-}short laser pulses, shown in figure  \ref{fig:oscillator_single}, and watched after the gain of the signal while it interacts with the plasma inside the capillary. The result is shown in figure \ref{fig:oscillator_gain}.
+Upon plasma discharge, we recorded the optical guiding of the pulse--train, shown in figure  \ref{fig:oscillator_single}, and watched after the gain of the signal while it interacts with the plasma inside the capillary. The result is shown in figure \ref{fig:oscillator_gain}.
 
-The \textcolor{red}{color1} waveform is the plasma discharge current profile delivered from the Rogowsky coil. The \textcolor{red}{color2} waveform is the signal arriving from the Nd:Yag photo-diode detector, which as mentioned before, tells us whether the discharge is timed with the igniting laser and is jitter-controlled. The bottom, \textcolor{red}{color3} waveform is that recorded from \textcolor{red}{P.D 2} with the oscillator as its signal.
+The upper waveform is the plasma discharge current profile delivered from the Rogowsky coil, similar to that shown in \ref{fig:discharge_sample}. The top waveform is the signal arriving from the Nd:Yag photo--diode detector, which as mentioned before, tells us whether the discharge is timed with the igniting laser and is jitter--controlled. The lower waveform is that recorded from the fast--photodiode with the oscillator laser as its signal.
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{figures/oscillator/guiding.pdf}
@@ -318,11 +321,11 @@ The \textcolor{red}{color1} waveform is the plasma discharge current profile del
     \label{fig:oscillator_gain}
 \end{figure}
 
-The explanation for the gain of the voltage arriving from \textcolor{red}{P.D 2} during the formation of the plasma channel was mentioned in section \ref{sec:indexrefraction}: If the plasma has a normal density profile (maximum on the axis), it behaves like a negative lens and causes the laser beam to diverge into the walls. If an inverted density profile (minimum on the axis, refer to figure \ref{fig:rdp_parabola}) can be created, however, the lens effect becomes converging; and the radiation is focused and trapped by the plasma. See figure \ref{fig:chen4_31}.
+The explanation for the gain of the voltage arriving from the photo--diode during the formation of the plasma channel was mentioned in section \ref{sec:indexrefraction}: If the plasma has a normal density profile (maximum on the axis), it behaves like a negative lens and causes the laser beam to diverge into the walls. If an inverted density profile (minimum on the axis, refer to figure \ref{fig:rdp_parabola}) can be created, however, the lens effect becomes converging; and the radiation is focused and trapped by the plasma. See figure \ref{fig:chen4_31}.
 \begin{marginfigure}
-		\includegraphics[width=\marginparwidth]{./figures/chen4_31.PNG}
-		\caption{A plasma confined inside the capillary will trap the \SI{800}{\nm} laser light only if the plasma has a density minimum on axis.}
-		\label{fig:chen4_31}
+\includegraphics[width=\marginparwidth]{./figures/chen4_31.PNG}
+\caption{A plasma confined inside the capillary will trap the \SI{800}{\nm} laser light only if the plasma has a density minimum on axis.}
+\label{fig:chen4_31}
 \end{marginfigure}
 
 An additional phenomenon to remark is the attenuation of the signal in the later stage of the discharge---the plasma becomes opaque to radiation traversing it. \textcolor{red}{\textbf{Explain why}}
