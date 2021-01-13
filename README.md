@@ -108,6 +108,23 @@ saveas(gcf,'typical_image.png')
 The function that displays the density profile is
 ![Equation](https://i.ibb.co/RbssSnx/png.png) i.e., addition of two Gaussians in the spatial coordinate and a Lorentzian in the wavelength coordinate.
 
+### Capillaries 3D figures
+Generated with Mathematica, using the following code:
+```mathematica
+capillary = Grid[{Table[
+    Import[
+     "C:\\Users\\HILL\\Desktop\\stright caillary wih gas inlet - \
+50_05.STL", "Graphics3D"
+     , ImageSize -> 960
+     , ViewAngle -> All
+     , Lighting -> Automatic
+     , ViewVertical -> {0, 1, 0}
+     , ViewPoint -> j]
+    , {j, {{1, 0, 0}, {0, 0, 1}, {2, 0, 2}, {1.2, 0.9, 2.3}}}]
+   }]
+Export["C:\\LOCATION-PATH\\capillary_cad.pdf", capillary]
+```
+
 ## Double Capillary
 On December 30th 2020 I finally succeeded measuring the 800nm signal when making a discharge. Arie said to put an iris in front of the convex lens positioned in the vacuum chamber. The iris was opened to ~4mm in diameter, and the bump of the optical noise was downgraded to ~35 mV, instead of 80 or 60 without. The bump's amplitude depends strongly on the capillary discharge strength; bright plasma -> high bump.
 
