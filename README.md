@@ -123,6 +123,15 @@ capillary = Grid[{Table[
     , {j, {{1, 0, 0}, {0, 0, 1}, {2, 0, 2}, {1.2, 0.9, 2.3}}}]
    }]
 Export["C:\\LOCATION-PATH\\capillary_cad.pdf", capillary]
+
+doubecapillary = 
+ Grid[{Table[
+    Import["C:\\Users\\HILL\\Desktop\\DC_500_500_90.STL", 
+     "Graphics3D", ImageSize -> 240, ViewAngle -> All, 
+     Lighting -> Automatic, ViewVertical -> {0, 1, 0}, 
+     ViewPoint -> 
+      j], {j, {{-1, 0, 0}, {0, 0, -1}, {-2, 0, -2}, {-1.2, 2, 
+       2.3}}}]}]
 ```
 
 ### Longitudinal profile
