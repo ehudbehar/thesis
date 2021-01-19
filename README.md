@@ -111,27 +111,31 @@ The function that displays the density profile is
 ### Capillaries 3D figures
 Generated with Mathematica, using the following code:
 ```mathematica
-capillary = Grid[{Table[
-    Import[
-     "C:\\Users\\HILL\\Desktop\\stright caillary wih gas inlet - \
-50_05.STL", "Graphics3D"
-     , ImageSize -> 960
+imageSize = 960;
+onecapillary = 
+ Grid[{Table[
+    Import["stright caillary wih gas inlet - 50_05.STL", "Graphics3D"
+     , ImageSize -> imageSize
      , ViewAngle -> All
      , Lighting -> Automatic
      , ViewVertical -> {0, 1, 0}
-     , ViewPoint -> j]
-    , {j, {{1, 0, 0}, {0, 0, 1}, {2, 0, 2}, {1.2, 0.9, 2.3}}}]
-   }]
-Export["C:\\LOCATION-PATH\\capillary_cad.pdf", capillary]
+     , BaseStyle -> RGBColor[0.7, 0.8, 0.86]
+     , ViewPoint -> 
+      j], {j, {{1, 0, 0}, {0, 0, 1}, {0, 1, -0.4}, {1.2, 0.9, 2.3}}}]}
+  ]
+Export["onecapillary_cad.pdf", onecapillary]
 
-doubecapillary = 
- Grid[{Table[
-    Import["C:\\Users\\HILL\\Desktop\\DC_500_500_90.STL", 
-     "Graphics3D", ImageSize -> 240, ViewAngle -> All, 
-     Lighting -> Automatic, ViewVertical -> {0, 1, 0}, 
-     ViewPoint -> 
-      j], {j, {{-1, 0, 0}, {0, 0, -1}, {-2, 0, -2}, {-1.2, 2, 
-       2.3}}}]}]
+doublecapillary = Grid[{Table[Import["DC_500_500_90.STL", "Graphics3D"
+     , ImageSize -> imageSize
+     , ViewAngle -> All
+     , Lighting -> Automatic
+     , BaseStyle -> RGBColor[0.7, 0.8, 0.86]
+     , ViewVertical -> {0, 1, 0}
+     , ViewPoint -> 
+      j], {j, {{0, 0, -1}, {-1, 0, 0}, {-0.3, 1, 0}, {-1.2, 2.3, 
+       0.9}}}]}
+  ]
+Export["doublecapillary_cad.png", doublecapillary]
 ```
 
 ### Longitudinal profile
