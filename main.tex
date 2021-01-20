@@ -230,12 +230,12 @@ The experiment was conducted using the following devices:
     \item Vacuum chamber
 \end{enumerate}
 \subsection{Capillary production}
-The capillary is the medium at which the plasma channel forms. Its length is \SI{5}{\cm}, and its inner diameter is \SI{500}{\um}. The plastic unit is made of a photopolymer, created in a 3D printer, and is shown in figure \ref{fig:capillaryCAD}. A hose connects at the top circular extrusion in the upper face to fill the capillary with gas. The capillary is \SI{5}{\cm} long, with an inner diameter of \SI{500}{\um}.
-\begin{figure*}
+The capillary is the medium at which the plasma channel forms. Its length is \SI{5}{\cm}, and its inner diameter is \SI{500}{\um}. The plastic unit is made of a photopolymer, created in a 3D printer, and is shown in figure \ref{fig:onecapillaryCAD}. A hose connects at the top circular extrusion in the upper face to fill the capillary with gas. The capillary is \SI{5}{\cm} long, with an inner diameter of \SI{500}{\um}.
+\begin{figure*}[b]
     \centering
-    \includegraphics[width=\textwidth]{figures/capillary_cad.png}
-    \caption{3D drawing of the linear capillary.}
-    \label{fig:capillaryCAD}
+    \includegraphics[width=\textwidth]{figures/onecapillary_cad.png}
+    \caption{3D drawing of the straight capillary.}
+    \label{fig:onecapillaryCAD}
 \end{figure*}
 \subsection{Lasers used}\label{ssec:lasers}
 In our system two laser were in use, igniting laser and an oscillator laser:
@@ -259,15 +259,14 @@ The high voltage pulser provides the high voltage difference applied on the two 
 \subsection{Spectrograph and Andor CCD camera}\label{ssec:spectro}
 To measure the capillary plasma density and to validate the existence of a hollow radial density profile at the time segment optical guiding exist, we performed a direct spectroscopic study of the plasma emission. The plasma emission during the discharge was collected by an imaging system and imaged onto the entrance slit of a detection system, composed of a spectrometric instrument\sidenote{\textit{Spectra--Pro} model 300i}, fitted with a 2D 1024$\times$256 element intensified charge-coupled device (CCD) fast camera\sidenote{\textit{Andor}, model DH520.}. The CCD allows for recording images with both spectral and spatial resolution.
 
-The detector gating and delay were set by a digital delay and pulse generator board\sidenote{\textit{Stanford Research Systems},\newline model DG--535.} that triggers the CCD camera.
+The detector gating and delay were set by a digital delay and pulse generator\sidenote{\textit{Stanford Research Systems},\newline model DG--535.} that triggers the CCD camera.
 
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{./figures/spectro/spectrometer.PNG}
+The spectrometric instrument is a Czerny-Turner arrangement, made of a plane reflection grating. Light entering the entrance slit is collimated by a concave mirror and directed towards the plane reflection grating. Light diffracted from the grating forms a plane wave that is focused by another concave mirror onto the exit slit. Only one wavelength leaves the grating in the right direction to reach the exit slit, and tuning is achieved by rotating the grating, controlled by Andor's computer software. See figure \ref{fig:spectrometer}. In our measurements we used a 1800 lines/mm grating; Spatial resolution is controlled by the width of the entrance slit.
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{./figures/spectro/spectrometer.PNG}
 \caption{Optical layout for the spectrometric instrument.}
 \label{fig:spectrometer}
-\end{figure}
-The spectrometric instrument is a Czerny-Turner arrangement, made of a plane reflection grating. Light entering the entrance slit is collimated by a concave mirror and directed towards the plane reflection grating. Light diffracted from the grating forms a plane wave that is focused by another concave mirror onto the exit slit. Only one wavelength leaves the grating in the right direction to reach the exit slit, and tuning is achieved by rotating the grating, controlled by Andor's computer software. See figure \ref{fig:spectrometer}. In our measurements we used a 1800 lines/mm grating; Spatial resolution is controlled by the width of the entrance slit.
+\end{marginfigure}
 	
 \chapter{Experimental work}\label{chap:Experimental_work}
 \section{Capillary discharge, Jitter}\label{sec:jitter}
@@ -338,32 +337,37 @@ To estimate \textcolor{red}{quantitatively} the depth of the plasma channel and 
 \subsection{Radial density profile}\label{ssec:radial}
 We installed an imaging system that images the \textcolor{red}{spatially} capillary entrance, shown in figure \ref{fig:radial_system}. For an accurate and \textcolor{red}{fidelity?} measurement, we needed to over--come two main difficulties:
 
-	\begin{figure}
-	\centering
-	    \includegraphics[width=\textwidth]{./figures/spectro/radial_system.png}
-	    \caption{Experimental setup and typical spectrum of the plasma at the exit of the capillary.}
-	    \label{fig:radial_system}
-	\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{./figures/spectro/radial_system.png}
+\caption{Experimental setup and typical spectrum of the plasma at the exit of the capillary.}
+\label{fig:radial_system}
+\end{figure}
 
 In order to magnify the circular cone of plasma light emitted from the capillary entrance imaged on the spectrometer slit, we placed a converging lens in a distance a bit longer from its focal length so to obtain as large as possible transverse magnification. The drawback is the loss of irradiance, which was compensated with the gain mechanism of the microchannel plate of the CCD camera.
 
 Secondly, as mentioned before (\ref{sec:jitter}), the plasma channel lasts for \SIrange{50}{100}{\ns}, and this leads to a constraint on the duration of the camera gating window. Clearly, a long exposure time ($\gtrsim \SI{1}{\us}$) would yield a constant profile. But to capture the hollow plasma channel we rather gated (using the digital delay generator) the CCD camera to exposure times of \SI{40}{\ns}\marginnote{To produce a sharp image of a moving subject, a fast shutter speed is required.}. That obviously led to signal--to--noise--ratio difficulties when analysing the digital data --- the shutter is not opened for long enough for the image-sensing area to be exposed to light.
 
-The simple imaging system was composed of two converging lens (fused-silica, bi-convex, \diameter 2 inch), the first with a shorter focal length, that imaged the capillary entrance magnified by $\times 5$ on the spectrometer entrance slit. I.e. the image of a \SI{0.5}{\mm} capillary was $\sim$ \SI{2.5}{\mm} in diameter, corresponding to about \textcolor{red}{???} of the CCD's vertical range. The spectrometer slit had the width of \SI{150}{\micro\metre}, providing a spectral resolution of about \SI{0.3}{\nm}.
+The simple imaging system was composed of two converging lens (fused-silica, bi-convex, \diameter 2 inch), the first with a shorter focal length, that imaged the capillary entrance magnified by $\times 5$ on the spectrometer entrance slit. I.e., the image of a \SI{0.5}{\mm} capillary was $\sim$ \SI{2.5}{\mm} in diameter, corresponding to about \SI{40}{\percent} of the CCD's vertical range. The spectrometer slit had the width of \SI{150}{\micro\metre}, providing a spectral resolution of about \SI{0.3}{\nm}.
 
-The grating was rotated to the central wavelength of \SI{653.3}{\nm}, which, as mentioned in section \ref{sec:hydrogen}, is the unperturbed central wavelength of hydrogen H\textsubscript{$\alpha$} line. This line, when emitted within a plasma, undergoes Stark broadening from which the electron density can be deduced, with the density estimate based on equation \ref{eq:delta_lambda}. A dielectric mirror coated for zero degrees at \SI{1.064}{\um} prevented the radiation of the igniting laser from entering the spectrometer.
+The grating was rotated to the central wavelength of \SI{653.3}{\nm}, which, as mentioned in section \ref{sec:hydrogen}, is the central wavelength of hydrogen H\textsubscript{$\alpha$} line. This line, when emitted within a plasma, undergoes Stark broadening from which the electron density can be deduced, with the density estimate based on equation \ref{eq:delta_lambda}. A dielectric mirror coated for zero degrees at \SI{1.064}{\um} prevented the radiation of the igniting laser from entering the spectrometer.
 
 We gated the CCD camera, as stated, to \SI{40}{\ns} gate--on time at time windows that correspond to the maximal transmission of the oscillator signal (as described in \ref{sec:duration-of-guiding}), and set the gain of the microchannel plate to its highest, at the level of 9.
 
-The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. A Lorentzian intensity profile is assumed as the analytical fitting function with the line half-width as a free parameter. A fit was found for each row of the data. The vertical dimension corresponds to the spatial coordinate. \textcolor{red}{Explain the step--by--step of the analysis or not?.}
+The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. The steps for the analysis are as follows (figure \ref{fig:spectra_analysis}): For each row of the data (256 rows), find a Lorentzian fit for the intensity profile, with the line half--width ($\Delta\lambda_{1/2}$) as a free parameter. Then, plot $\Delta\lambda_{1/2}$ versus the spatial coordinate. Finally, convert $\Delta\lambda_{1/2}$ from pixels to \si{\mm}, using the magnification factor and the pixel--to--mm conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}} to plasma density, using Eq. \ref{eq:delta_lambda}; Convert the wavelength axis to position (capillary radius) using the same factors.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/spectro/spectra_analysis.pdf}
+    \caption{An explanatory figure of the steps involved}
+    \label{fig:spectra_analysis}
+\end{figure}
 
-Figure \ref{fig:plasma_channel_spectro} plots the experimentally measured plasma density as a function of position (capillary radius) across a \SI{500}{\um} capillary diameter at a delay time \SI{400}{\ns}\textcolor{red}{check the time} after the beginning of the electrical current. The maximum discharge current was \SI{160}{\A} \textcolor{red}{check the amperes}.
+Figure \ref{fig:plasma_channel_spectro} plots the experimentally measured plasma density as a function of position (capillary radius) across a \SI{500}{\um} capillary diameter at a delay time \SI{400}{\ns} after the beginning of the electrical current. The maximum discharge current was \SI{165}{\A}.
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/spectro/parabolic.png}
-    \caption{Radial density profile of the plasma from the measured spectrum, \SI{400}{\ns} \textcolor{red}{check the number} after the beginning of the current.}
-    
+\caption{Radial density profile of the plasma from the measured spectrum, \SI{400}{\ns} after the rise of the current.}
 \label{fig:plasma_channel_spectro}
 \end{figure}
 
@@ -371,17 +375,41 @@ For these conditions, there is a density minimum on the axis of the capillary; a
 
 \subsection{Longitudinal density profile}\label{ssec:longi}
 
-The method described in section \ref{ssec:radial} allows for measuring the radial density profile only at the capillary output. It is also important to verify longitudinal homogeneity of the plasma density. For this measurement the entire length of the \SI{5}{\cm} capillary was imaged along the entrance slit of the spectrometer.
+The method described in section \ref{ssec:radial} allows for measuring the radial density profile only at the capillary output, but it is also important to verify longitudinal homogeneity of the plasma density. For this measurement the entire length of the \SI{5}{\cm} capillary was imaged along the entrance slit of the spectrometer.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/spectro/longitudinal_system.png}
+    \caption{Experimental system to image plasma emission in the longitudinal dimension.}
+    \label{fig:longi_system}
+\end{figure}
 
-To achieve that, we built the system shown in figure \ref{fig:longi_system}, with the main difference from the one before, figure \ref{fig:radial_system}, being the periscope assembly used to rotate the stripe of plasma emission by \SI{90}{\degree} so it can enters into the entrance slit of the spectrometer. As opposed to the magnification issue we had before, now a minification of the image was sought. We positioned the capillary on a moveable mount, and made a 
+To achieve that, we built the system shown in figure \ref{fig:longi_system}, with the main difference from the one before, figure \ref{fig:radial_system}, being a periscope assembly (not shown) used to flip the stripe of plasma emission by \SI{90}{\degree} so it enters into the entrance slit of the spectrometer. As opposed to the magnification issue we had before, now a minification of the image was sought. We positioned the capillary on a move--able mount, and performed 5 capillary discharges, each corresponding to a segment of \SI{1}{\cm} of the capillary length. The plasma density was estimated based on the H\textsubscript{$\alpha$} line Stark broadening, as before. The result is shown in figure \ref{fig:longi_profile}, for which we obtained mean plasma density of \SI{2.7e-17}{\per\cubic\cm} with a standard deviation of 0.32.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/spectro/longitudinal_profile.png}
+    \caption{\textcolor{red}{Caption}}
+    \label{fig:longi_profile}
+\end{figure}
 
-from this \href{article}{https://aip.scitation.org/doi/pdf/10.1063/1.5046400}: avalanche ablative process is started, and due to the discharge current, a plasma is formed in the capillaries.
+\section{Two stage capillary}
+As stated in the the theoretical introduction (section \ref{sec:wakefield}), a capillary composed of two channels or more can be used to overcome limitations in accelerating electrons. For that goal we designed an additional capillary on which we performed a few experiments (fig \ref{fig:doublecapillaryCAD}). To investigate the plasma channel that permits optical guiding, we built the system shown in fig. \textcolor{red}{??}.
+The oscillator pulse--train was split into two beams. To  differentiate between the two when viewed on the oscilloscope, one beam passed through a \SI{6}{\ns} delay line, resulting the temporal profile shown in figure \ref{fig:twostage_system.png}.
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{figures/oscillator/double.pdf}
+\label{fig:oscillator_double}
+\caption{Two \SI{84}{\MHz} temporal beam profiles of the oscillator laser, one delayed with respect to the other.}
+\end{marginfigure}
 
-See this \href{https://tex.stackexchange.com/a/427625}{Answer} to integrating draw.io with LaTeX.
-Mathematica customizing error bars answer:
-mathematica.stackexchange id 210185
-https://mathematica.stackexchange.com/questions/210185/customising-error-bars-in-mathematica-12
+\begin{figure*}[b]
+    \centering
+    \includegraphics[width=\textwidth]{figures/doublecapillary_cad.png}
+    \caption{3D drawing of the 2--stage capillary.}
+    \label{fig:doublecapillaryCAD}
+\end{figure*}
+
+\chapter{Summary}\label{chap:summary}
+
 \printbibliography
 
 \end{document}
