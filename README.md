@@ -108,6 +108,50 @@ saveas(gcf,'typical_image.png')
 The function that displays the density profile is
 ![Equation](https://i.ibb.co/RbssSnx/png.png) i.e., addition of two Gaussians in the spatial coordinate and a Lorentzian in the wavelength coordinate.
 
+### Capillaries 3D figures
+Generated with Mathematica, using the following code:
+```mathematica
+imageSize = 960;
+onecapillary = 
+ Grid[{Table[
+    Import["stright caillary wih gas inlet - 50_05.STL", "Graphics3D"
+     , ImageSize -> imageSize
+     , ViewAngle -> All
+     , Lighting -> Automatic
+     , ViewVertical -> {0, 1, 0}
+     , BaseStyle -> RGBColor[0.7, 0.8, 0.86]
+     , ViewPoint -> 
+      j], {j, {{1, 0, 0}, {0, 0, 1}, {0, 1, -0.4}, {1.2, 0.9, 2.3}}}]}
+  ]
+Export["onecapillary_cad.pdf", onecapillary]
+
+doublecapillary = Grid[{Table[Import["DC_500_500_90.STL", "Graphics3D"
+     , ImageSize -> imageSize
+     , ViewAngle -> All
+     , Lighting -> Automatic
+     , BaseStyle -> RGBColor[0.7, 0.8, 0.86]
+     , ViewVertical -> {0, 1, 0}
+     , ViewPoint -> 
+      j], {j, {{0, 0, -1}, {-1, 0, 0}, {-0.3, 1, 0}, {-1.2, 2.3, 
+       0.9}}}]}
+  ]
+Export["doublecapillary_cad.png", doublecapillary]
+```
+
+### Longitudinal profile
+```mathematica
+average = 0.27;
+c = 0.01;
+ListPlot[{average +
+   RandomFunction[
+    WhiteNoiseProcess[LaplaceDistribution[0, c]]
+    , {0, 500}
+    ]
+  , {{0, average}, {500, average}}}
+ , Joined -> True(*,Filling\[Rule]Axis*),
+ PlotRange -> {0, average + 5 c}]
+```
+
 ## Double Capillary
 On December 30th 2020 I finally succeeded measuring the 800nm signal when making a discharge. Arie said to put an iris in front of the convex lens positioned in the vacuum chamber. The iris was opened to ~4mm in diameter, and the bump of the optical noise was downgraded to ~35 mV, instead of 80 or 60 without. The bump's amplitude depends strongly on the capillary discharge strength; bright plasma -> high bump.
 
