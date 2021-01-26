@@ -1,0 +1,214 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+A background to the plasma state of matter, including a definition of plasma, characteristics and important equations used in this research, and a background to plasma spectroscopy.
+\section{Definition of plasma}
+Plasma is defined \cite{Chen1984IntroductionFusion} as an ionized gas of charged and neutral particles, which satisfies the \emph{quasi--neutrality} condition. An example of a non--neutral plasma is a beam of charged particles. Yet, a plasma cannot be treated simply as an ordinary gas which is electrically conducting. The particles that carry charge generate electromagnetic fields that are regarded as properties of the plasma. Due to the long range of the inter-particle forces each charged particle in a plasma interacts with a large number of other charged particles resulting in \emph{collective behaviour}.
+
+Inside such a medium diverse collective phenomena can occur which ultimately allow for electron acceleration in laser-driven plasma wakefields.
+
+To better understand this definition, we present two main characteristics of plasma behavior in space (Debye length) and time (plasma oscillations).
+
+\subsection{Debye shielding length}\label{sec:debye}
+The Debye length determines the effective interaction between charged particles in a plasma. The potential field $\phi$ around a charged particle is effectively screened by the cloud of the other charged particles; its force range is now confined within a certain characteristic length, $\lambda_D$, called the Debye shielding length, determined by the density and the temperature of the plasma:
+\begin{equation}
+\phi(r)=\frac{q_i}{4\pi\varepsilon_0 r}\exp{\left(-\frac{r}{\lambda_D}\right)},
+\end{equation}
+where
+\begin{equation}
+\lambda_D=\sqrt{\frac{\varepsilon_0 k_B T_e}{n_e e^2}}=\sqrt{\frac{k_B T}{m_e}}\frac{1}{\omega_p}.
+\end{equation}
+For a plasma with characteristic thermal energy of \SI{1}{\electronvolt}, number density $n_e \sim \SI{e18}{\per\cubic\cm}$, we get $\lambda_D \sim \SI{7}{\nm}$.
+For any volume with a length scale $L$ satisfying 
+\begin{equation}
+L \ll \lambda_D,
+\label{eq:quasiNeutrality}
+\end{equation}
+overall quasi-neutrality is a good approximation. This inequality is the first criterion for the definition of a plasma. If $L\lesssim \lambda_D$, then our approximations break down and significant deviations from quasi-neutrality occur.
+\subsection{Plasma Oscillation}\label{ssec:oscillation}
+The transfer of electrons from a given region of space to a neighbouring region induces a charge separation. This local charge gives rise to an electric field $E$. Since the electrons are much lighter than the ions, they respond much more rapidly to the electric field, and the motion of the ions can be neglected in first instance. The electric field pulls the electrons back to their initial position in order to reduce the local charge separation which is the source of the electric field. Those electrons produce another non-equilibrium distribution in the opposite direction, and so on, performing an oscillatory motion, with the Coulomb force acting as the restoring force and the mass of the electron as the inertia. This is called a plasma oscillation\sidenote{Eq. \ref{eq:index_of_refraction} for $\omega_p$ does not depend on $k$, so the group velocity $\mathrm{d}\omega / \mathrm{d}k$ is zero - the disturbance does not propagate.}, defined as
+\begin{equation}
+		\omega_p=\sqrt{\frac{n_e e^2}{m_e \varepsilon_0}}\si[per-mode=fraction]{\radian\per\sec}.\label{eq:plasma-frequency}
+\end{equation}
+For a typical plasma density of $n_e \sim \SI{e18}{\per\cubic\cm}$, we get \\ $\omega_p=\SI{5.6e13}{\radian\per\sec}$, which lies in the microwave range.
+
+\subsection{Collective behaviour criteria}
+A measure for the average number of particles with density $n_e$ inside a sphere of radius $\lambda_D$ is called the Debye number, $N_D$, via which the (dimensionless) plasma parameter $\Lambda$ is defined:
+$$
+    N_D=\frac{4\pi}{3}n_e \lambda_D^3=\frac{\Lambda}{3},
+$$
+\begin{equation}
+    \Lambda=4\pi n_e \lambda_D^3 \propto \frac{T^{3/2}}{\sqrt{n_e}}.
+\end{equation}
+Collective behaviour for plasmas in LWFA environments requires, therefore two criteria: overall quasi-neutrality (eq. \ref{eq:quasiNeutrality}), and hot plasma, yet not too dense: $\Lambda \gg 1$.
+
+
+\section{Plasma Temperature}
+It is customary in plasma physics to describe temperatures in units of energy, since $T$ and $\left<E\right>$ are so closely related. To avoid confusion on the number of dimensions involved, it is not $\left<E\right>$ but the energy corresponding to $k_B T$ that is used to denote the temperature. For example, by a \SI{2}{\electronvolt} plasma we mean that $k_B T = \SI{1}{\electronvolt}$.
+
+The familiar Maxwell-Boltzmann distribution corresponds to a system of particles that have reached thermodynamic equilibrium and uniform distributions of density and temperature. In plasma diagnostics, the assumption of full thermodynamic equilibrium has to be relaxed. In what follows we will assume that in a small neighbourhood (element of volume) of any point in the system, there is an equilibrium situation described by a local Maxwell-Boltzmann distribution function. For larger spatial scales there may exist gradients of $T$ but these scales are so large that locally the equilibrium is not perturbed; time variation of $T$ may exist, but on such slow time scale that instantaneous equilibrium is a very good approximation. This approximation is  called \emph{local thermodynamic equilibrium} (LTE). The assumption of LTE is a very powerful one, since it allows us to use the familiar results of statistical mechanics and thermodynamics. The relative populations of different states of an atom or ion are described by the Boltzmann equation:
+\begin{equation}
+		\frac{n_i}{n_j}=\frac{g_i}{g_j}e^{\frac{E_i-E_j}{k_B T}}=\frac{g_i}{g_j}e^{-\frac{h\nu_{ij}}{k_B T}}
+\end{equation}
+where $g_{i,j}$ are the degeneracies of the states. 
+
+\section{Saha Equation}\label{sec:saha}
+For a system in LTE, the Saha equation gives the amount of ionization to be expected in a gas, as a function of temperature and the concentration of electrons:
+\begin{equation}
+		\frac{n_i}{n_n}= \left(\frac{2 \pi m_e k_B T}{h^2}\right)^{3/2}\frac{T^{3/2}}{n_i}e^{-U_i/k_B T} \approx \SI{2.4e21}{\per \metre\cubed \per\kelvin\tothe{3/2}} \frac{T^{3/2}}{n_i}e^{-U_i/k_B T}
+\end{equation}
+By combining the Boltzmann equation and Saha equation, we can determine the population for any particular atomic state, and thus predict the strength of the emission line produced by the plasma.
+
+\section{The spectrum of Hydrogen and Stark Broadening}\label{sec:hydrogen}
+The emission spectrum of atomic hydrogen, due to the electron making a transition between two energy levels, has been divided into a number of spectral series, with wavelengths that can be given by the Rydberg formula. Transitions to the first excited state ($n_f=2$) are known to spectroscopists as the \textit{Balmer series} \sidenote{The others, to name a few, are Lyman ($n_f=1$) and Paschen ($n_f=3$).}, denoted historically as H\textsubscript{$\alpha$}, H\textsubscript{$\beta$}, H\textsubscript{$\gamma$} and so on, where H stands for the element Hydrogen. It is convenient to observe H\textsubscript{$\alpha$} ($n_i=3 \to n_f=2$, \SI{656.23}{\nm}) and H\textsubscript{$\beta$} ($n_i=4 \to n_f=2$ ,\SI{486.13}{\nm}) because both fall in the visible region.
+
+\textcolor{red}{Explain about Radiative Processes in Plasmas}
+
+All transitions emit spectral lines that have finite width. The observed lineshape function $f(\lambda)$ and its width $\Delta \lambda_{1/2}$ may serve as an optical diagnostic technique that can give information about the physical conditions in the emitting plasma \cite{Thorne1988Spectrophysics}. An inherent shortcoming of such observation is the fact that radiation is collected only along the line of sight in the direction of observation and any local information is therefore lost.
+
+The contributions to the spectrum emitted by a plasma are:
+\begin{enumerate}
+    \item bremsstrahlung, a continuum radiation. Emitted when
+    the electrons experience deflection in the field of the ions. Free--free transition.
+    \item recombination radiation, also a continuum but characterized by edges. It is emitted when electrons recombine with ions; Free--bound transition.
+    \item line radiation, corresponds to transitions between atomic energy levels. Bound-bound transition.
+\end{enumerate}
+
+In addition to the familiar natural (lifetime) and Doppler broadening, in plasma spectroscopy an additional broadening of the lines is observed, named \textit{Stark Broadening} \sidenote{Classified under \textit{Pressure broadening} mechanism.}: When the density of charged particles in a plasma is sufficiently large, their electric micro-fields perturb the atomic energy levels\cite{Griem1974SpectralPlasmas.}; An emitting atom at a distance $r$ from an ion or electron is perturbed by an electric field $E=e/(4\pi \varepsilon_0 r^2)$, and the interaction between the atom and the field is described by the Stark effect. A perturbation proportional to $E$ exists only in the case of the hydrogen atom or hydrogen--like atoms; for all other atoms the first non-vanishing interaction is the quadratic Stark effect\cite{Thorne1988Spectrophysics}, proportional to $E^2$ and thus to $1/r^4$.
+
+% Natural broadening smears out the H\textsubscript{$\alpha$} line by only 20 parts per billion, and Doppler broadening by 3 parts per million. Thus, in the presented measurements, we neglect these two, and focus solely on the Stark Broadening.
+
+The line shape for the Stark broadening assumes that of a Lorentzian,
+\begin{equation}
+I\left( \lambda \right)=\frac{A^2}{4\left( \left(\lambda-\lambda_0\right)^2+\Delta \lambda_{1/2}^2\right)}. \label{eq:Stark_Broadening}
+\end{equation}
+where $\Delta \lambda_{1/2}\left[\si{\nm}\right]$ is the full width at half maximum for a profile centered at wavelength $\lambda_0$.
+
+This phenomenon for hydrogen lines is very well understood, and the dependence of the line width on the plasma concentration and plasma density has been tabulated \cite{Griem1964PlasmaSpectroscopy,Griem1974SpectralPlasmas.}, but, from the theoretical point of view, there does not exist any model that enables accurate calculations of Stark broadening over a large electron density range\cite{Griem2000StarkPlasmas}. 
+
+The following equation relates electron density to the width of the emission line for the H\textsubscript{alpha} line:
+\begin{equation}
+n_e=\left( \frac{\Delta\lambda_{1/2}}{\gamma\left(n_e,T_e\right)}\right)^{3/2}.
+\end{equation}
+$\gamma\left(n_e,T_e\right)$ may be evaluated numerically and experimentally\cite{Griem2005ComparisonResults}, the dependence of which on the plasma density and temperature is rather weak and it has been neglected in our measurements, at which the following was used:
+\begin{equation}
+n_e=\left( \frac{\Delta\lambda_{1/2}\text{[nm]}}{5.4}\right)^{3/2}. \label{eq:delta_lambda}
+\end{equation}
+\section{Index of refraction}\label{sec:indexrefraction}
+
+
+\section{Paschen Curve}\label{sec:paschen}
+Paschen's Law states that the breakdown voltage is a unique function of the product of gas pressure $p$ and the gap length $d$ for a particular gas. The curve is shown in figure \ref{fig:paschen_curve}.
+\begin{marginfigure}
+    \includegraphics[width=\marginparwidth]{figures/paschen_curve.PNG}
+    \label{fig:paschen_curve}
+    \caption{Paschen curve --- voltage versus the pressure--gap length product.}
+\end{marginfigure}
+
+\section{Plasma acceleration, laser wake--field acceleration}\label{sec:wakefield}
+Laser--driven plasma-based accelerators were originally proposed by T. Tajima and J. Dawson in 1979 \cite{Dawson1979}, on purpose for experiments on nuclear physics and the structure of matter. Conventional radio--frequency linear accelerators (linacs) begin to approach their limit, because the accelerating electric fields  must  be  less  than  $\SI{100}{\MV\per \m}$  to  avoid material breakdown. This limits the highest energies achievable through cost, as each \si{\GeV} of energy requires $\sim \SI{100}{\m}$ of acceleration length \cite{Esarey2009PhysicsAccelerators}.
+
+If the limiting factor on the scale of the accelerator is ionisation of the material, then an attractive alternative with reasonably sized facilities is to use plasma as the medium for the acceleration mechanism.
+
+In a plasma accelerator, a longitudinal electron plasma wave (wakefield) is formed and electrons injected into the plasma near the high--density area will experience an acceleration toward it by the plasma. This method, termed \emph{Laer WakeField Acceleration} (LWFA), utilizes an ultrashort ($\sim\SI{100}{\ps}$), high--power (\si{\TW}) laser that provides a large electric field because of charge separation. Plasma formed by initiating a discharge in a narrow channel made within a tube (i.e., \textit{discharge capillary}) satisfies promising conditions for a plasma source to exploit LWFA, on a length scale of centimeters \cite{Gonsalves2019PetawattWaveguide,Leemans2014Multi-GeVRegime}. The injected electrons' acceleration continues as the wakefield travels through the plasma waveguide. The research has widely grown since the mid 1980s, when ultrashort laser pulses of sufficient energy became available after the damage threshold inherent in optical amplifiers had been overcome by means of Chirped Pulse Amplification (CPA) \cite{Strickland1985CompressionPulses}.
+
+It is necessary to provide transportation of the laser pulse in an underdense(\textcolor{red}{?}) plasma over distances on the order of the acceleration length $l_\text{acc}$,
+\begin{equation}
+    l_\text{acc}\approx\frac{c}{\omega_p}\left(\frac{\omega_0}{\omega_p}\right)^2
+\end{equation}
+without significant spreading. Here, $\omega_0$ is the  carrier frequency of laser radiation. Yet,
+
+To date, two major limitations of LWFA prevent quality electron beams from reaching high energies \cite{Esarey2009PhysicsAccelerators}. The former regards to the laser pulse that creates the wake, and the latter to the acceleration of the charged particles:
+\begin{description}
+  \item[\textnormal{Defocusing of the laser radiation}] \hfill \\ Conditions  should be created for both focusing of laser radiation to a small spot of radius $r_0$, together with transportation of  the laser pulse over many Rayleigh lengths, $l_R$\sidenote{$l_R=\pi r_0^2/\lambda$, where $\lambda$ is the wavelength of laser light.}, without diffraction spreading.
+  \item[\textnormal{The dephasing length}] \hfill \\ The trapped electrons outrun or dephase the accelerating phase of the wakefield.
+\end{description}
+
+We will now give a short explanation plasma waveguides and the geometry of Gaussian beams as a method to tackle the defocusing of the laser radiation, and present a proposed scheme to overcome the dephasing length.
+
+\subsection{Plasma waveguides}
+Although the divergence of a real laser beam can sometimes be negligible, this is not the case here because the intensities feasible for plasma accelerations can only be achieved by focusing the laser beam to a tiny spot of a few tens of microns in diameter. Such a beam will rapidly diverge in any homogeneous medium. The divergence is conventionally characterized by the Rayleigh length, defined to be the distance over which the intensity of the beam falls by a factor of 2 with respect to that in the focal plane. See figure \ref{fig:typical-beam}
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{figures/beam-geometry.PNG}
+\caption{Typical beam geometry around the focal point.}
+\label{fig:typical-beam}
+\end{marginfigure}
+It can be shown \cite{Saleh2019BeamOptics}, that for a beam of initial diameter $D$ focused by a parabolic lens with focal length $f$, the Rayleigh length and the waist radius are
+\begin{equation}
+\begin{split}
+z_R & = \frac{\lambda}{\pi} \cot^2\alpha = \frac{4f^2}{\pi D^2}\lambda
+\\
+w_0 & = \frac{\lambda}{\pi}\cot \alpha=\frac{2f}{\pi D}\lambda
+\end{split}
+\end{equation}
+where $\alpha$ is the divergence angle.
+
+For example, a \SI{75}{\mm} beam in diameter of a \SI{800}{\nm} laser focused by a \SI{1}{\m} parabolic mirror will have the (doubled) Rayleigh length of about \SI{0.4}{\mm}, whereas the dephasing length of an electron accelerating in plasma wakefield is typically \SIrange{1}{3}{\cm}.
+
+The problem of making a tightly focused laser pulse ($~$\SI{20}{\um} waist diameter) propagate over many tens of Rayleigh lengths without divergence can solved by constructing a preformed plasma channel with radially increasing density. Such channels, also known as plasma waveguides, are analogous to polymeric fibers in that they both rely on the same phenomenon --- total internal reflection resulting from axially--peaked refraction index. The simplest fiber consists of a transparent core in which light is confined, and a cladding surrounding the core, with a refractive index small than that of the core. On the contrary, plasma waveguides are formed dynamically, their radial decrease of refraction index is continuous and results from the corresponding increase of the plasma density.
+\subsection*{Preformed plasma channel as a waveguide}
+The dispersion relation \cite{Chen1984IntroductionFusion} for an electromagnetic wave propagating in a plasma takes the form 
+\begin{equation}
+\omega^2=\omega_p^2+c^2 k^2.
+\end{equation}
+
+Written as an expression for the index of refraction $\tilde{n}=c/v_\phi = ck/\omega$,
+\begin{equation}
+\tilde{n}=\frac{c k}{\omega}=\sqrt{1-\frac{\omega_p^2}{\omega^2}}\approx1-\frac{\omega_p^2}{2\omega^2}=1-\frac{N_e}{2N_\text{cr}}, \label{eq:index_of_refraction}
+\end{equation}
+where
+\begin{equation}
+    N_\text{cr}=\frac{\omega^2\varepsilon_0 m}{e^2}=\frac{\pi}{\lambda^2 r_e}
+\end{equation}
+is the critical plasma density, and $r_e$ is the classical electron radius. Equation \ref{eq:index_of_refraction} thus shows explicitly that the refractive index $\tilde{n}$ peaks on the axis of a plasma channel if the density has there a minimum.
+
+In other words, the plasma's less--than--unity refractive index suggests that a normal density profile (maximum on the axis) causes the laser beam to diverge into the walls. If an inverted density profile (minimum on the axis) can be created, however, the lens effect becomes converging; The radiation is focused and trapped by the plasma.
+
+The dependence $N_e(r)$ is usually termed the "radial density profile" (RDP). In an ideal plasma waveguide, the radial density profile is parabolic\sidenote{Essentially a power expansion of $N_e(r)$ up to second order in $r$.} \cite{Sprangle1992PropagationPlasmas},
+\begin{equation}
+    N_e(r)=N_e(0)+\Delta N_e\left( \frac{r}{r_\text{ch}}\right)^2.
+    \label{eq:rdp}
+\end{equation}
+and is of special practical interest, because it is capable of guiding a tightly focused laser pulse while keeping its spot radius constant \cite{Sprangle1992PropagationPlasmas,Esarey1997Self-focusingPlasmas}. This is accomplished for some waist radius of the guided beam (the \textit{matched} radius $w_m$), which is related to the geometry of a parabolic RDP as follows\sidenote{The readius of a mismatched beam oscillates as the beam propagates through the channel \cite{}}:
+\begin{equation}
+    w_m=\left( \frac{r_\text{ch}^2}{\pi r_e \Delta N_e}\right)^{1/4}
+\end{equation}
+or, stated differently,
+\begin{equation}
+    w_m=\left( \frac{2}{\pi r_e n^{\prime\prime}(0)}\right)^{1/4}
+\end{equation}
+where $N_e(r)$ is the electron density at a distance $r$ from the axis of the beam, $\Delta N_e=\SI{1.3e15}{\per\cubic\centi\metre}$ is the increase in the electron density at $r=r_\text{ch}$ compared to the axial value and $N_e(0)=\SI{1.2e16}{\per\cubic\centi\metre}$. See figure \ref{fig:rdp_parabola}.
+
+\begin{marginfigure}
+    \includegraphics[width=\marginparwidth]{figures/chen4_30.pdf}
+    \caption{A plasma lens has unusual optical properties, since the index of refraction is less than unity.}
+    \label{fig:plasma_lens_chen}
+\end{marginfigure}
+For a \SI{800}{\nm} laser field transversing the plasma, \textcolor{red}{what happens}
+The refractive index of a plasma felt by electromagnetic radiation with angular frequency $\omega$ can be obtained from 
+
+A gas-filled capillary is an attractive technique to confine plasma \cite{Bobrova2002SimulationsWaveguide,Spence2001InvestigationWaveguide} and since the medium responsible for guiding is not damaged by the laser radiation, it is able to guide pulses with a wide range of intensities and wavelengths \cite{Dorchies1999MonomodeTubes}, and can prevent the diffraction spreading of the laser pulses \cite{Sprangle1990NonlinearPlasmas,Bulanov1994ShortChannel}.
+
+The diffraction spreading of laser pulses can be prevented by guiding of the laser pulse in a plasma formed near the axis of the capillary discharge. This technique was reported experimentally in \cite{Ehrlich1996GuidingExperiments}.
+
+To propagate a laser pulse over many Rayleigh lengths, a preformed plasma channel can be used.  Lacking such guiding, the interaction length is at most of the order of the Rayleigh range.
+
+The dependence $N_e\left(r\right)$ in equation \ref{eq:rdp}, usually termed ”radial density profile” (RDP), forms dynamically inside the capillary; A plasma waveguide of this type It can help increase the dephasing length that will allow a longer propagation distance and a higher energy gain \cite{Sprangle2000StableAcceleration}.
+
+To date, a major limitation of LWFA that prevents well--defined electron beam from reaching high energies is the dephasing length: trapped electrons outrun or dephase the accelerating phase of the wakefield \cite{Esarey2009PhysicsAccelerators}. The current paradigm within the LWFA community envisions a \si{\TeV} LWFA composed of multiple $~$\SI{10}{\GeV} stages, which could be be optimized for efficiency, by matching the dephasing length to the depletion length of the laser pulse \cite{Schroeder2010PhysicsColliders}; Using multiple LWFA stages to successively accelerate one electron beam to higher energies (see figure \ref{fig:coupling_scheme}).
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{figures/coupling_scheme.png}
+\caption{Proposed multistage acceleration scheme. The first main laser is initiating the acceleration of the electron beam. A fishbone shaped curved channels are added down the acceleration line enabling further acceleration of the electrons.}
+\label{fig:coupling_scheme}
+\end{marginfigure}
+However, this introduces severe challenges with regard to electron beam transport in between stages \cite{Esarey2009PhysicsAccelerators}.
+
+
+
+\begin{marginfigure}
+    \includegraphics[width=\marginparwidth]{figures/rdp.PNG}
+    \caption{Radial Density Profile}
+    \label{fig:rdp_parabola}
+\end{marginfigure}
+
+\end{document}
