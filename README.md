@@ -158,3 +158,7 @@ On December 30th 2020 I finally succeeded measuring the 800nm signal when making
 Unfortunately, only the left branch is (probably) amplified. The right one is not affected at all. And the left channel was connected to the power supply.
 
 When connecting the second power supply, the current profile of the first looks not as good as before, and the current profile of the second (Rogowsky II) is not critical damped. Additionaly, the bump of the optic noise is has a different shape, and additional electric noises are visible.
+
+On January 2nd, we changed the power supply to that of the transfromer still connected to the UPS. We are now able to go up to 12 kV in discharges.
+
+We placed a black paper in front of the capillary and "drilled" a hole thourgh it by shooting a few NdYag shots. The undesired bump still appeared but the oscillator signal was still too low - 1mV, and so no guiding was observable. We decided to widen the capillary diameter to 500 micron or even 600, depending on the signal we will get.
