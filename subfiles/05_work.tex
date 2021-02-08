@@ -42,38 +42,42 @@ We are now in a position to estimate the timing and duration of the hollow densi
 \caption{\textcolor{red}{write a description.}}
 \label{fig:oscillator}
 \end{figure}
-Upon plasma discharge, we recorded the optical guiding of the pulse--train, shown in figure  \ref{fig:oscillator_single}, and watched after the gain of the signal while it interacts with the plasma inside the capillary. The result is shown in figure \ref{fig:oscillator_gain}.
+Upon plasma discharge, we recorded the optical guiding of the pulse--train, shown in figure \ref{fig:oscillator_single}, and watched after an increase in the detected signal amplitude while it interacts with the plasma inside the capillary. The result is shown in figure \ref{fig:guiding1}.
 
-The upper waveform is the plasma discharge current profile delivered from the Rogowsky coil, similar to that shown in \ref{fig:discharge_sample}. The top waveform is the signal arriving from the Nd:Yag photo--diode detector, which, as mentioned before, tells us whether the discharge is timed with the igniting laser and is jitter--controlled. The lower waveform is that recorded from the fast--photodiode with the oscillator laser as its signal.
-\begin{figure}
+The optical guiding is quantitatively estimated as the transmission factor --- ratio of the maximal amplitude obtained during the guiding window to the amplitude before the plasma discharge.
+
+At the upper plot is the plasma discharge current profile, similar to that shown in \ref{fig:discharge_sample}, as delivered from the Rogowsky coil. The applied voltage for these two measurements was $\sim$\SI{7}{\kilo\volt}. Along it is the signal arriving from the Nd:Yag photo--diode detector (green waveform), which, as mentioned before, tells us whether the discharge is timed with the igniting laser and is jitter--controlled. The lower waveform is that recorded from the fast--photodiode with the oscillator laser as its signal source.
+\begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/oscillator/guiding1.pdf}
-    \caption{\textcolor{red}{Description.}}
+    \caption{Guiding of the pulse train (bottom) shown in reference to the igniting laser (\textcolor{ForestGreen}{green}, top), and the discharge current.}
     \label{fig:guiding1}
-\end{figure}
+\end{figure*}
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{figures/oscillator/guiding2.pdf}
-    \caption{\textcolor{red}{Description.}}
+    \caption{Guiding of the oscillator laser, with a higher voltage difference applied to the capillary electrodes, $\sim$\SI{10}{\kilo\volt}, giving a larger transmission factor.}
     \label{fig:guiding2}
 \end{figure}
 
-The explanation for the gain of the voltage arriving from the photo--diode during the formation of the plasma channel was mentioned in section \ref{sec:indexrefraction}: If the plasma has a normal density profile (maximum on the axis), it behaves like a negative lens and causes the laser beam to diverge into the walls. If an inverted density profile (minimum on the axis, refer to figure \ref{fig:rdp_parabola}) can be created, however, the lens effect becomes converging; and the radiation is focused and trapped by the plasma. See figure \ref{fig:chen4_31}.
+The explanation for the improved transmission of the laser radiation during the formation of the plasma channel was mentioned in section \ref{sec:indexrefraction}: If the plasma has a normal density profile (maximum on the axis), it behaves like a negative lens and causes the laser beam to diverge into the walls. If an inverted density profile (minimum on the axis, refer to figure \ref{fig:rdp_parabola}) can be created, the lens effect becomes converging; and the radiation is focused and trapped by the plasma. See figure \ref{fig:chen4_31}.
 \begin{marginfigure}
 \includegraphics[width=\marginparwidth]{figures/chen4_31.png}
-\caption{A plasma confined inside the capillary will trap the \SI{800}{\nm} laser light only if the plasma has a density minimum on axis.}
+\caption{Plasma confined inside the capillary will trap the \SI{800}{\nm} laser light only if the plasma has a density minimum on axis.}
 \label{fig:chen4_31}
 \end{marginfigure}
 
-An additional phenomenon to remark is the attenuation of the signal in the later stage of the discharge---the plasma becomes opaque to radiation traversing it. \textcolor{red}{\textbf{Explain why}}
+An additional phenomenon to remark is that the oscillator pulse--train is blocked by the plasma in the later stage of the discharge. In this part of the plasma lifetime the capillary wave--guide is not operating. The plasma functions as a medium that refracts the radiation in some uncontrolled way to the capillary plastic walls, thus less light is collected by the photo--detector. The system approaches the state prior to the ignition after the plasma is dispersed inside the vacuum chamber.
 
-In addition to the timing and duration of the plasma channel, we examined the factor within which the guidance efficiency is determined. Therefore, we measured the enhancement for different parameters: applied voltage, laser power and injected gas pressure. Analysis shows that the main parameter that increases the efficiency of the guiding is the applied voltage. The effect is easily visible--the enhanced transmission duration is approximately in the scale of several \SI{1e-7}{\sec}, also we see that the timing seems to be synchronized with the maximal value of the current. Furthermore, using more precise analysis we assess the mean duration of the hollow density profile to be $\tau_\text{channel}=\SI{300}{\ns}$ and with a maximal transmission lasting approximately \SI{30}{\ns} long.
+In addition to the timing and duration of the plasma channel, we measured the optical guiding for different parameters: applied voltage over the capillary electrodes, laser power and injected gas pressure. Analysis shows that the stronger parameter is the applied voltage. The effect is seen in figure \ref{fig:guiding2}, for which a $\sim$\SI{10}{\kilo\volt} was applied to the capillary terminals, and a peak current of \SI{240}{\A} was measured by the Rogowsky coil. The optical guiding for this measurement is as high as $\sim 6.7$.
+
+The $\sim$ \SI{12.5}{\ns} time resolution of the pulse--train enables us to estimate the temporal duration of the plasma channel (the vertical red grid lines in figures \ref{fig:guiding1}-\ref{fig:guiding2} as a visual aid) to be $\tau_\text{channel}=\SI{150}{\ns}$.
 
 \section{Spectroscopic measurements}\label{sec:spectro}
-To estimate \textcolor{red}{quantitatively} the depth of the plasma channel and the plasma density, we performed an additional measurement with a spectrometer and a fast camera, introduced in section \ref{ssec:spectro}, and analysed the broadened emission line attributable to Stark effect.
+To estimate quantitatively the depth of the plasma channel and the plasma density, we performed an additional measurement with a spectrometer and a fast camera, introduced in section \ref{ssec:spectro}, and analysed the emission line attributable to Stark effect.
 
 \subsection{Radial density profile}\label{ssec:radial}
-We installed an imaging system that images the \textcolor{red}{spatially} capillary entrance, shown in figure \ref{fig:radial_system}. For an accurate and \textcolor{red}{fidelity?} measurement, we needed to over--come two main difficulties:
+We installed an imaging system that images the capillary entrance, as shown in figure \ref{fig:radial_system}. For an accurate and reliable measurement, we needed to over--come two main difficulties:
 
 \begin{figure}
 \centering
@@ -84,7 +88,7 @@ We installed an imaging system that images the \textcolor{red}{spatially} capill
 
 In order to magnify the circular cone of plasma light emitted from the capillary entrance imaged on the spectrometer slit, we placed a converging lens in a distance a bit longer from its focal length so to obtain as large as possible transverse magnification. The drawback is the loss of irradiance, which was compensated with the gain mechanism of the microchannel plate of the CCD camera.
 
-Secondly, as mentioned before (\ref{sec:jitter}), the plasma channel lasts for \SIrange{50}{100}{\ns}, and this leads to a constraint on the duration of the camera gating window. Clearly, a long exposure time ($\gtrsim \SI{1}{\us}$) would yield a constant profile. But to capture the hollow plasma channel we rather gated (using the digital delay generator) the CCD camera to exposure times of \SI{40}{\ns}\marginnote{To produce a sharp image of a moving subject, a fast shutter speed is required.}. That obviously led to signal--to--noise--ratio difficulties when analysing the digital data --- the shutter is not opened for long enough for the image-sensing area to be exposed to light.
+Secondly, as mentioned before (\ref{sec:jitter}), the plasma channel lasts for \SIrange{50}{150}{\ns}, and this leads to a constraint on the duration of the camera gating window. Clearly, a long exposure time ($\gtrsim \SI{1}{\us}$) would yield a constant profile. But to capture the hollow plasma channel we rather gated (using the digital delay generator) the CCD camera to exposure times of \SI{40}{\ns}\marginnote{To produce a sharp image of a moving subject, a fast shutter speed is required.}. That obviously led to signal--to--noise--ratio difficulties when analysing the digital data --- the shutter is not opened for long enough for the image-sensing area to be exposed to light.
 
 The simple imaging system was composed of two converging lens (fused-silica, bi-convex, \diameter 2 inch), the first with a shorter focal length, that imaged the capillary entrance magnified by $\times 5$ on the spectrometer entrance slit. I.e., the image of a \SI{0.5}{\mm} capillary was $\sim$ \SI{2.5}{\mm} in diameter, corresponding to about \SI{40}{\percent} of the CCD's vertical range. The spectrometer slit had the width of \SI{150}{\micro\metre}, providing a spectral resolution of about \SI{0.3}{\nm}.
 
@@ -104,7 +108,7 @@ Figure \ref{fig:plasma_channel_spectro} plots the experimentally measured plasma
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{figures/spectro/parabolic.png}
+\includegraphics[width=\textwidth]{figures/spectro/parabolic.pdf}
 \caption{Radial density profile of the plasma from the measured spectrum, \SI{400}{\ns} after the rise of the current.}
 \label{fig:plasma_channel_spectro}
 \end{figure}
