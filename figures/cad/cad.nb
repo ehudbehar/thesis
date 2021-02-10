@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    543437,       9134]
-NotebookOptionsPosition[    541965,       9104]
-NotebookOutlinePosition[    542367,       9120]
-CellTagsIndexPosition[    542324,       9117]
+NotebookDataLength[    543653,       9138]
+NotebookOptionsPosition[    542180,       9108]
+NotebookOutlinePosition[    542582,       9124]
+CellTagsIndexPosition[    542539,       9121]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -135,7 +135,7 @@ Cell[BoxData[
   "\n"}]], "Input",
  CellChangeTimes->{{3.8219504746585007`*^9, 3.8219505470616074`*^9}, {
   3.8219583935225115`*^9, 3.8219584129225388`*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"703980a4-73d0-4d97-9327-0c753cb16ab8"],
+ CellLabel->"In[39]:=",ExpressionUUID->"703980a4-73d0-4d97-9327-0c753cb16ab8"],
 
 Cell[CellGroupData[{
 
@@ -369,7 +369,7 @@ IFposu5lEN1y9+AtEL3Nbf8jEN3kuuQ1iA76tOYz2B0fK1nPAGk1rdoGEO1R
 8L4VRO/jTX9+FkhvYAn4AqJ9+P1/gOh7Xl6/QLR5Sd0/EP3p9h+ec0D6++IH
 RSD6d7ThHBD9UKRhEYiOCDoEpgHnjNT4
   "],
- CellLabel->"In[6]:=",ExpressionUUID->"f99be39e-844a-44b5-b1d5-4e79ad482346"],
+ CellLabel->"In[40]:=",ExpressionUUID->"f99be39e-844a-44b5-b1d5-4e79ad482346"],
 
 Cell[BoxData[
  Graphics3DBox[{GraphicsComplex3DBox[CompressedData["
@@ -3446,8 +3446,8 @@ qp/FOZzHBaf6Rfw/MBNE+Q==
   ViewVertical->{0, 1, 0}]], "Output",
  CellChangeTimes->{{3.8219582457103043`*^9, 3.821958254550317*^9}, {
    3.8219582862703614`*^9, 3.8219583700424786`*^9}, 3.8219584319725657`*^9, 
-   3.8219598427945414`*^9},
- CellLabel->"Out[6]=",ImageCache->GraphicsData["CompressedBitmap", "\<\
+   3.8219598427945414`*^9, 3.8219610992586293`*^9},
+ CellLabel->"Out[40]=",ImageCache->GraphicsData["CompressedBitmap", "\<\
 eJzsvXd0VUfWL3i/mySRk3HExqHd3bbbbndwO7RtHMEGHMiYJKJAIJIQEkLh
 SkIoopyzEBlEFsEEkXHb7v7e9703L8y8ecysNbPWrDV/zFrzx+SZmtp1qurW
 uWefcIOEAHutc4yurs6p+v1+tWtX1d5VM5dvW7s6Zfm2dSuXT566dfnmtetW
@@ -5096,7 +5096,7 @@ LzbnjqbPPtaeVbx7ZgPeX+1cRsxdnhY4CyLk37u5XZVeZ+Vf0d39CfP8M0f4
 Yv94hoPOG9jkSltQypKTXL2s/v+G702thj8hI9M5UvAtMjJAZxzWwm+BWXHu
 1ZrN8Fuob6/KlP9vfvr/10+j7/u/tLIiBA==\
 \>", "ImageResolution" -> \
-72.],ExpressionUUID->"947576fc-8d8a-47dc-9de0-0c26ccbac870"]
+72.],ExpressionUUID->"9a18c307-b2b6-4c84-8d87-88fa6537f52c"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -5131,7 +5131,9 @@ Cell[BoxData[
       RowBox[{"{", "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{"{", 
-         RowBox[{"Gray", ",", 
+         RowBox[{
+          RowBox[{"Lighter", "[", 
+           RowBox[{"Black", ",", "0.4"}], "]"}], ",", 
           RowBox[{"Polygon", "[", 
            RowBox[{
             RowBox[{
@@ -5192,8 +5194,9 @@ Cell[BoxData[
    "]"}]}]], "Input",
  CellChangeTimes->{{3.821958490752648*^9, 3.82195849224265*^9}, {
   3.821958733424988*^9, 3.821958759525024*^9}, {3.8219599008946223`*^9, 
-  3.8219601121169186`*^9}, {3.821960446822387*^9, 3.8219607607428265`*^9}},
- CellLabel->"In[33]:=",ExpressionUUID->"7f31a4c6-e8df-428c-beec-21225a493095"],
+  3.8219601121169186`*^9}, {3.821960446822387*^9, 3.8219607607428265`*^9}, {
+  3.821960983154459*^9, 3.821961018984512*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"7f31a4c6-e8df-428c-beec-21225a493095"],
 
 Cell[BoxData[
  Graphics3DBox[{GraphicsComplex3DBox[CompressedData["
@@ -9059,7 +9062,7 @@ Le1oTwc60onOdKEr3ehOD3rSi970oS/96M8ABjKIwfzGEIYyjOGMYCS/M4o/
 BwOC+iEOc4SjHOM4JzjJKU7zPy/1zVU=
        "]],
       "Triangle"]}], {
-    {GrayLevel[0.5], 
+    {RGBColor[0.4, 0.4, 0.4], 
      Polygon3DBox[{{77, 0, 485}, {77, 30, 485}, {77, 30, 515}, {77, 0, 
        515}} -> {{77, 19, 500}, {
         77, 18 + Cos[Rational[1, 7] Pi], 500 + Sin[Rational[1, 7] Pi]}, {
@@ -9093,8 +9096,9 @@ BwOC+iEOc4SjHOM4JzjJKU7zPy/1zVU=
   ViewAngle->All,
   ViewPoint->{1.3, 0.8, -1},
   ViewVertical->{0, 1, 0}]], "Output",
- CellChangeTimes->{{3.8219607569028215`*^9, 3.821960761182827*^9}},
- CellLabel->"Out[33]=",ExpressionUUID->"b714a543-1dd2-4dc1-aba7-01c2c1c2cf04"]
+ CellChangeTimes->{{3.8219607569028215`*^9, 3.821960761182827*^9}, {
+  3.8219609843844633`*^9, 3.8219610194445124`*^9}},
+ CellLabel->"Out[38]=",ExpressionUUID->"db3318e1-5621-4806-8236-acd6f27a9533"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -9125,17 +9129,17 @@ Cell[833, 28, 278, 4, 32, "Output",ExpressionUUID->"d3722f85-448b-42f2-b71a-4876
 }, Open  ]],
 Cell[1126, 35, 221, 4, 28, "Input",ExpressionUUID->"c0561e9a-84e2-417b-b531-d924f345d167"],
 Cell[1350, 41, 2826, 71, 105, "Input",ExpressionUUID->"65294f95-7d57-4c37-8c94-acbb6f79224c"],
-Cell[4179, 114, 990, 23, 67, "Input",ExpressionUUID->"703980a4-73d0-4d97-9327-0c753cb16ab8"],
+Cell[4179, 114, 991, 23, 121, "Input",ExpressionUUID->"703980a4-73d0-4d97-9327-0c753cb16ab8"],
 Cell[CellGroupData[{
-Cell[5194, 141, 9242, 230, 542, "Input",ExpressionUUID->"f99be39e-844a-44b5-b1d5-4e79ad482346"],
-Cell[14439, 373, 286340, 4725, 1391, 185561, 3072, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"947576fc-8d8a-47dc-9de0-0c26ccbac870"]
+Cell[5195, 141, 9243, 230, 542, "Input",ExpressionUUID->"f99be39e-844a-44b5-b1d5-4e79ad482346"],
+Cell[14441, 373, 286365, 4725, 1412, 185561, 3072, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"9a18c307-b2b6-4c84-8d87-88fa6537f52c"]
 }, Open  ]],
-Cell[300794, 5101, 156, 3, 28, "Input",ExpressionUUID->"0b5df2f6-71d5-4639-94dc-3a4cb56fa2ac"],
+Cell[300821, 5101, 156, 3, 28, "Input",ExpressionUUID->"0b5df2f6-71d5-4639-94dc-3a4cb56fa2ac"],
 Cell[CellGroupData[{
-Cell[300975, 5108, 3639, 87, 219, "Input",ExpressionUUID->"7f31a4c6-e8df-428c-beec-21225a493095"],
-Cell[304617, 5197, 237173, 3899, 1046, "Output",ExpressionUUID->"b714a543-1dd2-4dc1-aba7-01c2c1c2cf04"]
+Cell[301002, 5108, 3765, 90, 219, "Input",ExpressionUUID->"7f31a4c6-e8df-428c-beec-21225a493095"],
+Cell[304770, 5200, 237235, 3900, 1025, "Output",ExpressionUUID->"db3318e1-5621-4806-8236-acd6f27a9533"]
 }, Open  ]],
-Cell[541805, 9099, 156, 3, 28, InheritFromParent,ExpressionUUID->"4a09d48b-b497-4339-bd0a-d8929de2e7e7"]
+Cell[542020, 9103, 156, 3, 28, InheritFromParent,ExpressionUUID->"4a09d48b-b497-4339-bd0a-d8929de2e7e7"]
 }
 ]
 *)
