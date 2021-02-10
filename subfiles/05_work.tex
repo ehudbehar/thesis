@@ -138,7 +138,7 @@ To achieve that, we built the system shown in figure \ref{fig:longi_system}, wit
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\textwidth]{figures/doublecapillary_cad.png}
+    \includegraphics[width=\textwidth]{figures/cad/doublecapillary_cad.png}
     \caption{3D drawing of the 2--stage capillary. Designed by Yair Ferber.}
     \label{fig:doublecapillaryCAD}
 \end{figure*}
@@ -168,16 +168,20 @@ In contrast to the previously presented measurements, now a jitter controlled sy
 
 \begin{marginfigure}
 \includegraphics[width=\marginparwidth]{figures/Curved capillaries/line-of-sight.png}
-\caption{No ling of sight for the curved capillary.}
+\caption{No line of sight for the curved capillary.}
 \label{fig:lineofsight}
 \end{marginfigure}
 
 At the time of writing and the assignment due, we faced two main difficulties when performing this measurement.
 \begin{description}
-  \item[\textnormal{Optical background noise}] \hfill \\ When creating a capillary discharge, the photo--diode also collected unwanted light from the emitting plasma --- light that is collected by the same lens that focuses the oscillator laser. To minimize this effect we positioned an opaque screen with a small hole (about \SI{1}{\mm} in diameter) in the capillary exit plane. See figures (X) and (Y).
+  \item[\textnormal{Optical background noise}] \hfill \\ When creating a capillary discharge, the photo--diode also collected unwanted light from the emitting plasma --- light that is collected by the same lens that focuses the oscillator laser. To minimize this effect we positioned an opaque screen with a small hole (about \SI{1}{\mm} in diameter) in the capillary exit plane. See figures \ref{fig:opaque}.
   \item[\textnormal{Correct entrance vector of the laser beam}] \hfill \\ The plasma channel spans about \SI{50}{\um} in diameter out of the \SI{500}{\um} of the capillary. This dictates a very careful alignment of the oscillator laser beam. We can't be sure if the laser is aligned in the correct vector. We need a systematic way to scan the alignments.
 \end{description}
-
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{figures/cad/opaquescreen.png}
+\caption{Opaque screen with a small hole positioned close to the back plane of the capillary, intended to block light emitted from the plasma discharge.}
+\label{fig:opaque}
+\end{marginfigure}
 Unfortunately, we did not manage to observe a plasma channel and a decent optical guide.
 
 \end{document}
