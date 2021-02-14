@@ -69,7 +69,14 @@ The explanation for the improved transmission of the laser radiation during the 
 
 An additional phenomenon to remark is that the oscillator pulse--train is blocked by the plasma in the later stage of the discharge. In this part of the plasma lifetime the capillary wave--guide is not operating. The plasma functions as a medium that refracts the radiation in some uncontrolled way to the capillary plastic walls, thus less light is collected by the photo--detector. The system approaches the state prior to the ignition after the plasma is diffused into the vacuum chamber.
 
-In addition to the timing and duration of the plasma channel, we measured the optical guiding for different parameters: applied voltage over the capillary electrodes, laser power and injected gas pressure. Analysis shows that the stronger parameter is the applied voltage. The effect is seen in figure \ref{fig:guiding2}, for which a $\sim$\SI{10}{\kilo\volt} was applied to the capillary terminals, and a peak current of \SI{240}{\A} was measured by the Rogowsky coil. The optical guiding for this measurement is as high as $\sim 6.7$.
+In addition to the timing and duration of the plasma channel, we measured the optical guiding for different parameters: applied voltage over the capillary electrodes, laser power and injected gas pressure. Analysis shows that the stronger parameter is the applied voltage. The effect is seen in figure \ref{fig:guiding2}, for which a $\sim$\SI{11}{\kilo\volt} was applied to the capillary terminals, and a peak current of \SI{240}{\A} was measured by the Rogowsky coil. The optical guiding for this measurement is as high as $\sim 6.7$.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/oscillator/voltage vs guiding.png}
+    \caption{Correlation for optical guiding to different applied voltage differences across the capillary ends. This behaviour suggests an upper limit to the transmission ratio.}
+    \label{fig:voltagevsguiding}pa
+\end{figure}
 
 The $\sim$ \SI{12.5}{\ns} time resolution of the pulse--train enables us to estimate the temporal duration of the plasma channel (the vertical red grid lines in figures \ref{fig:guiding1}-\ref{fig:guiding2} as a visual aid) to be $\tau_\text{channel}=\SI{150}{\ns}$.
 
@@ -96,7 +103,7 @@ The grating was rotated to the central wavelength of \SI{653.3}{\nm}, which, as 
 
 We gated the CCD camera, as stated, to \SI{40}{\ns} gate--on time at time windows that correspond to the maximal transmission of the oscillator signal (as described in \ref{sec:duration-of-guiding}), and set the gain of the microchannel plate to its highest, at the level of 9.
 
-The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. The steps for the analysis are as follows (figure \ref{fig:spectra_analysis}): For each row of the data (256 rows), find a Lorentzian fit for the intensity profile, with the line half--width ($\Delta\lambda_{1/2}$) as a free parameter. Then, plot $\Delta\lambda_{1/2}$ versus the spatial coordinate. Finally, convert $\Delta\lambda_{1/2}$ from pixels to \si{\mm}, using the magnification factor and the pixel--to--mm conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}} to plasma density, using Eq. \ref{eq:delta_lambda}; Convert the wavelength axis to position (capillary radius) using the same factors.
+The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. The steps for the analysis are as follows (figure \ref{fig:spectra_analysis}): For each row of the data (256 rows), find a Lorentzian fit for the intensity profile, with the line half--width ($\Delta\lambda_{1/2}$) as a free parameter. Then, plot the set of $\Delta\lambda_{1/2}$ versus the corresponding spatial coordinate. Finally, convert $\Delta\lambda_{1/2}$ from pixels to \si{\mm}, using the magnification factor and the pixel--to--mm conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}} to plasma density, using Eq. \ref{eq:delta_lambda}; Convert the wavelength axis to position (capillary radius) using the same factors.
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{figures/spectro/spectra_analysis.pdf}
@@ -108,7 +115,7 @@ Figure \ref{fig:plasma_channel_spectro} plots the experimentally measured plasma
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{figures/spectro/parabolic.pdf}
+\includegraphics[width=\textwidth]{figures/spectro/parabolic.png}
 \caption{Radial density profile of the plasma from the measured spectrum, \SI{400}{\ns} after the rise of the current.}
 \label{fig:plasma_channel_spectro}
 \end{figure}
@@ -135,7 +142,7 @@ The method described in section \ref{ssec:radial} allows for measuring the radia
     \label{fig:longi_system}
 \end{figure}
 
-To achieve that, we built the system shown in figure \ref{fig:longi_system}, with the main difference from the one before, figure \ref{fig:radial_system}, being a periscope assembly (not shown) used to flip the stripe of plasma emission by \SI{90}{\degree} so it enters into the entrance slit of the spectrometer. As opposed to the magnification issue we had before, now a minification of the image was sought. We positioned the capillary on a move--able mount, and performed 5 capillary discharges, each corresponding to a segment of \SI{1}{\cm} of the capillary length. The plasma density was estimated based on the H\textsubscript{$\alpha$} line Stark broadening, as before; Gate--on time windows of the Andor ccd camera were on the scale of \SI{1}{\us}. The result is shown in figure \ref{fig:longi_profile}, for which we obtained mean plasma density of \SI{2.7e-17}{\per\cubic\cm} with a standard deviation of 0.32.
+To achieve that, we built the system shown in figure \ref{fig:longi_system}, with the main difference from the one before, figure \ref{fig:radial_system}, being a periscope assembly (not shown) used to flip the stripe of plasma emission by \SI{90}{\degree} so it enters into the entrance slit of the spectrometer. As opposed to the magnification issue we had before, now a minification of the image was sought. We positioned the capillary on a move--able mount, and performed 5 capillary discharges, each corresponding to a segment of \SI{1}{\cm} of the capillary length. The plasma density was estimated based on the H\textsubscript{$\alpha$} line Stark broadening, as before; Gate--on time windows of the Andor ccd camera were on the scale of \SI{1}{\us}. The result is shown in figure \ref{fig:longi_profile}, for which we obtained mean plasma density of \SI{2.7e-17}{\per\cubic\cm} with a standard deviation of \SI{0.33e17}{\per\cubic\cm}.
 
 \begin{figure}
     \centering
@@ -143,7 +150,7 @@ To achieve that, we built the system shown in figure \ref{fig:longi_system}, wit
     \caption{Longitudinal plasma density profile in a \SI{5}{\cm} long, \SI{0.5}{\mm} diameter straight capillary. Red line indicates average density.}
     \label{fig:longi_profile}
 \end{figure}
-\todo{Change the y axis to 10e17. Not 10e18.}
+
 
 \section{Two stage capillary}
 As stated in the theoretical introduction (section \ref{sec:wakefield}), a "fish--bone" capillary composed of two channels or more can be used to overcome limitations in the dephasing length when accelerating electrons. For that goal we designed a Y--shape capillary (figure \ref{fig:doublecapillaryCAD}) on which we performed an experiment to investigate the parameters that permits optical guiding in a very similar way to that presented in section \ref{sec:duration-of-guiding}.
