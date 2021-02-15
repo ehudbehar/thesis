@@ -14,7 +14,7 @@ This was our goal as a first experiment with the gas injected capillaries.
 \end{marginfigure}
 To anchor the discharge starting process to a fixed event to which we can refer, we mounted a photo--detector close to the igniting laser radiation output, thus enabling one to fix a time event at which the plasma discharge occurs; The photo--detector allows for visualizing the synchronization. Recording to an oscilloscope both the photo--diode rise-up signal and the current profile obtained from the Rogowsky coil, we monitored the igniting pulse and the discharge current for consecutive 50 ignitions performed at constant time intervals.
 \begin{figure}
-%    \centering
+    \centering
     \includegraphics[width=\textwidth]{figures/jitter/low_jitter.png}
     \caption{Low jitter exhibiting \textcolor{red}{fix this.}}
     \label{fig:low_jitter}
@@ -75,7 +75,7 @@ In addition to the timing and duration of the plasma channel, we measured the op
     \centering
     \includegraphics[width=\textwidth]{figures/oscillator/voltage vs guiding.png}
     \caption{Correlation for optical guiding to different applied voltage differences across the capillary ends. This behaviour suggests an upper limit to the transmission ratio.}
-    \label{fig:voltagevsguiding}pa
+    \label{fig:voltagevsguiding}
 \end{figure}
 
 The $\sim$ \SI{12.5}{\ns} time resolution of the pulse--train enables us to estimate the temporal duration of the plasma channel (the vertical red grid lines in figures \ref{fig:guiding1}-\ref{fig:guiding2} as a visual aid) to be $\tau_\text{channel}=\SI{150}{\ns}$.
@@ -105,12 +105,18 @@ We gated the CCD camera, as stated, to \SI{40}{\ns} gate--on time at time window
 
 The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. The steps for the analysis are as follows (figure \ref{fig:spectra_analysis}):
 \begin{itemize}[label={$-$}]
-\item For each row of the data (256 rows), find a Lorentzian fit for the intensity profile, with the line half--width ($\Delta\lambda_{1/2}\left[\text{px}\right]$) as a free parameter (see figure \ref{fig:single-lorentzian}).
+\item For each row of the data (256 rows), find a Lorentzian fit for the intensity profile, with the line half--width ($\Delta\lambda_{1/2}\left[\text{px}\right]$) as a free parameter (figure \ref{fig:single-lorentzian}).
 \item Then, plot the set of $\Delta\lambda_{1/2}$ versus the corresponding spatial coordinate.
 \item To convert $\Delta\lambda_{1/2}\left[\text{px}\right]$ to \si{\nm}, we used the known Sodium doublet for the lines $D_1=\SI{589.59}{\nm}$ and $D_2=\SI{589.00}{\nm}$, which corresponds to 18 horizontal pixels.
 \item This line broadening was translated to plasma density using equation \ref{eq:delta_lambda}.
 \item Finally, convert the spatial coordinate axis to position (capillary radius, \si{\mm}) using the magnification factor of the imaging system together with the pixel--to--\si{\um} conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}}.
 \end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/spectro/sample-lorentzian.png}
+    \caption{\textcolor{red}{Sample. Typical broadening of xx nm.}}
+    \label{fig:single-lorentzian}
+\end{figure}
 
 \begin{figure}
     \centering
