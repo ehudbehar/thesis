@@ -10,16 +10,24 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     39239,        874]
-NotebookOptionsPosition[     38173,        846]
-NotebookOutlinePosition[     38572,        862]
-CellTagsIndexPosition[     38529,        859]
+NotebookDataLength[     39582,        883]
+NotebookOptionsPosition[     38427,        854]
+NotebookOutlinePosition[     38824,        870]
+CellTagsIndexPosition[     38781,        867]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell["\<\
+A notebook for some other fit files that (as Arie) proved to be less good \
+than the one Yoav did\
+\>", "Text",
+ CellChangeTimes->{{3.8223060396685066`*^9, 
+  3.8223060738694625`*^9}},ExpressionUUID->"86a017c5-9697-4aa3-9c4e-\
+228854de13d9"],
 
 Cell[CellGroupData[{
+
 Cell["18.fit", "Section",
  CellChangeTimes->{{3.819987803653471*^9, 
   3.8199878174644957`*^9}},ExpressionUUID->"bc91639b-5581-451a-bd14-\
@@ -844,8 +852,8 @@ POmdm3hgGzzSKNrCgYnIAD5rKw+GZmldIq0ckPz3MeXadh4EehQNCbVxYI1Z
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1280, 942},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1264, 934},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"8eb2cbde-1d07-42de-8668-13c1da4271ac"
@@ -861,19 +869,20 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 251, 6, 34, "Text",ExpressionUUID->"86a017c5-9697-4aa3-9c4e-228854de13d9"],
 Cell[CellGroupData[{
-Cell[580, 22, 153, 3, 67, "Section",ExpressionUUID->"bc91639b-5581-451a-bd14-abe0585aebd5"],
+Cell[834, 30, 153, 3, 67, "Section",ExpressionUUID->"bc91639b-5581-451a-bd14-abe0585aebd5"],
 Cell[CellGroupData[{
-Cell[758, 29, 7688, 190, 787, "Input",ExpressionUUID->"6b46ec40-47ef-4fbf-b9a1-2f9e8af2c5e3"],
-Cell[8449, 221, 656, 10, 32, "Output",ExpressionUUID->"589907dd-f788-4b14-a858-0a89a66a411a"],
-Cell[9108, 233, 10970, 207, 449, "Output",ExpressionUUID->"2ace3d70-f66e-4ff4-8a31-5bd4c5689bc3"]
+Cell[1012, 37, 7688, 190, 787, "Input",ExpressionUUID->"6b46ec40-47ef-4fbf-b9a1-2f9e8af2c5e3"],
+Cell[8703, 229, 656, 10, 32, "Output",ExpressionUUID->"589907dd-f788-4b14-a858-0a89a66a411a"],
+Cell[9362, 241, 10970, 207, 449, "Output",ExpressionUUID->"2ace3d70-f66e-4ff4-8a31-5bd4c5689bc3"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20127, 446, 206, 4, 67, "Section",ExpressionUUID->"26e2ee09-ef3f-45c0-8b62-7cb89da314e2"],
+Cell[20381, 454, 206, 4, 67, "Section",ExpressionUUID->"26e2ee09-ef3f-45c0-8b62-7cb89da314e2"],
 Cell[CellGroupData[{
-Cell[20358, 454, 7308, 185, 749, "Input",ExpressionUUID->"ade9550b-ca16-4932-8e04-1b50f58f5a08"],
-Cell[27669, 641, 10476, 201, 449, "Output",ExpressionUUID->"1bd7877b-2bd1-44e2-a7c2-2e930fc16623"]
+Cell[20612, 462, 7308, 185, 787, "Input",ExpressionUUID->"ade9550b-ca16-4932-8e04-1b50f58f5a08"],
+Cell[27923, 649, 10476, 201, 449, "Output",ExpressionUUID->"1bd7877b-2bd1-44e2-a7c2-2e930fc16623"]
 }, Open  ]]
 }, Open  ]]
 }
