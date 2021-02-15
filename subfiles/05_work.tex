@@ -103,10 +103,18 @@ The grating was rotated to the central wavelength of \SI{653.3}{\nm}, which, as 
 
 We gated the CCD camera, as stated, to \SI{40}{\ns} gate--on time at time windows that correspond to the maximal transmission of the oscillator signal (as described in \ref{sec:duration-of-guiding}), and set the gain of the microchannel plate to its highest, at the level of 9.
 
-The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. The steps for the analysis are as follows (figure \ref{fig:spectra_analysis}): For each row of the data (256 rows), find a Lorentzian fit for the intensity profile, with the line half--width ($\Delta\lambda_{1/2}$) as a free parameter. Then, plot the set of $\Delta\lambda_{1/2}$ versus the corresponding spatial coordinate. Finally, convert $\Delta\lambda_{1/2}$ from pixels to \si{\mm}, using the magnification factor and the pixel--to--mm conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}} to plasma density, using Eq. \ref{eq:delta_lambda}; Convert the wavelength axis to position (capillary radius) using the same factors.
+The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file format were processed in the \textit{Matlab} environment and its curve-fitting tool. The steps for the analysis are as follows (figure \ref{fig:spectra_analysis}):
+\begin{itemize}[label={$-$}]
+\item For each row of the data (256 rows), find a Lorentzian fit for the intensity profile, with the line half--width ($\Delta\lambda_{1/2}\left[\text{px}\right]$) as a free parameter (see figure \ref{fig:single-lorentzian}).
+\item Then, plot the set of $\Delta\lambda_{1/2}$ versus the corresponding spatial coordinate.
+\item To convert $\Delta\lambda_{1/2}\left[\text{px}\right]$ to \si{\nm}, we used the known Sodium doublet for the lines $D_1=\SI{589.59}{\nm}$ and $D_2=\SI{589.00}{\nm}$, which corresponds to 18 horizontal pixels.
+\item This line broadening was translated to plasma density using equation \ref{eq:delta_lambda}.
+\item Finally, convert the spatial coordinate axis to position (capillary radius, \si{\mm}) using the magnification factor of the imaging system together with the pixel--to--\si{\um} conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}}.
+\end{itemize}
+
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{figures/spectro/spectra_analysis.pdf}
+    \includegraphics[width=\textwidth]{figures/spectro/spectra_analysis.png}
     \caption{An explanatory figure of the steps involved}
     \label{fig:spectra_analysis}
 \end{figure}
