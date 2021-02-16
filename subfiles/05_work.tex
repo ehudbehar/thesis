@@ -99,7 +99,7 @@ Secondly, as mentioned before (\ref{sec:jitter}), the plasma channel lasts for \
 
 The simple imaging system was composed of two converging lens (fused-silica, bi-convex, \diameter 2 inch), the first with a shorter focal length, that imaged the capillary entrance magnified by $\times 5$ on the spectrometer entrance slit. I.e., the image of a \SI{0.5}{\mm} capillary was $\sim$ \SI{2.5}{\mm} in diameter, corresponding to about \SI{40}{\percent} of the CCD's vertical range. The spectrometer slit had the width of \SI{150}{\micro\metre}, providing a spectral resolution of about \SI{0.3}{\nm}.
 
-The grating was rotated to the central wavelength of \SI{653.3}{\nm}, which, as mentioned in section \ref{sec:hydrogen}, is the central wavelength of hydrogen H\textsubscript{$\alpha$} line. This line, when emitted within a plasma, undergoes Stark broadening from which the electron density can be deduced, with the density estimate based on equation \ref{eq:delta_lambda}. A dielectric mirror coated for zero degrees at \SI{1.064}{\um} prevented the radiation of the igniting laser from entering the spectrometer.
+The grating was rotated to the central wavelength of \SI{656.3}{\nm}, which, as mentioned in section \ref{sec:hydrogen}, is the central wavelength of hydrogen H\textsubscript{$\alpha$} line. This line, when emitted within a plasma, undergoes Stark broadening from which the electron density can be deduced, with the density estimate based on equation \ref{eq:delta_lambda}. A dielectric mirror coated for zero degrees at \SI{1.064}{\um} prevented the radiation of the igniting laser from entering the spectrometer.
 
 We gated the CCD camera, as stated, to \SI{40}{\ns} gate--on time at time windows that correspond to the maximal transmission of the oscillator signal (as described in \ref{sec:duration-of-guiding}), and set the gain of the microchannel plate to its highest, at the level of 9.
 
@@ -111,18 +111,18 @@ The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file 
 \item This line broadening was translated to plasma density using equation \ref{eq:delta_lambda}.
 \item Finally, convert the spatial coordinate axis to position (capillary radius, \si{\mm}) using the magnification factor of the imaging system together with the pixel--to--\si{\um} conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}}.
 \end{itemize}
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{figures/spectro/sample-lorentzian.png}
-    \caption{\textcolor{red}{Sample. Typical broadening of xx nm.}}
-    \label{fig:single-lorentzian}
-\end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{figures/spectro/spectra_analysis.png}
     \caption{An explanatory figure of the steps involved}
     \label{fig:spectra_analysis}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/spectro/sample-lorentzian.png}
+    \caption{\textcolor{red}{Sample. Typical broadening of xx nm.}}
+    \label{fig:single-lorentzian}
 \end{figure}
 
 Figure \ref{fig:plasma_channel_spectro} plots the experimentally measured plasma density as a function of position (capillary radius) across a \SI{500}{\um} capillary diameter at a delay time \SI{400}{\ns} after the rise of the discharge current pulse. The maximum discharge current was \SI{165}{\A}.
