@@ -186,7 +186,7 @@ The proposed method is to split the oscillator pulse--train into two beams, one 
 \caption{Two \SI{84}{\MHz} temporal beam profiles of the oscillator laser, one delayed with respect to the other.}
 \end{marginfigure}
 
-The two channel capillary goes a step beyond the straight one, but complicates the measurement in a few aspects. Note that the curved channel doesn't posses a line--of--sight from the entrance plane to the exit plane; The capillary radius of curvature (\SI{50}{\cm}), \textcolor{red}{length} (\SI{5}{\cm}) and diameter (\SI{500}{\um}) doesn't allow a straight ray to propagate through it --- see figure \ref{fig:lineofsight}. For that reason, when carefully aligning the laser beam, we relied on refractions from the capillary plastic walls to be collected and focused by a positive lens outward to the photo--diode.
+The two channel capillary goes a step beyond the straight one, but complicates the measurement in a few aspects. Note that the curved channel doesn't posses a line--of--sight from the entrance plane to the exit plane; The capillary radius of curvature (\SI{50}{\cm}), length (\SI{6.5}{\cm}) and diameter (\SI{500}{\um}) doesn't allow a straight ray to propagate through it --- see figure \ref{fig:lineofsight}. For that reason, when carefully aligning the laser beam, we relied on refractions from the capillary plastic walls to be collected and focused by a positive lens outward to the photo--diode.
 
 As a first check, we performed the measurement only on one channel, the shorter of the two. We inserted a metal wire to the longer one, thus dis--functioning it by blocking plasma from entering it.
 
@@ -197,6 +197,12 @@ As a first check, we performed the measurement only on one channel, the shorter 
     \label{fig:twostage_system}
 \end{figure}
 
+\begin{marginfigure}
+\includegraphics[width=\marginparwidth]{figures/Curved capillaries/line-of-sight.png}
+\caption{The curved channel does not posses line--of--sight.}
+\label{fig:lineofsight}
+\end{marginfigure}
+
 In contrast to the previously presented measurements, now a stable, jitter controlled operation was achieved when the triggering Nd:Yag laser pulse was delivered to the \textbf{positive} electrode, as opposed to the set--up until now, in which it was delivered to the negative one. The inverse arrangement also caused electromagnetic noise to the surrounding, which, in turn affected the recorded signal of the measuring devices (Rogowsky coil and photo--detector).
 
 We estimate the jitter to be very similar as that obtained in section \ref{sec:jitter}, at $\tau_\text{jitter}\approx 6\pm 1\si{\ns}$.
@@ -204,15 +210,11 @@ We estimate the jitter to be very similar as that obtained in section \ref{sec:j
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{figures/Curved capillaries/low_jitter_curved_capillary.png}
-    \caption{Caption}
-    \label{fig:Demonstration of low-jitter ignition set--up when generating plasma in the curved capillary. A plot of nine consecutive Rogowsky coil current profiles in reference to the igniting Nd:Yag pulse (Green).}
+    \caption{Demonstration of low-jitter ignition set--up when generating plasma in the curved capillary. A plot of nine consecutive Rogowsky coil current profiles in reference to the igniting Nd:Yag pulse (Green).}
+    \label{fig:curved-low-jitter}
 \end{figure}
 
-\begin{marginfigure}
-\includegraphics[width=\marginparwidth]{figures/Curved capillaries/line-of-sight.png}
-\caption{The curved channel does not posses line--of--sight.}
-\label{fig:lineofsight}
-\end{marginfigure}
+
 
 Another thing to point out, is that when creating a plasma discharge, the photo--diode also detected unwanted light from the emitting plasma --- light that is collected by the same lens that focuses the oscillator laser. This plasma light caused a "bump" in the time--domain voltage profile monitored on the oscilloscope, with a maximal peak of about 7 to 8 that of the oscillator signal prior to the plasma discharge. To minimize this effect we positioned an opaque screen with a small hole (about \SI{1}{\mm} in diameter) in the capillary exit plane (figure \ref{fig:opaque}).
 
