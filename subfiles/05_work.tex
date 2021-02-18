@@ -112,12 +112,12 @@ The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file 
 \item Finally, convert the spatial coordinate axis to position (capillary radius, \si{\mm}) using the magnification factor of the imaging system together with the pixel--to--\si{\um} conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}}.
 \end{itemize}
 
-\begin{figure}
+\begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{figures/spectro/spectra_analysis.png}
-    \caption{An explanatory figure of the steps involved}
+    \caption{An explanatory figure of the steps involved in the analysis of the raw spectroscopic data.}
     \label{fig:spectra_analysis}
-\end{figure}
+\end{figure*}
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{figures/spectro/sample-lorentzian.png}
@@ -214,7 +214,7 @@ We estimate the jitter to be very similar as that obtained in section \ref{sec:j
 \label{fig:lineofsight}
 \end{marginfigure}
 
-Another thing to point out, is that when creating a plasma discharge, the photo--diode also collected unwanted light from the emitting plasma --- light that is collected by the same lens that focuses the oscillator laser. To minimize this effect we positioned an opaque screen with a small hole (about \SI{1}{\mm} in diameter) in the capillary exit plane. See figure \ref{fig:opaque}.
+Another thing to point out, is that when creating a plasma discharge, the photo--diode also detected unwanted light from the emitting plasma --- light that is collected by the same lens that focuses the oscillator laser. This plasma light caused a "bump" in the time--domain voltage profile monitored on the oscilloscope, with a maximal peak of about 7 to 8 that of the oscillator signal prior to the plasma discharge. To minimize this effect we positioned an opaque screen with a small hole (about \SI{1}{\mm} in diameter) in the capillary exit plane (figure \ref{fig:opaque}).
 
 \begin{marginfigure}
 \includegraphics[width=\marginparwidth]{figures/cad/opaquescreen.png}
@@ -224,7 +224,7 @@ Another thing to point out, is that when creating a plasma discharge, the photo-
 
 Unfortunately, at the time of writing and the assignment due, we did not manage to observe a plasma channel and optical guiding.
 %The following results are not ideal, but show the
-Figures \ref{fig:bump-longwindow}-\ref{fig:bump-shortwindow} demonstrate a single capillary discharge in a curved channel. The plasma discharge is timed with the igniting Nd:Yag laser pulse (green waveform), and the Rogowsky coil indicates satisfactory plasma discharge. The \SI{800}{\nm} pulse-train (bottom plot) is observed prior to the Nd:Yag pulse, then sharply rising up at time $t=0$ due to scattered Nd:Yag light, and then rises up in a "bump" shape --- caused by light emitted by the plasma (minimized as much as possible by the opaque screen at the capillary front). The former was not significant in the previous measurements due to the use of a \SI{0}{\degree}--mirror for the Nd:Yag wavelength, together with the fact that pulse was delivered to the other side of the capillary, so that less scattered light reached the photo--detector. The latter, the slowly varying bump, was eliminated in the previous measurements using an aperture (iris diaphragm) positioned between the capillary and the photo--detector, before the focusing lens. We mounted a stop in the current set--up too, but that didn't redact completely the unwanted light.
+Figures \ref{fig:bump-longwindow}-\ref{fig:bump-shortwindow} demonstrate a single capillary discharge in a curved channel. The plasma discharge is timed with the igniting Nd:Yag laser pulse (green waveform), and the Rogowsky coil indicates satisfactory plasma discharge. The \SI{800}{\nm} pulse-train (bottom plot) is observed prior to the Nd:Yag pulse, then sharply rising up at time $t=0$ due to scattered Nd:Yag light, and then rises up in a "bump" shape --- caused by light emitted by the plasma (minimized as much as possible by the opaque screen at the capillary front). The former was not significant in the previous measurements due to the use of a \SI{0}{\degree}--mirror for the Nd:Yag wavelength, together with the fact that pulse was delivered to the other side of the capillary, so that less scattered light reached the photo--detector. The latter, the slowly varying bump, was eliminated in the previous measurements using an aperture (iris diaphragm) positioned between the capillary and the photo--detector, before the focusing lens. We mounted a stop in the current set--up too, but that wouldn't redact completely the unwanted light.
 
 Note that these two optic signals that the photo--detector catches are not problematic, and one is still able to infer information about the system and the plasma process. \textcolor{red}{The most importatnt of which is the fact that the laser is blocked in later times and returns, but there is no guiding.}
 
