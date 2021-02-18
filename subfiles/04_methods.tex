@@ -12,9 +12,9 @@ The waveguide is designed to operate in an evacuated chamber, maintained at $\si
     \end{figure}
 The experimental system is shown in figure \ref{fig:scheme}, and applies to all forth--coming discussion.
 
-Two electrodes are mounted at both ends of the capillary. Those electrodes are connected to a high-voltage source, which provides a pulse of a few kilovolts amplitude, during the opening of a valve\sidenote{Product of \textit{Parker Hannifin Corporation}, model 099-0340-900}, set to be opened for \SI{30}{\ms}, that fills the the capillary with gas. The ignition is achieved by the igniting laser pulse, that ionizes matter and detaches electrons \cite{Palchan2007ElectronChannel}, which in turn accelerate under the applied high voltage and in an avalanche manner, plasma discharge manifests inside the capillary. The created electron current effectively closes an electrical circuit, for which the plasma ignition acts as a switch. The discharge current is recorded by a Rogowski coil \sidenote{\textit{Pearson}, model 110A. A wide band current transformer with typical response time of less than \SI{50}{\ns}.} and the current profile is acquired by an oscilloscope.
+Two electrodes are mounted at both ends of the capillary. Those electrodes are connected to a high-voltage source, which provides a pulse of a few kilovolts amplitude, during the opening of a valve\sidenote[][-50mm]{Product of \textit{Parker Hannifin Corporation}, model 099-0340-900}, set to be opened for \SI{30}{\ms}, that fills the the capillary with gas. The ignition is achieved by the igniting laser pulse, that ionizes matter and detaches electrons \cite{Palchan2007ElectronChannel}, which in turn accelerate under the applied high voltage and in an avalanche manner, plasma discharge manifests inside the capillary. The created electron current effectively closes an electrical circuit, for which the plasma ignition acts as a switch. The discharge current is recorded by a Rogowski coil \sidenote[][-75mm]{\textit{Pearson}, model 110A. A wide band current transformer with typical response time of less than \SI{50}{\ns}.} and the current profile is acquired by an oscilloscope.
 
-\begin{marginfigure}
+\begin{marginfigure}[-60mm]
     \includegraphics[width=\marginparwidth]{figures/cad/setup.pdf}
     \caption{The 3D printed capillary shown with the two electrodes and a hose--barb to inject the gas.}
     \label{fig:setup}
@@ -53,7 +53,7 @@ In our system two laser were in use, igniting laser and an oscillator laser:
 \caption{Oscillator laser, \SI{84}{\MHz} temporal beam profile.}
 \end{marginfigure}
 \item The second laser is \textit{Mai Tai}, a \SI{800}{\nm} mode-locked oscillator, manufactured by \textit{Spectra Physics}, with a Ti:Sa crystal as the lasing medium.
-It produces \SI{5}{\mJ} \textcolor{red}{check that}, \SI{20}{\fs} pulses at a \SI{84}{\MHz} rate (i.e., a pulse every \SI{12.5}{\ns}). This beam was directed through the capillary and recorded with a fast photo--diode\sidenote{\textit{ThorLabs DET10A}} (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
+It produces \SI{15}{\fs} temporal pulses at a \SI{84}{\MHz} rate (i.e., a pulse every \SI{12.5}{\ns}) with \SI{5}{\nano\J} per pulse. This beam was directed, in some parts of the experiment, through the capillary and recorded with a fast photo--diode\sidenote{\textit{ThorLabs DET10A}} (see figure \ref{fig:oscillator_single}), thus enabling one to compare the optical guiding at different times along the discharge process.
 \end{itemize}
 \subsection{High Voltage pulser}
 The high voltage pulser provides the high voltage difference applied on the two electrodes. See picture on the right. Its key element is the energy storing capacitor that must be charged to a high voltage (that to be applied on the electrodes) and then discharged through the capillary and the rest of the electric chain. The pulser was designed, built, and still maintained, by Levin. See  \cite{Levin2009ExcitationAcceleration} pp. 46-47, for more information considering the setup and explanation of its operation.
