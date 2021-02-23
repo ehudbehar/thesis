@@ -59,10 +59,13 @@
     citecolor=blue,
     pdftitle={Ehud Behar M.Sc. thesis}
 }
+
+
 \usepackage{subfiles} % Best loaded last in the preamble
 
 %%% Document %%%
 \begin{document}
+\maketitle
 
 \tableofcontents % table of content
 
@@ -79,10 +82,10 @@
 \chapter{Experimental work}\label{chap:Experimental_work}
 \subfile{subfiles/05_work}
 
-%\chapter{Results}
-%\subfile{subfiles/06_discussion}
+\chapter{Results}
+\subfile{subfiles/06_discussion}
 
-\chapter{Summary}\label{chap:summary}
+\chapter{Discussion and Summary}\label{chap:summary}
 \subfile{subfiles/06_discussion} % (discussion became summary)
 %\subfile{subfiles/07_summary}
 
