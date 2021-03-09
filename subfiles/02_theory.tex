@@ -162,7 +162,7 @@ In a plasma accelerator, a longitudinal electron plasma wave (wakefield) is form
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{figures/lwfa_schematic.PNG}
-    \caption{Adapted from \href{https://aip.scitation.org/doi/pdf/10.1063/1.37621}{here}.}
+    \caption{Schematic of the LWFA showing an intense short laser pulse generating a plasma wave wake as it propagates through the plasma. Roughly speaking, the laser pulse acts like an intense negative charge by repelling electrons in both the radial and axial directions. Figure adapted from \href{https://aip.scitation.org/doi/pdf/10.1063/1.37621}{\cite{Sprangle1988LaserGuiding}}.}
     \label{fig:lwfa-schema}
 \end{figure}
 
@@ -251,8 +251,32 @@ which means, in particular, that a minimal (absolute) depth of an RDP capable of
 \begin{equation}
 \Delta N_\text{min}\left[\SI{e18}{\per\cubic\cm}\right]\approx\frac{113}{w_0^2\left[\si{\square\um}\right]}.
 \end{equation}
-For the beam geometry shown in figure \ref{fig:typical-beam} ($w_0\approx\SI{7}{\um}$) should be about \SI{2e17}{\per\cubic\cm}. % , i.e., is less but still of the same order as the optimal density at which a typical ultrashort laser pulse excites a plasma wake.
-These conditions can be achieved in fully ionised plasma channels formed in capillary discharge  \cite{Butler2002GuidingWaveguide,Ehrlich1996GuidingExperiments}.
+For the beam geometry shown in figure  \ref{fig:typical-beam} ($w_0\approx\SI{70}{\um}$), $\Delta N_\text{min}$ should be about \SI{2e17}{\per\cubic\cm}. % , i.e., is less but still of the same order as the optimal density at which a typical ultrashort laser pulse excites a plasma wake.
+These conditions can be achieved in fully ionised plasma\sidenote{Fully ionised means that every atom is stripped of all its electrons.} channels formed in capillary discharge\cite{Butler2002GuidingWaveguide,Ehrlich1996GuidingExperiments}.
+
+One method for creating a suitable plasma for the above mentioned wave--guiding is the discharge in an initially evacuated capillary.
+
+Two distinct varieties of capillary discharges are in use:
+\begin{enumerate}
+    \item Ablated capillary, which operate by ablating and subsequently ionizing the wall material to form a plasma with a radial profile suitable for guiding\cite{Ehrlich1996GuidingExperiments,Ferber2019GuidingChannels,Hooker2000GuidingWaveguide}. In these devices the ablation of the capillary wall leads to the practical loss of wall material, and therefore results in a finite capillary lifetime. For polymer made capillaries it is only several hundred shots. It also pollutes the plasma with elements that cannot be fully stripped of electrons, and the relatively low temperature causes less than full ionization that weakens the guiding performance.
+
+    \item Gas--filled capillary, which is pre--filled with gas, such as hydrogen, at a pressure of tens to hundreds of  millibar\cite{Spence2001InvestigationWaveguide}. The ionisation of the gas has the advantage of longer device lifetime.
+\end{enumerate}
+The present thesis is concerned with the second type.
+\begin{description} \item[\textnormal{Why the plasma channel forms?}]\hfill \\ 
+The plasma channel is created by an electric discharge through an insulated capillary. The discharge is strongly dynamic, and three phases can clearly be distinguished\cite{Bobrova2002SimulationsWaveguide}.
+\begin{enumerate}
+    \item The ionization phase, lasting from the current onset, during which electron temperature is increasing. This causes a dramatic rise in the ionization rate and consequently of electron density.
+    \item The formation phase, when redistribution of plasma across the capillary channel begins. The plasma pressure is homogeneous, but the plasma radial distribution of temperature is in--homogeneous, for the following reason. The pressure may be considered uniform across the capillary section, because the time scale of the electric discharge is long in comparison to the capillary diameter ($L=\SI{250}{\um}$) divided by the plasma sound velocity\cite{Chen1984IntroductionFusion}: $$v_s=\sqrt{k_B T_e/M}\sim \SI{e6}{\cm\per\sec},$$where $M$ is the ion mass and $T_e\sim \SI{1}{\electronvolt}$: A characteristic time scale, $\Delta T$, for a perturbation to propagate would be
+    $$\Delta T=\frac{L}{v_s}=\SI{25}{\ns}.$$
+    I.e., shorter compared to the whole  duration of the discharge,
+    
+    $\sim$\SI{500}{\ns}. Under assumption of the ideal gas equation--of--state, $P=N_e k_B T$, this implies a uniform pressure.
+    
+    Heat transfer (or heat conduction) from the electrons to the wall cools the electrons there, causing the current density near the wall to decrease. The heating of the plasma is mostly Ohmic, and is balanced mainly by thermal conduction at the capillary wall. This results in current density increase near capillary axis, and, consequently, in a higher temperature there.
+    \item The channel phase, at which the plasma channel remains relatively stable. The plasma temperature at this stage has its maximum on the axis. At constant pressure, a radially decreasing temperature results in an on--axis minimum of the electron density profile of the plasma.
+    \end{enumerate}
+\end{description}
 
 
 
@@ -267,7 +291,7 @@ These conditions can be achieved in fully ionised plasma channels formed in capi
 
 \subsection{Multi--stage acceleration scheme}
 
-As stated in page \pageref{dephasing-length}, in addition to defocusing, there is also the dephasing length: trapped electrons outrun or dephase the accelerating phase of the wakefield \cite{Esarey2009PhysicsAccelerators}. The current paradigm within the LWFA community envisions a \si{\TeV} LWFA composed of multiple $~$\SI{10}{\GeV} stages, which could be be optimized for efficiency, by matching the dephasing length to the depletion length of the laser pulse \cite{Schroeder2010PhysicsColliders}, thus using multiple LWFA stages to successively accelerate one electron beam to higher energies (see figure \ref{fig:coupling_scheme}).
+As stated in previously, in addition to defocusing, there is also the dephasing length: trapped electrons outrun or dephase the accelerating phase of the wakefield \cite{Esarey2009PhysicsAccelerators}. The current paradigm within the LWFA community envisions a \si{\TeV} LWFA composed of multiple $~$\SI{10}{\GeV} stages, which could be be optimized for efficiency, by matching the dephasing length to the depletion length of the laser pulse \cite{Schroeder2010PhysicsColliders}, thus using multiple LWFA stages to successively accelerate one electron beam to higher energies (see figure \ref{fig:coupling_scheme}).
 \begin{marginfigure}
 \includegraphics[width=\marginparwidth]{figures/cad/coupling_scheme.png}
 \caption{Proposed multistage acceleration scheme. The first main laser is initiating the acceleration of the electron beam. A fishbone shaped curved channels are added down the acceleration line enabling further acceleration of the electrons.}
