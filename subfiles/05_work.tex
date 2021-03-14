@@ -22,7 +22,7 @@ To anchor the discharge starting process to a fixed event to which we can refer,
 
 The time resolution is evaluated while taking into consideration both the oscilloscope sampling rate and the prior to ignition electrical components' jitter. The jitter is calculated as half the difference between the earliest and latest ignition timing of multiple independent ignitions. Overall, we evaluate the jitter to be
 \begin{equation}
-	\tau_\text{jitter}\approx 3\pm 1\si{\ns}
+	\tau_\text{jitter}\approx 1\pm 0.36\si{\ns}
 \end{equation}
 This implies that we can determine the time window for optical guiding, with no concerns of shooting too early or too late with respect to the over-all plasma lifetime. Also, we deduce that our system and its over all components is relatively stable and reliable.
 
@@ -111,8 +111,9 @@ The raw spectroscopic images captured by \textit{Andor} in a \texttt{.fit} file 
 \item Then, plot the set of $\Delta\lambda_{1/2}$ versus the corresponding spatial coordinate.
 \item To convert $\Delta\lambda_{1/2}\left[\text{px}\right]$ to \si{\nm}, we used the known Sodium doublet for the lines $D_1=\SI{589.59}{\nm}$ and $D_2=\SI{589.00}{\nm}$, which corresponds to 18 horizontal pixels.
 \item This line broadening was translated to plasma density using equation \ref{eq:delta_lambda}.
-\item Finally, convert the spatial coordinate axis to position (capillary radius, \si{\mm}) using the magnification factor of the imaging system together with the pixel--to--\si{\um} conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}}.
+\item Finally, convert the spatial coordinate axis to position (capillary radius, \si{\mm}) using the magnification factor of the imaging system together with the pixel--to--\si{\um} conversion factor\sidenote{pixel size = \SI{26}{\um}$\times$ \SI{26}{\um}.}.
 \end{itemize}
+Due to combination of variables' error for each step, the measurement is subjected to an overall relative error, of about $\sim$\SI{20}{\percent}.
 
 \begin{figure*}
     \centering
@@ -233,7 +234,7 @@ Figure \ref{fig:oscillator-bump} demonstrate a single capillary discharge in a c
 
 Note that these two optical signals that the photo--detector detects are not problematic, and one is still able to infer information about the system and the plasma process. We see the decay in the transmittance (\SIrange{0.2}{1.5}{\us} after ignition), and the re--appearance of the oscillator signal after the plasma vanishes from the capillary and diffuses to the vacuum chamber. This implies that the plasma does influence the laser radiation, with the lack of conditions for transportation of the laser radiation.
 
-At this point of the research, we conclude that, in this set--up, no plasma channel forms in the capillary discharge.
+%At this point of the research, we conclude that, in this set--up, no plasma channel forms in the capillary discharge.
 
 %\begin{figure}
 %    \centering
