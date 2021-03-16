@@ -1,7 +1,7 @@
 \documentclass[justified,nofonts,nobib,openany]{tufte-book}
 % Use tufte-book, not tufte-handout as the documentclass
 % use pdfLatex as the compiler
-\pdfoutput=1
+%\pdfoutput=1
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{biblatex}
@@ -57,12 +57,15 @@
     linkcolor=ForestGreen,
     filecolor=magenta,
     citecolor=blue,
-    pdftitle={Ehud Behar M.Sc. thesis}
+    pdftitle={Low jitter plasma channel in 3D printed gas filled capillary discharges}
 }
+
+
 \usepackage{subfiles} % Best loaded last in the preamble
 
 %%% Document %%%
 \begin{document}
+%\maketitle
 
 \tableofcontents % table of content
 
@@ -76,13 +79,13 @@
 \chapter{Methods}\label{chap:methods}
 \subfile{subfiles/04_methods}
 	
-\chapter{Experimental work}\label{chap:Experimental_work}
+\chapter{Experimental results}\label{chap:Experimental_work}
 \subfile{subfiles/05_work}
 
 %\chapter{Results}
 %\subfile{subfiles/06_discussion}
 
-\chapter{Summary}\label{chap:summary}
+\chapter{Discussion and Summary}\label{chap:summary}
 \subfile{subfiles/06_discussion} % (discussion became summary)
 %\subfile{subfiles/07_summary}
 
