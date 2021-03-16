@@ -2,8 +2,46 @@
 % Use tufte-book, not tufte-handout as the documentclass
 % use pdfLatex as the compiler
 %\pdfoutput=1
+%% Enconding and fonts %%
+
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage{culmus}
+\usepackage[main=english, hebrew]{babel}
+
+\pdfmapfile{=culmus.map}
+%% Herbew letters declarations %%
+\DeclareUnicodeCharacter{05D0}{\hebalef}
+\DeclareUnicodeCharacter{05D1}{\hebbet}
+\DeclareUnicodeCharacter{05D2}{\hebgimel}
+\DeclareUnicodeCharacter{05D3}{\hebdalet}
+\DeclareUnicodeCharacter{05D4}{\hebhe}
+\DeclareUnicodeCharacter{05D5}{\hebvav}
+\DeclareUnicodeCharacter{05D6}{\hebzayin}
+\DeclareUnicodeCharacter{05D7}{\hebhet}
+\DeclareUnicodeCharacter{05D8}{\hebtet}
+\DeclareUnicodeCharacter{05D9}{\hebyod}
+\DeclareUnicodeCharacter{05DA}{\hebfinalkaf}
+\DeclareUnicodeCharacter{05DB}{\hebkaf}
+\DeclareUnicodeCharacter{05DC}{\heblamed}
+\DeclareUnicodeCharacter{05DD}{\hebfinalmem}
+\DeclareUnicodeCharacter{05DE}{\hebmem}
+\DeclareUnicodeCharacter{05DF}{\hebfinalnun}
+\DeclareUnicodeCharacter{05E0}{\hebnun}
+\DeclareUnicodeCharacter{05E1}{\hebsamekh}
+\DeclareUnicodeCharacter{05E2}{\hebayin}
+\DeclareUnicodeCharacter{05E3}{\hebfinalpe}
+\DeclareUnicodeCharacter{05E4}{\hebpe}
+\DeclareUnicodeCharacter{05E5}{\hebfinaltsadi}
+\DeclareUnicodeCharacter{05E6}{\hebtsadi}
+\DeclareUnicodeCharacter{05E7}{\hebqof}
+\DeclareUnicodeCharacter{05E8}{\hebresh}
+\DeclareUnicodeCharacter{05E9}{\hebshin}
+\DeclareUnicodeCharacter{05EA}{\hebtav}
+%% End of herbrew letters %%
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist % define new command for changing margins. Used for the abstract.
+
 \usepackage{biblatex}
 \addbibresource{references.bib}
 \usepackage{csquotes}
@@ -60,13 +98,18 @@
     pdftitle={Low jitter plasma channel in 3D printed gas filled capillary discharges}
 }
 
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
 
 \usepackage{subfiles} % Best loaded last in the preamble
 
 %%% Document %%%
 \begin{document}
-%\maketitle
 
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+\thispagestyle{empty} % suppress page number for abstract page
+\subfile{01_abstract}
 \tableofcontents % table of content
 
 %\chapter{Abstract}\label{chap:abstract}
