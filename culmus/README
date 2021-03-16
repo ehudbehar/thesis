@@ -1,0 +1,108 @@
+culmus-latex
+==================
+Culmus fonts support for latex. Formerly known as tetex-fonts-hebrew. 
+
+Maintainer:          Guy Rutenberg <guyrutenberg@gmail.com>
+Original Maintainer: Dan Kenigsberg <danken@cs.technion.ac.il>
+You may also report any bugs or suggestions to 
+<IVRITEX@listserv.tau.ac.il>
+
+License
+-------
+culmus-latex is released under the term of the GPL version 2, or 
+(at your option) any later version. See GNU-GPL (distributed in this 
+package) for more details.
+
+This license only refers to the package itself. Terms of use and license of the 
+the Culmus fonts that come with this package (if you received a package that provides them) is covered in the file LICENSE-Culmus
+Requirements 
+------------
+- teTex-3.0 (may also work on older version but untested). TeXLive 2007 recommended
+- The "Culmus" fonts package.
+
+Installation
+------------
+To install culmus-latex untar the package and cd into the 
+package's directory and execute:
+
+make
+make install
+
+The second command must be done as root. The installation process 
+assumes that the texmf dir resides in /usr/share/texmf and that the 
+culmus fonts reside in /usr/share/fonts/hebrew . To override this 
+settings append to the above command "CULMUSDIR=/path/to/culmus/" and/or 
+"TEXMFDIR=/path/to/texmf" (both without the quotes).
+
+After the installation was done you may want to clean some temporary 
+files created during the setup process. You can do it by executing 
+"make clean" (without the quotes). Keep the other files if you intend to 
+unistall the package at a later time.
+
+Uninstallation may be done by issuing "make uninstall"
+
+Notes to Ubuntu users:
+You will need the texlive-font-utils package in order to install culmus-latx.
+The following commands should do it (at least for 7.04 and 7.10):
+
+sudo apt-get install texlive-font-utils
+make CULMUSDIR=/usr/share/fonts/X11/Type1/ TEXMFDIR=/usr/share/texmf-texlive/
+sudo make install CULMUSDIR=/usr/share/fonts/X11/Type1/ TEXMFDIR=/usr/share/texmf-texlive/
+
+Notes to Packagers
+------------------
+Packagers might be interested in using "make pgkinstall" instead of 
+"make install" of source packages under systems that enforce a sandbox 
+policies (like Gentoo) during installation. It will cause the setup 
+process not to do mktexlsr and updmap. Those command should be done 
+later on those systems.
+
+While installing the package requires the culmus fonts, after the 
+installation was done there is no need anymore for the culmus package.
+
+Usage
+-----
+The package provides the culmus.sty package, you can enable the culmus 
+fonts as the default fonts in your document by adding 
+"\usepackage{culmus}" to the document preabmle. 
+
+You can also change the font-family manully without using the culmus 
+package. Just add the following line: 
+\fontfamily{frank}\selectfont 
+to alter the font-family used in the document from this line onward. 
+Using "frank" is one of the several font-family names available. Others 
+include: aharoni, miriam, david, nachlieli, ellinia, yehuda, drugulin.
+
+Change Log
+----------
+
+culmus-latex-0.7
+- Default font size was adjusted (now bigger) so documents written in older
+  packages will look the same in culmus-latex. This action can be reveres by
+  paasing the "small-size" option to the package.
+- Add package optio (use-david) that allows to select David as the default
+  roman font.
+- Makefile target to create tarballs that don't require the Culmus fonts or
+  fontutils in order to install.
+- Made culmus-latex work correctly with the Latin Modern package.
+- Disabled unnecessary creation of folders.
+- Added new example.
+
+culmus-latex-0.6 
+- Add support for nikud
+- Automatic recognition of TEXMF and CULMUSDIR settings.
+- Add support for DESTDIR in the Makefile
+
+culmus-latex-0.5
+- Name change.
+
+tetex-fonts-hebrew-0.2
+- Several pathces for fixing the package on some distributions.
+- Uninstall script.
+- New maintainer.
+
+tetex-fonts-hebrew-0.1
+- Original package by Dan Kenigsberg.
+
+Many thanks should go to Dan Kenigsberg for making this package in the 
+first place. 

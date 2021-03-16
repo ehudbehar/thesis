@@ -1,0 +1,2517 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2008.3.20)  12 JUL 2008 23:21
+entering extended mode
+ %&-line parsing enabled.
+**hiriq.tex
+(./hiriq.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count87
+\uc@combtoks=\toks14
+\uc@combtoksb=\toks15
+\uc@temptokena=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/share/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texmf/tex/latex/culmus/culmus.sty
+Package: culmus 0000/00/00 $Revision: 30 $ Culmus Fonts for Hebrew
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/generic/babel/he8enc.def
+File: HE8enc.def 2005/05/20 v1.2c 8-bit Hebrew font encoding (test version: sti
+ll liable to change)
+LaTeX Font Info:    Redeclaring font encoding HE8 on input line 58.
+)
+(/usr/share/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding OT1 on input line 43.
+))
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2005/11/23 v3.8h The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2005/11/23 v3.8h Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/share/texmf-dist/tex/generic/babel/rlbabel.def
+File: rlbabel.def 2005/03/30 v2.3h Right-to-Left support from the babel system 
+Hebrew language support from the babel system
+)
+(/usr/share/texmf/tex/generic/0babel/hebrew.ldf
+File: hebrew.ldf 2004/02/20 v2.3h Hebrew language definition from the babel sys
+tem Hebrew language support from the babel system
+
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Hebrew'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@hebrew = a dialect from \language0
+)) (/usr/share/texmf-dist/tex/generic/babel/he8enc.def
+File: HE8enc.def 2005/05/20 v1.2c 8-bit Hebrew font encoding (test version: sti
+ll liable to change)
+LaTeX Font Info:    Redeclaring font encoding HE8 on input line 58.
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2002/07/08 v3.2 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@dimlist=\toks20
+) (./hiriq.aux
+LaTeX Font Info:    Font shape `HE8/cmr/m/n' will be
+(Font)              scaled to size 11.99997pt on input line 2.
+)
+\openout1 = `hiriq.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for HE8/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+
+(/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+LaTeX Font Info:    Font shape `HE8/cmr/m/n' will be
+(Font)              scaled to size 14.39996pt on input line 28.
+-------------------- Geometry parameters
+paper: class default
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 72.26999pt, 469.75502pt, 72.26999pt
+v-parts: 72.26999pt, 650.43001pt, 72.26999pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: 
+-------------------- Page layout dimensions and switches
+\paperwidth  614.295pt
+\paperheight 794.96999pt
+\textwidth  469.75502pt
+\textheight 650.43001pt
+\oddsidemargin  0.0pt
+\evensidemargin 0.0pt
+\topmargin  -37.0pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 44.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+ [1
+
+]
+LaTeX Font Info:    Try loading font information for HE8+franknikud on input li
+ne 74.
+ (./he8franknikud.fd
+File: he8franknikud.fd Hebrew font with Nikud (Culmus)
+)
+! Font HE8/franknikud/m/n/12=frankClmNkd at 12.0pt not loadable: Metric (TFM) f
+ile not found.
+<to be read again> 
+                   relax 
+l.74 \FourSeriesShape{franknikud}
+                                 
+? 
+(./uni-5.def
+Non standard uni-5.def to bypass non combine case
+File: uni-5.def 2004/10/17 UCS: Unicode data U+0500..U+05FF
+)
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+
+! Font HE8/franknikud/b/n/12=frankClmNkdb at 12.0pt not loadable: Metric (TFM) 
+file not found.
+<to be read again> 
+                   relax 
+l.74 \FourSeriesShape{franknikud}
+                                 
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+! Font HE8/franknikud/m/it/12=frankClmNkdi at 12.0pt not loadable: Metric (TFM)
+ file not found.
+<to be read again> 
+                   relax 
+l.74 \FourSeriesShape{franknikud}
+                                 
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+! Font HE8/franknikud/b/it/12=frankClmNkdbi at 12.0pt not loadable: Metric (TFM
+) file not found.
+<to be read again> 
+                   relax 
+l.74 \FourSeriesShape{franknikud}
+                                 
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+LaTeX Font Info:    Try loading font information for HE8+miriamnikud on input l
+ine 77.
+(./he8miriamnikud.fd
+File: he8miriamnikud.fd Hebrew font with Nikud (Culmus)
+)
+! Font HE8/miriamnikud/m/n/12=miriamClmNkd at 12.0pt not loadable: Metric (TFM)
+ file not found.
+<to be read again> 
+                   relax 
+l.77 \FourSeriesShape{miriamnikud}
+                                  
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+[2]
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+
+! Font HE8/miriamnikud/b/n/12=miriamClmNkdb at 12.0pt not loadable: Metric (TFM
+) file not found.
+<to be read again> 
+                   relax 
+l.77 \FourSeriesShape{miriamnikud}
+                                  
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+! Font HE8/miriamnikud/m/it/12=miriamClmNkdi at 12.0pt not loadable: Metric (TF
+M) file not found.
+<to be read again> 
+                   relax 
+l.77 \FourSeriesShape{miriamnikud}
+                                  
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+! Font HE8/miriamnikud/b/it/12=miriamClmNkdbi at 12.0pt not loadable: Metric (T
+FM) file not found.
+<to be read again> 
+                   relax 
+l.77 \FourSeriesShape{miriamnikud}
+                                  
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+LaTeX Font Info:    Try loading font information for HE8+nachlielinikud on inpu
+t line 80.
+(./he8nachlielinikud.fd
+File: he8nachlielinikud.fd Hebrew font with Nikud (Culmus)
+)
+! Font HE8/nachlielinikud/m/n/12=nachlieliClmNkd at 12.0pt not loadable: Metric
+ (TFM) file not found.
+<to be read again> 
+                   relax 
+l.80 \FourSeriesShape{nachlielinikud}
+                                     
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+[3]
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+
+! Font HE8/nachlielinikud/b/n/12=nachlieliClmNkdb at 12.0pt not loadable: Metri
+c (TFM) file not found.
+<to be read again> 
+                   relax 
+l.80 \FourSeriesShape{nachlielinikud}
+                                     
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+! Font HE8/nachlielinikud/m/it/12=nachlieliClmNkdi at 12.0pt not loadable: Metr
+ic (TFM) file not found.
+<to be read again> 
+                   relax 
+l.80 \FourSeriesShape{nachlielinikud}
+                                     
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+! Font HE8/nachlielinikud/b/it/12=nachlieliClmNkdbi at 12.0pt not loadable: Met
+ric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.80 \FourSeriesShape{nachlielinikud}
+                                     
+? 
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ð in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no ì in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ñ in font nullfont!
+Missing character: There is no ô in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no ú in font nullfont!
+[4] (./hiriq.aux) ) 
+Here is how much of TeX's memory you used:
+ 2042 strings out of 50087
+ 26149 string characters out of 433498
+ 83339 words of memory out of 1100000
+ 5214 multiletter control sequences out of 10000+15000
+ 8687 words of font info for 25 fonts, out of 400000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 24i,5n,20p,362b,269s stack positions out of 1500i,500n,1500p,200000b,5000s
+
+Output written on hiriq.dvi (4 pages, 1752 bytes).

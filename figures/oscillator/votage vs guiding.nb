@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6185,        173]
-NotebookOptionsPosition[      5301,        150]
-NotebookOutlinePosition[      5700,        166]
-CellTagsIndexPosition[      5657,        163]
+NotebookDataLength[      6901,        185]
+NotebookOptionsPosition[      5793,        158]
+NotebookOutlinePosition[      6195,        174]
+CellTagsIndexPosition[      6152,        171]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,15 +24,13 @@ Cell[BoxData[
  RowBox[{"SetDirectory", "[", 
   RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.822295638176575*^9, 3.8222956515493402`*^9}},
- CellLabel->
-  "In[198]:=",ExpressionUUID->"b6dcb648-e8b3-469c-9b46-e35fd9a08621"],
+ CellLabel->"In[1]:=",ExpressionUUID->"b6dcb648-e8b3-469c-9b46-e35fd9a08621"],
 
 Cell[BoxData["\<\"C:\\\\Users\\\\HILL\\\\Documents\\\\GitHub\\\\thesis\\\\\
 figures\\\\oscillator\"\>"], "Output",
  CellChangeTimes->{{3.822295652087371*^9, 3.8222956695063667`*^9}, 
-   3.8223071511230783`*^9},
- CellLabel->
-  "Out[198]=",ExpressionUUID->"32effebf-edf8-42d0-be86-ef147d825cd3"]
+   3.8223071511230783`*^9, 3.824118779243037*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"e728ae1a-e805-462b-aa15-31969b03b1f5"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -44,10 +42,11 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"g", "=", 
    RowBox[{"{", 
-    RowBox[{"2", ",", "3.2", ",", "4.5", ",", "6.2", ",", "6.7"}], "}"}]}], 
+    RowBox[{"2", ",", "5.2", ",", "6.9", ",", "7.5", ",", "7.9"}], "}"}]}], 
   ";"}]}], "Input",
- CellChangeTimes->{{3.8222956779698515`*^9, 3.8222957419255095`*^9}},
- CellLabel->"In[17]:=",ExpressionUUID->"0197abe0-a223-41a6-bf6a-d30c3fcb0fc7"],
+ CellChangeTimes->{{3.8222956779698515`*^9, 3.8222957419255095`*^9}, {
+  3.824118753611001*^9, 3.824118792584056*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"0197abe0-a223-41a6-bf6a-d30c3fcb0fc7"],
 
 Cell[CellGroupData[{
 
@@ -84,14 +83,13 @@ Cell[BoxData[
  CellChangeTimes->{{3.822295710033685*^9, 3.8222957197412405`*^9}, {
   3.8222957649368253`*^9, 3.8222958660786104`*^9}, {3.822295912858286*^9, 
   3.8222961073914127`*^9}, {3.822307086544384*^9, 3.8223070871754203`*^9}},
- CellLabel->
-  "In[197]:=",ExpressionUUID->"9c3c86d0-959d-4302-a476-2922cc2672bf"],
+ CellLabel->"In[7]:=",ExpressionUUID->"9c3c86d0-959d-4302-a476-2922cc2672bf"],
 
 Cell[BoxData[
  GraphicsBox[{{}, 
    {GrayLevel[0], PointSize[0.02], AbsoluteThickness[1.6], 
-    PointBox[{{6., 2.}, {7., 3.2}, {8., 4.5}, {10., 6.2}, {11., 
-     6.7}}]}, {{}, {}}},
+    PointBox[{{6., 2.}, {7., 5.2}, {8., 6.9}, {10., 7.5}, {11., 
+     7.9}}]}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{
@@ -121,7 +119,7 @@ Cell[BoxData[
          Part[#, 1]], 
         Identity[
          Part[#, 2]]}& )}},
-  PlotRange->{{5.895833333333334, 11.}, {0, 6.7}},
+  PlotRange->{{5.895833333333334, 11.}, {0, 7.9}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -132,10 +130,12 @@ Cell[BoxData[
   TicksStyle->Directive["Label", 18, 
     GrayLevel[0], Bold, FontFamily -> "Arial"]]], "Output",
  CellChangeTimes->{{3.8222960537913465`*^9, 3.822296074941557*^9}, 
-   3.8222961077334323`*^9, 3.8223071011842213`*^9},
- CellLabel->
-  "Out[197]=",ExpressionUUID->"2aa5bcb0-18d3-4de7-ac07-98b4554ee7b1"]
+   3.8222961077334323`*^9, 3.8223071011842213`*^9, {3.824118784324044*^9, 
+   3.82411879575506*^9}},
+ CellLabel->"Out[7]=",ExpressionUUID->"87bbadc9-4bb6-4650-9078-645a853f7aba"]
 }, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{"Export", "[", 
@@ -145,11 +145,19 @@ Cell[BoxData[{
   RowBox[{"\"\<voltage vs guiding.pdf\>\"", ",", "plot"}], "]"}]}], "Input",
  CellChangeTimes->{{3.8223071025072975`*^9, 3.822307104780427*^9}, {
   3.8223071481669087`*^9, 3.82230716078063*^9}},
- CellLabel->
-  "In[199]:=",ExpressionUUID->"81a57623-3cda-4b23-8707-13a14b919676"]
+ CellLabel->"In[8]:=",ExpressionUUID->"81a57623-3cda-4b23-8707-13a14b919676"],
+
+Cell[BoxData["\<\"voltage vs guiding.png\"\>"], "Output",
+ CellChangeTimes->{3.8241188030750704`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"bb607d68-2f1d-42a1-b5e6-2934adc9f6b4"],
+
+Cell[BoxData["\<\"voltage vs guiding.pdf\"\>"], "Output",
+ CellChangeTimes->{3.8241188036860714`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"622b8e44-f83f-4d47-8a12-230a706b77b6"]
+}, Open  ]]
 },
 WindowSize->{759, 824},
-WindowMargins->{{180, Automatic}, {44, Automatic}},
+WindowMargins->{{Automatic, -1117}, {-13, Automatic}},
 FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"fd19c408-ad71-4459-842a-c421071214b2"
@@ -166,15 +174,19 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 255, 5, 28, "Input",ExpressionUUID->"b6dcb648-e8b3-469c-9b46-e35fd9a08621"],
-Cell[838, 29, 293, 5, 32, "Output",ExpressionUUID->"32effebf-edf8-42d0-be86-ef147d825cd3"]
+Cell[580, 22, 250, 4, 28, "Input",ExpressionUUID->"b6dcb648-e8b3-469c-9b46-e35fd9a08621"],
+Cell[833, 28, 310, 4, 32, "Output",ExpressionUUID->"e728ae1a-e805-462b-aa15-31969b03b1f5"]
 }, Open  ]],
-Cell[1146, 37, 460, 12, 48, "Input",ExpressionUUID->"0197abe0-a223-41a6-bf6a-d30c3fcb0fc7"],
+Cell[1158, 35, 508, 13, 48, "Input",ExpressionUUID->"0197abe0-a223-41a6-bf6a-d30c3fcb0fc7"],
 Cell[CellGroupData[{
-Cell[1631, 53, 1477, 34, 143, "Input",ExpressionUUID->"9c3c86d0-959d-4302-a476-2922cc2672bf"],
-Cell[3111, 89, 1736, 47, 310, "Output",ExpressionUUID->"2aa5bcb0-18d3-4de7-ac07-98b4554ee7b1"]
+Cell[1691, 52, 1472, 33, 143, "Input",ExpressionUUID->"9c3c86d0-959d-4302-a476-2922cc2672bf"],
+Cell[3166, 87, 1780, 47, 310, "Output",ExpressionUUID->"87bbadc9-4bb6-4650-9078-645a853f7aba"]
 }, Open  ]],
-Cell[4862, 139, 435, 9, 48, "Input",ExpressionUUID->"81a57623-3cda-4b23-8707-13a14b919676"]
+Cell[CellGroupData[{
+Cell[4983, 139, 430, 8, 48, "Input",ExpressionUUID->"81a57623-3cda-4b23-8707-13a14b919676"],
+Cell[5416, 149, 179, 2, 32, "Output",ExpressionUUID->"bb607d68-2f1d-42a1-b5e6-2934adc9f6b4"],
+Cell[5598, 153, 179, 2, 79, "Output",ExpressionUUID->"622b8e44-f83f-4d47-8a12-230a706b77b6"]
+}, Open  ]]
 }
 ]
 *)

@@ -1,0 +1,67 @@
+9
+
+dir
+24
+https://ivritex.svn.sourceforge.net/svnroot/ivritex/culmus-latex/trunk/examples
+https://ivritex.svn.sourceforge.net/svnroot/ivritex
+
+
+
+2007-08-09T21:27:48.292625Z
+17
+yotam
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d52103c3-3530-0410-8533-9162ea3a5bac
+
+hebhello.tex
+file
+31
+
+
+
+2008-04-19T05:51:34.000000Z
+bd9ba6938fe9bfa45333280648f7f4b5
+2008-05-26T10:33:19.613616Z
+31
+guyru
+
+culmus-ex.tex
+file
+31
+
+
+
+2008-04-19T05:51:43.000000Z
+f1c72bc42dd61a747bd5e92a7a85e3f2
+2008-05-26T10:33:19.613616Z
+31
+guyru
+
+culmus-test.tex
+file
+32
+
+
+
+2008-05-26T10:44:21.000000Z
+1970fcc3f3cf6f06d56e1120f21d134f
+2008-05-26T10:50:05.160144Z
+32
+guyru
+
+hiriq
+dir
+
