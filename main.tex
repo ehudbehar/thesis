@@ -1,4 +1,4 @@
-\documentclass[justified,nofonts,nobib,openany]{tufte-book}
+\documentclass[nofonts,justified,nobib,openany]{tufte-book}
 % Use tufte-book, not tufte-handout as the documentclass
 % use pdfLatex as the compiler
 %\pdfoutput=1
@@ -6,46 +6,21 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{culmus}
-\usepackage[main=english, hebrew]{babel}
-
-\pdfmapfile{=culmus.map}
-%% Herbew letters declarations %%
-\DeclareUnicodeCharacter{05D0}{\hebalef}
-\DeclareUnicodeCharacter{05D1}{\hebbet}
-\DeclareUnicodeCharacter{05D2}{\hebgimel}
-\DeclareUnicodeCharacter{05D3}{\hebdalet}
-\DeclareUnicodeCharacter{05D4}{\hebhe}
-\DeclareUnicodeCharacter{05D5}{\hebvav}
-\DeclareUnicodeCharacter{05D6}{\hebzayin}
-\DeclareUnicodeCharacter{05D7}{\hebhet}
-\DeclareUnicodeCharacter{05D8}{\hebtet}
-\DeclareUnicodeCharacter{05D9}{\hebyod}
-\DeclareUnicodeCharacter{05DA}{\hebfinalkaf}
-\DeclareUnicodeCharacter{05DB}{\hebkaf}
-\DeclareUnicodeCharacter{05DC}{\heblamed}
-\DeclareUnicodeCharacter{05DD}{\hebfinalmem}
-\DeclareUnicodeCharacter{05DE}{\hebmem}
-\DeclareUnicodeCharacter{05DF}{\hebfinalnun}
-\DeclareUnicodeCharacter{05E0}{\hebnun}
-\DeclareUnicodeCharacter{05E1}{\hebsamekh}
-\DeclareUnicodeCharacter{05E2}{\hebayin}
-\DeclareUnicodeCharacter{05E3}{\hebfinalpe}
-\DeclareUnicodeCharacter{05E4}{\hebpe}
-\DeclareUnicodeCharacter{05E5}{\hebfinaltsadi}
-\DeclareUnicodeCharacter{05E6}{\hebtsadi}
-\DeclareUnicodeCharacter{05E7}{\hebqof}
-\DeclareUnicodeCharacter{05E8}{\hebresh}
-\DeclareUnicodeCharacter{05E9}{\hebshin}
-\DeclareUnicodeCharacter{05EA}{\hebtav}
-%% End of herbrew letters %%
-\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
-\let\endchangemargin=\endlist % define new command for changing margins. Used for the abstract.
+\usepackage[english]{babel}
+\usepackage{hebrewdecs}
 
 \usepackage{biblatex}
 \addbibresource{references.bib}
-\usepackage{csquotes}
+\usepackage[babel]{csquotes}
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{float}
+
+%% To include figures %%
+\usepackage{standalone,import,pgfplots}
+\pgfplotsset{compat=1.7}
+\usepackage{pdfpages}
+\usepackage{graphicx}
 \usepackage{float}
 
 \usepackage{siunitx}
@@ -56,8 +31,8 @@
 \usepackage{wasysym}
 \usepackage{listings}
 \usepackage{soul}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}
-\usepackage{xcolor}
 
 \usepackage{todonotes} % to add notes. \todo{...text..} environment.
 
@@ -97,24 +72,23 @@
     citecolor=blue,
     pdftitle={Low jitter plasma channel in 3D printed gas filled capillary discharges}
 }
+%\usepackage[left=20mm,top=23.4mm,headsep=2\baselineskip,textwidth=120mm,textheight=380mm,marginparsep=8.2mm,marginparwidth=54mm,textheight=49\baselineskip,headheight=\baselineskip,asymmetric,showframe]{geometry}
 
-\newcommand{\onlyinsubfile}[1]{#1}
-\newcommand{\notinsubfile}[1]{}
 
+\usepackage{pdfpages}
+%\usepackage{marginnote,sidenotes} % marginnote environment
 \usepackage{subfiles} % Best loaded last in the preamble
 
 %%% Document %%%
 \begin{document}
 
-\renewcommand{\onlyinsubfile}[1]{}
-\renewcommand{\notinsubfile}[1]{#1}
-\thispagestyle{empty} % suppress page number for abstract page
-\subfile{01_abstract}
-\tableofcontents % table of content
+\includepdf[pages={1-}]{./subfiles/01_abstract.pdf}
 
-%\chapter{Abstract}\label{chap:abstract}
+\tableofcontents
+
 \chapter{Theoretical background}\label{chap:background}
 \subfile{subfiles/02_theory}
+
 
 \chapter{Thesis Goals}\label{chap:goals}
 \subfile{subfiles/03_goals}
@@ -125,12 +99,8 @@
 \chapter{Experimental results}\label{chap:Experimental_work}
 \subfile{subfiles/05_work}
 
-%\chapter{Results}
-%\subfile{subfiles/06_discussion}
-
 \chapter{Discussion and Summary}\label{chap:summary}
-\subfile{subfiles/06_discussion} % (discussion became summary)
-%\subfile{subfiles/07_summary}
+\subfile{subfiles/06_discussion}
 
 \printbibliography
 

@@ -1,0 +1,221 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7332,        211]
+NotebookOptionsPosition[      6575,        191]
+NotebookOutlinePosition[      6972,        207]
+CellTagsIndexPosition[      6929,        204]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "Parabolic profile ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["N", "e"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "1b6a7eaa-960d-431f-8b6e-83184075db3e"],
+ "(r) for the theoretical chapter"
+}], "Text",
+ CellChangeTimes->{{3.826795603788534*^9, 
+  3.8267956363993993`*^9}},ExpressionUUID->"6e8e2adf-d62d-4f68-a876-\
+05100fa19ed0"],
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"2", "+", 
+        RowBox[{"x", "^", "2"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "0.2"}], ",", "4"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"Ticks", "\[Rule]", "None"}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", 
+       RowBox[{"AxesStyle", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Black", ",", ",", "Thick", ",", 
+            RowBox[{"Arrowheads", "[", 
+             RowBox[{"{", 
+              RowBox[{"0.0", ",", "0.03"}], "}"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Black", ",", "Thick", ",", 
+            RowBox[{"Arrowheads", "[", 
+             RowBox[{"{", 
+              RowBox[{"0.0", ",", "0.03"}], "}"}], "]"}]}], "}"}]}], "}"}]}], 
+       ",", 
+       RowBox[{"ImagePadding", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"AxesLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{"\"\<$r$\>\"", ",", "\"\<$N_e(r)$\>\""}], "}"}]}]}], "]"}], 
+     "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Arrowheads", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "0.04"}], ",", "0.04"}], "}"}], "]"}], ",", 
+          RowBox[{"Arrow", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "2"}], "}"}]}], "}"}], "]"}]}], "}"}],
+         "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Arrowheads", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "0.04"}], ",", "0.04"}], "}"}], "]"}], ",", 
+          RowBox[{"Arrow", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "2"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "3"}], "}"}]}], "}"}], "]"}]}], "}"}],
+         "\[IndentingNewLine]", ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<$\\Delta N_e$\>\"", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "2.5"}], "}"}]}], "]"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<$N_e(0)$\>\"", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "1"}], "}"}]}], "]"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"Dashed", ",", "Thick", ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "3"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "3"}], "}"}]}], "}"}], "]"}]}], "}"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"Dashed", ",", "Thick", ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "2"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "2"}], "}"}]}], "}"}], "]"}]}], "}"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}]}], "}"}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "0.8"}]}], "]"}]], "Input",ExpressionUUID\
+->"3476b7b9-6d42-455c-914e-8f779d18c481"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"fig", ",", 
+     RowBox[{"str", "=", 
+      RowBox[{"NotebookDirectory", "[", "]"}]}]}], "}"}], ",", 
+   RowBox[{
+    RowBox[{"fig", "=", "%115"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"str", "<>", "\"\<in.pdf\>\""}], ",", "fig"}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"RunProcess", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"inkscape", ",", "\"\<-z\>\"", ",", "\"\<-D\>\"", ",", 
+        RowBox[{"\"\<--file=\>\"", "<>", "str", "<>", "\"\<in.pdf\>\""}], ",", 
+        RowBox[{
+        "\"\<--export-pdf=\>\"", "<>", "str", "<>", "\"\<out.pdf\>\""}], ",", 
+        "\"\<--export-latex\>\""}], "}"}], ",", 
+      RowBox[{"ProcessEnvironment", "\[Rule]", 
+       RowBox[{"Association", "[", 
+        RowBox[{"DeleteCases", "[", 
+         RowBox[{
+          RowBox[{"GetEnvironment", "[", "All", "]"}], ",", 
+          RowBox[{"\"\<LD_LIBRARY_PATH\>\"", "\[Rule]", "_"}]}], "]"}], 
+        "]"}]}]}], "]"}], ";"}]}], "]"}]], "Input",ExpressionUUID->"915e078b-\
+b65f-45d4-bf78-470da1a502db"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["inkscape"], "Input",
+ CellChangeTimes->{{3.8267956531013546`*^9, 3.8267956541484146`*^9}},
+ CellLabel->
+  "In[117]:=",ExpressionUUID->"36cf17fd-394a-4195-b1c0-45a1c0372a9f"],
+
+Cell[BoxData["\<\"C:\\\\Program \
+Files\\\\Inkscape\\\\bin\\\\inkscape.exe\"\>"], "Output",
+ CellChangeTimes->{3.826795654676444*^9},
+ CellLabel->
+  "Out[117]=",ExpressionUUID->"611e18ea-5eb9-4743-9a02-cfa6978c43df"]
+}, Open  ]]
+},
+WindowSize->{1264, 942},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3d0754a0-da16-452e-b5c5-4e528e6759df"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 377, 11, 34, "Text",ExpressionUUID->"6e8e2adf-d62d-4f68-a876-05100fa19ed0"],
+Cell[938, 33, 4043, 112, 236, "Input",ExpressionUUID->"3476b7b9-6d42-455c-914e-8f779d18c481"],
+Cell[4984, 147, 1144, 28, 86, "Input",ExpressionUUID->"915e078b-b65f-45d4-bf78-470da1a502db"],
+Cell[CellGroupData[{
+Cell[6153, 179, 187, 3, 28, "Input",ExpressionUUID->"36cf17fd-394a-4195-b1c0-45a1c0372a9f"],
+Cell[6343, 184, 216, 4, 79, "Output",ExpressionUUID->"611e18ea-5eb9-4743-9a02-cfa6978c43df"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

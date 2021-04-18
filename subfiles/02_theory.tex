@@ -29,9 +29,9 @@ overall quasi-neutrality is a good approximation. This inequality is the first c
 \subsection{Plasma Oscillation}\label{ssec:oscillation}
 The transfer of electrons from a given region of space to a neighbouring region induces a charge separation. This local charge gives rise to an electric field $E$. Since the electrons are much lighter than the ions, they respond much more rapidly to the electric field, and the motion of the ions can be neglected in first instance. The electric field pulls the electrons back to their initial position in order to reduce the local charge separation which is the source of the electric field. Those electrons produce another non-equilibrium distribution in the opposite direction, and so on, performing an oscillatory motion, with the Coulomb force acting as the restoring force and the mass of the electron as the inertia. This is called a plasma oscillation\sidenote{Eq. \ref{eq:plasma-frequency} for $\omega_p$ does not depend on $k$, so the group velocity $\mathrm{d}\omega / \mathrm{d}k$ is zero - the disturbance does not propagate.}, defined as
 \begin{equation}
-		\omega_p=\sqrt{\frac{n_e e^2}{m_e \varepsilon_0}}\si[per-mode=fraction]{\radian\per\sec}.\label{eq:plasma-frequency}
+		\omega_p=\sqrt{\frac{N_e e^2}{m_e \varepsilon_0}}\si[per-mode=fraction]{\radian\per\sec}.\label{eq:plasma-frequency}
 \end{equation}
-For a typical plasma density of $n_e \sim \SI{e18}{\per\cubic\cm}$, we get \\ $\omega_p=\SI{5.6e13}{\radian\per\sec}$, which lies in the microwave range.
+For a typical plasma density of $N_e \sim \SI{e18}{\per\cubic\cm}$, we get \\ $\omega_p=\SI{5.6e13}{\radian\per\sec}$, which lies in the microwave range.
 
 \subsection{Collective behaviour criteria}
 A measure for the average number of particles with density $n_e$ inside a sphere of radius $\lambda_D$ is called the Debye number, $N_D$, via which the (dimensionless) plasma parameter $\Lambda$ is defined:
@@ -63,8 +63,8 @@ In many cases it is possible to neglect the last process (c) and use the approxi
 \end{equation}
 Here $\kappa$ is the linear absorption coefficient (\si{\per\cm}). In this simple case, the emergent and incident intensities $I_\text{out}$ and $I_\text{in}$ are related by \marginnote{Equation \ref{eq:radiative-transfer} is the simplest equation of radiative transfer.}
 \begin{equation}
-    I_\text{out}=I_\text{in}e^{-\kappa z}.
-    \label{eq:radiative-transfer}
+I_\text{out}=I_\text{in}e^{-\kappa z}.
+\label{eq:radiative-transfer}
 \end{equation}
 Media with optical depths less than unity and exceeding unity, are called optically \emph{thin} and optically \emph{thick}, respectively. I.e., by optically thin plasma, we mean that the freely propagating radiation is not significantly attenuated by the plasma environment and reaches the detector without re--absorption.
 \end{description}
@@ -136,7 +136,7 @@ where $\Delta \lambda_{1/2}\left[\si{\nm}\right]$ is the full width at half maxi
 
 This phenomenon for hydrogen lines is very well understood, and the dependence of the line width on the plasma concentration and plasma density has been tabulated \cite{Griem1964PlasmaSpectroscopy,Griem1974SpectralPlasmas.}, but, from the theoretical point of view, there does not exist any model that enables accurate calculations of Stark broadening over a large electron density range\cite{Griem2000StarkPlasmas}. 
 
-The following equation relates electron density to the width of the emission line for the H\textsubscript{alpha} line:
+The following equation relates electron density to the width of the emission line for the H\textsubscript{$\alpha$} line:
 \begin{equation}
 n_e=\left( \frac{\Delta\lambda_{1/2}}{\gamma\left(n_e,T_e\right)}\right)^{3/2}.
 \end{equation}
@@ -159,10 +159,11 @@ Laser--driven plasma-based accelerators were originally proposed by T. Tajima an
 If the limiting factor on the scale of the accelerator is ionisation of the material, then an attractive alternative with reasonably sized facilities is to use plasma as the medium for the acceleration mechanism.
 
 In a plasma accelerator, a longitudinal electron plasma wave (wakefield) is formed and electrons injected into the plasma near the high--density area will experience an acceleration toward it by the plasma. This method, termed \emph{Laer WakeField Acceleration} (LWFA), utilizes an ultrashort ($\sim\SI{100}{\fs}$), high--power (\si{\TW}) laser that provides a large electric field because of charge separation. Plasma formed by initiating a discharge in a narrow channel made within a tube (i.e., \textit{discharge capillary}) satisfies promising conditions for a plasma source to exploit LWFA, on a length scale of centimeters \cite{Gonsalves2019PetawattWaveguide,Leemans2014Multi-GeVRegime}. The injected electrons' acceleration continues as the wakefield travels through the plasma waveguide. The research has widely grown since the mid 1980s, when ultrashort laser pulses of sufficient energy became available after the damage threshold inherent in optical amplifiers had been overcome by means of Chirped Pulse Amplification (CPA) \cite{Strickland1985CompressionPulses}.
+
 \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{figures/lwfa_schematic.PNG}
-    \caption{Schematic of the LWFA showing an intense short laser pulse generating a plasma wave wake as it propagates through the plasma. Roughly speaking, the laser pulse acts like an intense negative charge by repelling electrons in both the radial and axial directions. Figure adapted from \href{https://aip.scitation.org/doi/pdf/10.1063/1.37621}{\cite{Sprangle1988LaserGuiding}}.}
+\centering
+\includegraphics[width=\textwidth]{figures/lwfa-schematic.PNG}
+    \caption{Schematic of the LWFA showing an intense short laser pulse generating a plasma wave wake as it propagates through the plasma. Roughly speaking, the laser pulse acts like an intense negative charge by repelling electrons in both the radial and axial directions. Figure adapted from \cite{Sprangle1988LaserGuiding}.}
     \label{fig:lwfa-schema}
 \end{figure}
 
@@ -213,7 +214,7 @@ Written as an expression for the index of refraction $\tilde{n}=c/v_\phi = ck/\o
 \end{equation}
 where
 \begin{equation}
-    N_\text{cr}=\frac{\omega^2\varepsilon_0 m}{e^2}=\frac{\pi}{\lambda^2 r_e}
+    N_\text{cr}=\frac{\omega^2\varepsilon_0 m_e}{e^2}=\frac{\pi}{\lambda^2 r_e}
 \end{equation}
 is the critical plasma density, and $r_e$ is the classical electron radius.
 
@@ -229,11 +230,20 @@ The dependence $N_e(r)$ is usually termed the "radial density profile" (RDP). In
     \label{eq:rdp}
 \end{equation}
 and is of special practical interest, because it is capable of guiding a tightly focused laser pulse while keeping its spot radius constant \cite{Sprangle1992PropagationPlasmas,Esarey1997Self-focusingPlasmas}. Here $N_e(r)$ is the electron density at a distance $r$ from the axis of the beam and $\Delta N_e$ is the increase in the electron density at $r=r_\text{ch}$ compared to the axial value. See figure \ref{fig:rdp_parabola}. Such guiding is accomplished for some waist radius of the guided beam (the \textit{matched} radius $w_m$), which is related to the geometry of a parabolic RDP as follows \cite{Esarey1997Self-focusingPlasmas}\sidenote{The radius of a mismatched beam oscillates as the beam propagates through the channel \cite{Esarey1997Self-focusingPlasmas}.}:
+%\begin{marginfigure}
+%    \includegraphics[width=\marginparwidth]{figures/rdp.PNG}
+%    \caption{Radial Density Profile}
+%    \label{fig:rdp_parabola}
+%\end{marginfigure}
+
 \begin{marginfigure}
-    \includegraphics[width=\marginparwidth]{figures/rdp.PNG}
+    \def\svgwidth{\marginparwidth}
+    \input{./figures/rdp.pdf_tex}
     \caption{Radial Density Profile}
     \label{fig:rdp_parabola}
 \end{marginfigure}
+
+
 \begin{equation}
     w_m=\left( \frac{r_\text{ch}^2}{\pi r_e \Delta N_e}\right)^{1/4}
     \label{eq:matched_radius}
@@ -293,7 +303,7 @@ The plasma channel is created by an electric discharge through an insulated capi
 
 As stated in previously, in addition to defocusing, there is also the dephasing length: trapped electrons outrun or dephase the accelerating phase of the wakefield \cite{Esarey2009PhysicsAccelerators}. The current paradigm within the LWFA community envisions a \si{\TeV} LWFA composed of multiple $~$\SI{10}{\GeV} stages, which could be be optimized for efficiency, by matching the dephasing length to the depletion length of the laser pulse \cite{Schroeder2010PhysicsColliders}, thus using multiple LWFA stages to successively accelerate one electron beam to higher energies (see figure \ref{fig:coupling_scheme}).
 \begin{marginfigure}
-\includegraphics[width=\marginparwidth]{figures/cad/coupling_scheme.png}
+\includegraphics[width=\marginparwidth]{figures/cad/coupling_scheme.pdf}
 \caption{Proposed multistage acceleration scheme. The first main laser is initiating the acceleration of the electron beam. A fishbone shaped curved channels are added down the acceleration line enabling further acceleration of the electrons.}
 \label{fig:coupling_scheme}
 \end{marginfigure}
